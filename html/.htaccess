@@ -1,0 +1,7 @@
+AddDefaultCharset UTF-8
+#CharsetSourceEnc UTF-8
+
+php_value default_charset utf-8
+
+#AddType application/x-httpd-php .php .htm .html .phtml
+AddType application/javascript .js

@@ -1,0 +1,366 @@
+/**/
+/********************* file: mixins *********************/
+/**/
+
+.u {
+	&:link, &:visited {
+		text-decoration: none;
+	}
+	&:hover, &:active {
+		text-decoration: underline;
+	}
+}
+
+.caption {
+	//	height: 60px;
+	//	line-height: 60px;
+	padding: 13px 0 14px 0;
+	line-height: 1.1;
+	font-family: @fontL;
+	font-size: 30px;
+}
+
+.more-button {
+	.u;
+	float: right;
+	font-family: @fontI;
+}
+
+.clearfix() {
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+.font-italic {
+	&, &:link, &:visited,
+	*, &:link *, &:visited * {
+		font-family: @fontI;
+	}
+}
+
+.font-bold() {
+	&, &:link, &:visited {
+		font-family: @fontB;
+	}
+}
+
+.hover-light-red() {
+	&:hover, &:active {
+		color: @light-red-color;
+	}
+}
+
+.red-color-link {
+	&:link, &:visited {
+		color: @white-color;
+		background: @light-red-color;
+	}
+	&:hover, &:active {
+		background: @red-color;
+	}
+}
+
+.normal-color {
+	color: @text-color !important;
+}
+
+.normal-link {
+	&:link, &:visited {
+		text-decoration: underline;
+	}
+	&:hover, &:active {
+		text-decoration: none;
+	}
+}
+
+.border-radius(@radius: 5px) {
+	-web-kit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	border-radius: @radius;
+}
+
+.border-radius-top(@radius: 5px) {
+	-web-kit-border-top-left-radius: @radius;
+	-moz-border-top-left-radius: @radius;
+	border-top-left-radius: @radius;
+	-web-kit-border-top-right-radius: @radius;
+	-moz-border-top-right-radius: @radius;
+	border-top-right-radius: @radius;
+}
+
+.border-radius-bottom(@radius: 5px) {
+	-web-kit-border-bottom-right-radius: @radius;
+	-moz-border-bottom-right-radius: @radius;
+	border-bottom-right-radius: @radius;
+	-web-kit-border-bottom-left-radius: @radius;
+	-moz-border-bottom-left-radius: @radius;
+	border-bottom-left-radius: @radius;
+}
+
+.border-radius-left(@radius: 5px) {
+	-web-kit-border-top-left-radius: @radius;
+	-moz-border-top-left-radius: @radius;
+	border-top-left-radius: @radius;
+	-web-kit-border-bottom-left-radius: @radius;
+	-moz-border-bottom-left-radius: @radius;
+	border-bottom-left-radius: @radius;
+}
+
+.border-radius-right(@radius: 5px) {
+	-web-kit-border-top-right-radius: @radius;
+	-moz-border-top-right-radius: @radius;
+	border-top-right-radius: @radius;
+	-web-kit-border-bottom-right-radius: @radius;
+	-moz-border-bottom-right-radius: @radius;
+	border-bottom-right-radius: @radius;
+}
+
+.border-radius-top-left(@radius: 5px) {
+	-web-kit-border-top-left-radius: @radius;
+	-moz-border-top-left-radius: @radius;
+	border-top-left-radius: @radius;
+}
+
+.border-radius-top-right(@radius: 5px) {
+	-web-kit-border-top-right-radius: @radius;
+	-moz-border-top-right-radius: @radius;
+	border-top-right-radius: @radius;
+}
+
+.border-radius-bottom-right(@radius: 5px) {
+	-web-kit-border-bottom-right-radius: @radius;
+	-moz-border-bottom-right-radius: @radius;
+	border-bottom-right-radius: @radius;
+}
+
+.border-radius-bottom-left(@radius: 5px) {
+	-web-kit-border-bottom-left-radius: @radius;
+	-moz-border-bottom-left-radius: @radius;
+	border-bottom-left-radius: @radius;
+}
+
+.opacity(@opacity: 0.5) {
+	-moz-opacity: @opacity;
+	-khtml-opacity: @opacity;
+	-webkit-opacity: @opacity;
+	opacity: @opacity;
+	@opperc: @opacity * 100;
+	-ms-filter: ~"progid:DXImageTransform.Microsoft.Alpha(opacity=@{opperc})";
+	filter: ~"alpha(opacity=@{opperc})";
+}
+
+.box-sizing(@sizing: border-box) {
+	-ms-box-sizing: @sizing;
+	-moz-box-sizing: @sizing;
+	-webkit-box-sizing: @sizing;
+	box-sizing: @sizing;
+}
+
+.padding-left-right-null(@all: false) {
+	padding-left: 0;
+	padding-right: 0;
+	li:first-child {
+		padding-left: 0;
+		*when (@all = true) {
+		&, &:link, &:visited {
+			padding-left: 0;
+		}
+	}
+	}
+	li:last-child {
+		padding-right: 0;
+		*when (@all = true) {
+		&, &:link, &:visited {
+			padding-right: 0;
+		}
+	}
+	}
+}
+
+.border-red {
+	border: 1px solid red;
+}
+
+.border-blue {
+	border: 1px solid blue;
+}
+
+.border-green {
+	border: 1px solid green;
+}
+
+.border-yellow {
+	border: 1px solid yellow;
+}
+
+.center-text {
+	text-align: center;
+}
+
+.small-text {
+	font-size: 13px;
+}
+
+.gray-text {
+	color: @gray-color;
+}
+
+.green-text {
+	color: @green-color;
+}
+
+.red-text {
+	color: @red-color;
+}
+
+.yellow-text {
+	color: @yellow-color;
+}
+
+.orange-text {
+	color: @orange-color;
+}
+
+.white-text {
+	color: @white-color;
+}
+
+.white-block {
+	background: @white-color;
+}
+
+.background-transparent-white() {
+	background: rgba(255, 255, 255, 0.7);
+}
+
+.background-transparent-black() {
+	background: rgba(0, 0, 0, 0.7);
+}
+
+.box-shadow(@opacity: 0.1, @int-red-color: 0, @int-green-color: 0, @int-blue-color: 0) {
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(@int-red-color, @int-green-color, @int-blue-color, @opacity);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(@int-red-color, @int-green-color, @int-blue-color, @opacity);
+	box-shadow: 0px 0px 10px 0px rgba(@int-red-color, @int-green-color, @int-blue-color, @opacity);
+}
+
+.box-shadow-priority(@opacity: 0.1, @int-red-color: 255, @int-green-color: 100, @int-blue-color: 19) {
+	.box-shadow(@opacity, @int-red-color, @int-green-color, @int-blue-color)
+}
+
+.background-cover() {
+	background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+}
+
+.center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.pull-right {
+	float: right !important;
+}
+
+.pull-left {
+	float: left !important;
+}
+
+.hide {
+	display: none !important;
+}
+
+.show {
+	display: block !important;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+.icon-32x32 {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	background: url("../images/icons/icon-32x32-sprite.png") no-repeat;
+}
+
+.icon-16x16 {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url("../images/icons/icon-16x16-sprite.png") no-repeat;
+}
+
+.placeholder(@color: @gray-color) {
+	// красивое обрезание текста в placeholder'е, если текст не помещается
+	&::-webkit-input-placeholder {
+		color: @color;
+	}
+	&::-moz-placeholder {
+		// Firefox 19+
+		color: @color;
+	}
+	&:-moz-placeholder {
+		// Firefox 18-
+		color: @color;
+	}
+	&:-ms-input-placeholder {
+		color: @color;
+	}
+
+	// скрывание placeholder'а при получении фокуса инпутом
+	& {
+		text-overflow: ellipsis;
+	}
+	&::-moz-placeholder {
+		text-overflow: ellipsis;
+	}
+	&:-moz-placeholder {
+		text-overflow: ellipsis;
+	}
+	&:-ms-input-placeholder {
+		text-overflow: ellipsis;
+	}
+
+	// плавное изменение прозрачности placeholder'а при фокусе
+	&:focus::-webkit-input-placeholder {
+		color: transparent
+	}
+	&:focus::-moz-placeholder {
+		color: transparent
+	}
+	&:focus:-moz-placeholder {
+		color: transparent
+	}
+	&:focus:-ms-input-placeholder {
+		color: transparent
+	}
+}
+
+/* Градиент в белый цвет справа, P.S.: установка отступа слева и высота - в index.js */
+.gradient-right {
+	position: absolute;
+	display: block;
+	float: right;
+	width: 30px;
+	height: 1.5em;
+	margin-top: -1.5em;
+	background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+	background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+	background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 1)));
+	background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffffff', GradientType=1);
+}
+
+/* /Градиент в белый цвет справа, P.S.: установка отступа слева и высота - в index.js */

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Ubuntu Medium Italic';
+    src: url('ubuntu-medium-italic.eot');
+    src: url('ubuntu-medium-italic.eot') format('embedded-opentype'),
+         url('ubuntu-medium-italic.woff2') format('woff2'),
+         url('ubuntu-medium-italic.woff') format('woff'),
+         url('ubuntu-medium-italic.ttf') format('truetype'),
+         url('ubuntu-medium-italic.svg#ubuntu-medium-italic') format('svg');
+}

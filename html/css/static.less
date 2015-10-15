@@ -1,0 +1,75 @@
+/**/
+/********************* file: static *********************/
+/**/
+
+.hr {
+	background: #ddd;
+	height: 1px;
+	margin: 11px 0;
+	&.simple {
+		margin: 5px 0;
+	}
+	&.simple-line {
+		margin: 0;
+	}
+}
+
+.selected-text {
+	color: @light-red-color;
+}
+
+.dark-text {
+	color: @dark-gray-color;
+}
+
+.caret {
+	display: inline-block;
+	height: 0px;
+	margin-left: 2px;
+	vertical-align: middle;
+	width: 0px;
+	border-top: 4px solid;
+	border-right: 4px solid transparent;
+	border-bottom: none;
+	border-left: 4px solid transparent;
+	&.up {
+		border-top: none;
+		border-bottom: 4px solid;
+	}
+}
+
+.outline-none, * {
+	outline: none;
+	outline-offset: 0;
+}
+
+a:link, a:visited, a:hover, a:active, a:focus,
+	//input[type="text"], input[type="file"], input[type="radio"], input[type="checkbox"],
+	//input[type="text"]:focus, input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focus
+input,
+input:focus {
+	.outline-none;
+}
+
+label {
+	margin: 0;
+}
+
+input[placeholder] {
+	.placeholder(@light-gray-color);
+}
+
+p, ul.simple-list {
+	padding-bottom: 9px;
+}
+
+div.simple-list {
+	> div + div {
+		clear: both;
+	}
+}
+
+.required-field-sign {
+	.selected-text;
+	font-family: @fontB;
+}

@@ -1,0 +1,251 @@
+@import "variables.less";
+@import "static.less";
+
+/**/
+/********************* file: bitrix *********************/
+/**/
+
+/** выравнивание изображения по левому краю **/
+.image-left {
+	margin: 3px 20px 15px 0;
+	display: block;
+	float: left;
+}
+
+/** /выравнивание изображения по левому краю **/
+/**/
+/**/
+/**/
+/** выравнивание изображения по левому краю **/
+.image-right {
+	margin: 3px 0 15px 20px;
+	display: block;
+	float: right;
+}
+
+/** /выравнивание изображения по левому краю **/
+/**/
+/**/
+/**/
+/** изображения с бордюром **/
+.image-border {
+	box-sizing: content-box;
+	border: 1px solid @light-gray-color;
+}
+
+/** /изображения с бордюром **/
+/**/
+/**/
+/**/
+/** выравнивание изображения по левому краю с бордюром **/
+.image-left-border {
+	.image-left;
+	.image-border;
+	.border-radius(2px);
+}
+
+/** /выравнивание изображения по левому краю с бордюром **/
+/**/
+/**/
+/**/
+/** выравнивание изображения по левому краю с бордюром **/
+.image-right-border {
+	.image-right;
+	.image-border;
+	.border-radius(2px);
+}
+
+/** /выравнивание изображения по левому краю с бордюром **/
+/**/
+/**/
+/**/
+/** выравнивание изображения по левому краю в рамке **/
+.image-left-frame {
+	.image-left-border;
+	padding: 3px;
+	.border-radius(3px);
+}
+
+/** /выравнивание изображения по левому краю в рамке **/
+/**/
+/**/
+/**/
+/** выравнивание изображения по левому краю в рамке **/
+.image-right-frame {
+	.image-right-border;
+	padding: 3px;
+	.border-radius(3px);
+}
+
+/** /выравнивание изображения по левому краю в рамке **/
+
+/*
+.padding-frame {
+	padding: 20px;
+}
+*/
+
+/** слой для превью с отступами **/
+.img-preview-border-left-frame {
+	.image-left-frame;
+	padding: 10px 20px;
+	display: block;
+}
+
+/** /слой для превью с отступами **/
+
+/** Простая таблица **/
+.simple-table {
+	width: 100%;
+	tr {
+		td {
+			img {
+				margin-bottom: 0;
+			}
+			vertical-align: top;
+			padding: 15px 0;
+		}
+	}
+}
+
+/** /Простая таблица **/
+
+/** Простая таблица с полосками сверху и снизу строк **/
+.simple-top-bottom-border-table {
+	.simple-table;
+	border-top: 1px solid @light-gray-color;
+	tr {
+		td {
+			border-bottom: 1px solid @light-gray-color;
+		}
+	}
+}
+
+/** /Простая таблица с полосками сверху и снизу строк **/
+
+// SubCaption - Серая плашка - подзаголовок
+.sub-caption {
+	padding: 10px 17px;
+	margin-bottom: 7px;
+	line-height: 1.5;
+	color: @dark-gray-color;
+	background: @super-light-gray-color;
+	.border-radius();
+}
+
+// /SubCaption - Серая плашка - подзаголовок
+
+// SubCaptionText - Текст под серой плашкой с отступом
+.sub-caption-text {
+	padding: 10px 7px 10px 17px;
+}
+
+// /SubCaptionText - Текст под серой плашкой с отступом
+
+// обязательный перенос строки
+.clearfix {
+
+}
+
+// /обязательный перенос строки
+
+// простой спиок с буллетам
+ul.simple-list {
+	li {
+		padding-left: 17px;
+		background: url("../images/bullet.png") no-repeat 2px 7px;
+	}
+}
+
+// /простой спиок с буллетам
+
+// простой спиок связанные буллеты
+ul.simple-list-connected-bullet {
+	li {
+		padding: 0;
+		margin: 0;
+		padding-left: 27px;
+		background: url("../images/bullet-connected.png") no-repeat;
+		padding-bottom: 1em;
+		&:first-child {
+			background-image: url("../images/bullet-connected-top.png");
+		}
+		&:last-child {
+			background-image: url("../images/bullet-connected-bottom.png");
+		}
+		&.last-child {
+			background-image: url("../images/bullet-connected-bottom.png");
+		}
+		h3 {
+			margin-top: 0;
+		}
+	}
+}
+
+// /простой спиок связанные буллеты
+
+// светло-серые границы между строками таблицы
+table.st-row-border {
+	tr {
+		.st-border;
+		td {
+			padding-bottom: 20px;
+		}
+	}
+}
+
+// /светло-серые границы между строками таблицы
+
+// светло-серые границы между строками
+.st-border {
+	+ tr {
+		td {
+			padding-top: 20px;
+			border-top: 1px solid @light-gray-color;
+		}
+	}
+	&:last-child {
+		td {
+			padding-bottom: 0;
+		}
+	}
+	td {
+		padding-bottom: 20px;
+	}
+}
+
+// /светло-серые границы между строками
+
+// горизонтальные отступы между ячейками
+.st-spacing-between-cells {
+	tr + tr {
+		td {
+			padding-top: 20px;
+		}
+	}
+	tr {
+		td + td {
+			padding-left: 35px;
+		}
+	}
+	form.personal-data & {
+		tr {
+			td {
+				&:first-child {
+					width: 115px;
+				}
+			}
+		}
+	}
+}
+
+// /горизонтальные отступы между ячейками
+
+// В таблице выравнивание текста в ячейках по середине
+table.vertical-align-middle {
+	td {
+		vertical-align: middle;
+	}
+}
+
+// /В таблице выравнивание текста в ячейках по середине

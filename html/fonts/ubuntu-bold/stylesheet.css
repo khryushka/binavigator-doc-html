@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Ubuntu Bold';
+    src: url('ubuntu-bold.eot');
+    src: url('ubuntu-bold.eot') format('embedded-opentype'),
+         url('ubuntu-bold.woff2') format('woff2'),
+         url('ubuntu-bold.woff') format('woff'),
+         url('ubuntu-bold.ttf') format('truetype'),
+         url('ubuntu-bold.svg#ubuntu-bold') format('svg');
+}
