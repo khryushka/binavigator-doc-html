@@ -124,11 +124,11 @@
 			{
 				name: 'Общие сведения: Список помещений',
 				fileName: 'info-spaces.php'
-			}/*,
+			},
 			{
 				name: 'Общие сведения: О руководителе',
-				fileName: '.php'
-			},
+				fileName: 'info-about-head.php'
+			}/*,
 			{
 				name: 'Общие сведения: О руководителе (уменьшенные вопросы)',
 				fileName: '.php'

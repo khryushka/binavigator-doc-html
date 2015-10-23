@@ -12,19 +12,9 @@
 	<script>var SITE_TEMPLATE_PATH = '.'; // путь к корневой папке, без завершающего слэша</script>
 	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 
-	<?
-		/*
-	?>
-	<!-- JqueryUi -->
-	<link type="text/css" href="jquery-ui/jquery-ui.min.css" rel="stylesheet"/>
-	<script type="text/javascript" src="jquery-ui/jquery-ui.min.js"></script>
-	<!-- /JqueryUi -->
-	<?
-		*/
-	?>
-
 	<!-- Bootstrap -->
 	<link type="text/css" href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 	<?
 		/*
 	?>
@@ -34,14 +24,19 @@
 	?>
 	<!-- /Bootstrap -->
 
+	<!-- JqueryUi -->
+	<link type="text/css" href="jquery-ui/jquery-ui.min.css" rel="stylesheet"/>
+	<script type="text/javascript" src="jquery-ui/jquery-ui.min.js"></script>
+	<!-- /JqueryUi -->
+
 	<link type="text/css" href="css/reset.css" rel="stylesheet"/>
 
 	<!-- Fonts -->
-	<link type="text/css" href="fonts/ubuntu-regular/stylesheet.css" rel="stylesheet" />
-	<link type="text/css" href="fonts/ubuntu-light/stylesheet.css" rel="stylesheet" />
-	<link type="text/css" href="fonts/ubuntu-medium/stylesheet.css" rel="stylesheet" />
-	<link type="text/css" href="fonts/ubuntu-bold/stylesheet.css" rel="stylesheet" />
-	<link type="text/css" href="fonts/ubuntu-italic/stylesheet.css" rel="stylesheet" />
+	<link type="text/css" href="fonts/ubuntu-regular/stylesheet.css" rel="stylesheet"/>
+	<link type="text/css" href="fonts/ubuntu-light/stylesheet.css" rel="stylesheet"/>
+	<link type="text/css" href="fonts/ubuntu-medium/stylesheet.css" rel="stylesheet"/>
+	<link type="text/css" href="fonts/ubuntu-bold/stylesheet.css" rel="stylesheet"/>
+	<link type="text/css" href="fonts/ubuntu-italic/stylesheet.css" rel="stylesheet"/>
 	<?
 		/*
 	?>
@@ -61,18 +56,6 @@
 	<script src="validation/js/languages/jquery.validationEngine-ru.js" type="text/javascript" charset="utf-8"></script>
 	<script src="validation/js/jquery.validationEngine.js" type="text/javascript" charset="utf-8"></script>
 	<!-- /Validation -->
-	<?
-		*/
-	?>
-	<?
-		/*
-	?>
-	<!-- Checkbox -->
-	<link type="text/css" href="checkbox/css/styles.css" rel="stylesheet"/>
-	<!--[if lt IE 9]>
-	<link type="text/css" href="checkbox/css/styles-ie8.css" rel="stylesheet"/>
-	<![endif]-->
-	<!-- /Checkbox -->
 	<?
 		*/
 	?>
@@ -105,6 +88,10 @@
 	<?
 		*/
 	?>
+	<!-- FormStyler -->
+	<link type="text/css" href="form-styler/css/jquery.formstyler.css" rel="stylesheet"/>
+	<script type="text/javascript" src="form-styler/js/jquery.formstyler.js"></script>
+	<!-- /FormStyler -->
 
 	<link type="text/css" href="css/index.css?t=<?= time () ?>" rel="stylesheet"/>
 	<?
@@ -120,10 +107,15 @@
 	<script type="text/javascript" src="js/index.js?t=<?= time () ?>"></script>
 
 	<!-- Удалить меню html-ек -->
-	<script type="text/javascript" src="js/del-jquery-ui.js"></script>
 	<script type="text/javascript" src="js/del-menu.js"></script>
 	<!--[if lt IE 9]>
-	<style type="text/css">.del-menu {background: #000 !important;} .del-menu .current {background: orangered !important;}</style>
+	<style type="text/css">.del-menu {
+		background: #000 !important;
+	}
+
+	.del-menu .current {
+		background: orangered !important;
+	}</style>
 	<![endif]-->
 	<!-- /Удалить меню html-ек -->
 </head>
