@@ -57,9 +57,6 @@
 				});
 			}
 		});
-		$('.steps-content-block .button-prev, .steps-content-block .button-next').on('click', function() {
-
-		});
 		$('.steps-menu-block li').eq(0).find('a').trigger('click');
 		/** /StepsMenuBlock **/
 
@@ -132,6 +129,7 @@
 				if (!$form.attr('init')) {
 					$form.attr('init', 1);
 
+					/*
 					$form.validationEngine('attach', {
 						bindMethod: "live",
 						scroll: false,
@@ -169,6 +167,7 @@
 							}
 						}
 					});
+					*/
 				}
 			});
 		}

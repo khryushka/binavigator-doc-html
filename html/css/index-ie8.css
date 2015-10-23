@@ -202,16 +202,16 @@ input[placeholder] {
   text-overflow: ellipsis;
 }
 input[placeholder]::-webkit-input-placeholder {
-  color: #979797;
+  color: #dbdbdb;
 }
 input[placeholder]::-moz-placeholder {
-  color: #979797;
+  color: #dbdbdb;
 }
 input[placeholder]:-moz-placeholder {
-  color: #979797;
+  color: #dbdbdb;
 }
 input[placeholder]:-ms-input-placeholder {
-  color: #979797;
+  color: #dbdbdb;
 }
 input[placeholder]::-moz-placeholder {
   text-overflow: ellipsis;

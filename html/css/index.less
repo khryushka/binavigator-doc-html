@@ -67,14 +67,22 @@ input[type="password"],
 input[type="email"],
 input[type="number"],
 input[type="tel"] {
-	/*
-	.border-radius(5px);
+	.border-radius();
+	padding: 0 11px;
+	//width: 315px;
+	height: 33px;
+	line-height: 33px;
 	border: 1px solid @light-gray-color;
-	padding: 0 7px;
-	width: 315px;
-	height: 39px;
-	line-height: 39px;
-	*/
+	background: @super-light-gray-color;
+	&:focus {
+		border-color: @blue-color;
+	}
+	&.success {
+		border-color: @gray-color;
+	}
+	&.error {
+		border-color: @red-color;
+	}
 }
 
 .center-text {
@@ -110,6 +118,7 @@ input[type="tel"] {
 		background: @blue-color;
 		border-bottom: 3px solid @dark-blue-color;
 		text-decoration: none;
+		white-space: nowrap;
 	}
 	&:hover {
 		background-color: #4daee5;
@@ -477,7 +486,7 @@ ul.breadcrumbs-block {
 /**/
 /** LeftColumn **/
 .left-column {
-	padding: 15px 0;
+	padding-top: 15px;
 
 	> .caption-block {
 		text-align: center;
@@ -530,7 +539,17 @@ ul.breadcrumbs-block {
 /**/
 /** RightColumn **/
 .right-column {
-	padding: 15px 0;
+	padding-top: 15px;
+
+	> .caption-block {
+		margin-bottom: 20px;
+	}
+
+	// Body
+	.body {
+
+	}
+	// /Body
 }
 
 /** /RightColumn **/

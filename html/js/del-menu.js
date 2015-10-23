@@ -112,15 +112,15 @@
 			{
 				name: 'Общие сведения: Структура подразделений',
 				fileName: 'info-ou-structure.php'
-			}/*,
+			},
 			{
 				name: 'Общие сведения: Список должностей',
-				fileName: '.php'
+				fileName: 'info-posts-list.php'
 			},
 			{
 				name: 'Общие сведения: Список сотрудников',
-				fileName: '.php'
-			},
+				fileName: 'info-employees-list.php'
+			}/*,
 			{
 				name: 'Общие сведения: Список помещений',
 				fileName: '.php'

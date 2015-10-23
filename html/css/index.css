@@ -202,16 +202,16 @@ input[placeholder] {
   text-overflow: ellipsis;
 }
 input[placeholder]::-webkit-input-placeholder {
-  color: #979797;
+  color: #dbdbdb;
 }
 input[placeholder]::-moz-placeholder {
-  color: #979797;
+  color: #dbdbdb;
 }
 input[placeholder]:-moz-placeholder {
-  color: #979797;
+  color: #dbdbdb;
 }
 input[placeholder]:-ms-input-placeholder {
-  color: #979797;
+  color: #dbdbdb;
 }
 input[placeholder]::-moz-placeholder {
   text-overflow: ellipsis;
@@ -321,7 +321,7 @@ body {
 /** изображения с бордюром **/
 .image-border {
   box-sizing: content-box;
-  border: 1px solid #979797;
+  border: 1px solid #dbdbdb;
 }
 /** /изображения с бордюром **/
 /**/
@@ -333,7 +333,7 @@ body {
   display: block;
   float: left;
   box-sizing: content-box;
-  border: 1px solid #979797;
+  border: 1px solid #dbdbdb;
   -web-kit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
@@ -348,7 +348,7 @@ body {
   display: block;
   float: right;
   box-sizing: content-box;
-  border: 1px solid #979797;
+  border: 1px solid #dbdbdb;
   -web-kit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
@@ -363,7 +363,7 @@ body {
   display: block;
   float: left;
   box-sizing: content-box;
-  border: 1px solid #979797;
+  border: 1px solid #dbdbdb;
   -web-kit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
@@ -382,7 +382,7 @@ body {
   display: block;
   float: right;
   box-sizing: content-box;
-  border: 1px solid #979797;
+  border: 1px solid #dbdbdb;
   -web-kit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
@@ -402,7 +402,7 @@ body {
   margin: 3px 20px 15px 0;
   float: left;
   box-sizing: content-box;
-  border: 1px solid #979797;
+  border: 1px solid #dbdbdb;
   -web-kit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
@@ -429,7 +429,7 @@ body {
 /** Простая таблица с полосками сверху и снизу строк **/
 .simple-top-bottom-border-table {
   width: 100%;
-  border-top: 1px solid #979797;
+  border-top: 1px solid #dbdbdb;
 }
 .simple-top-bottom-border-table tr td {
   vertical-align: top;
@@ -439,7 +439,7 @@ body {
   margin-bottom: 0;
 }
 .simple-top-bottom-border-table tr td {
-  border-bottom: 1px solid #979797;
+  border-bottom: 1px solid #dbdbdb;
 }
 /** /Простая таблица с полосками сверху и снизу строк **/
 .sub-caption {
@@ -447,7 +447,7 @@ body {
   margin-bottom: 7px;
   line-height: 1.5;
   color: #1b1b1b;
-  background: #eeeff1;
+  background: #f8f8f8;
   -web-kit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -480,7 +480,7 @@ ul.simple-list-connected-bullet li h3 {
 }
 table.st-row-border tr + tr td {
   padding-top: 20px;
-  border-top: 1px solid #979797;
+  border-top: 1px solid #dbdbdb;
 }
 table.st-row-border tr:last-child td {
   padding-bottom: 0;
@@ -493,7 +493,7 @@ table.st-row-border tr td {
 }
 .st-border + tr td {
   padding-top: 20px;
-  border-top: 1px solid #979797;
+  border-top: 1px solid #dbdbdb;
 }
 .st-border:last-child td {
   padding-bottom: 0;
@@ -627,14 +627,44 @@ input[type="password"],
 input[type="email"],
 input[type="number"],
 input[type="tel"] {
-  /*
-	.border-radius(5px);
-	border: 1px solid @light-gray-color;
-	padding: 0 7px;
-	width: 315px;
-	height: 39px;
-	line-height: 39px;
-	*/
+  -web-kit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 0 11px;
+  height: 33px;
+  line-height: 33px;
+  border: 1px solid #dbdbdb;
+  background: #f8f8f8;
+}
+select:focus,
+option:focus,
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus {
+  border-color: #00a1e6;
+}
+select.success,
+option.success,
+textarea.success,
+input[type="text"].success,
+input[type="password"].success,
+input[type="email"].success,
+input[type="number"].success,
+input[type="tel"].success {
+  border-color: #7d8083;
+}
+select.error,
+option.error,
+textarea.error,
+input[type="text"].error,
+input[type="password"].error,
+input[type="email"].error,
+input[type="number"].error,
+input[type="tel"].error {
+  border-color: #ff000f;
 }
 .center-text {
   text-align: center;
@@ -672,6 +702,7 @@ a.button:active {
   background: #00a1e6;
   border-bottom: 3px solid #007fb3;
   text-decoration: none;
+  white-space: nowrap;
 }
 .button:hover,
 a.button:hover {
@@ -976,7 +1007,7 @@ ul.breadcrumbs-block li + li:before {
 /**/
 /** LeftColumn **/
 .left-column {
-  padding: 15px 0;
+  padding-top: 15px;
 }
 .left-column > .caption-block {
   text-align: center;
@@ -1043,7 +1074,10 @@ ul.breadcrumbs-block li + li:before {
 /**/
 /** RightColumn **/
 .right-column {
-  padding: 15px 0;
+  padding-top: 15px;
+}
+.right-column > .caption-block {
+  margin-bottom: 20px;
 }
 /** /RightColumn **/
 /**/
@@ -1173,7 +1207,7 @@ label.error {
   margin: 7px 0 0 0;
   font-size: 12px;
   font-style: italic;
-  color: #979797;
+  color: #dbdbdb;
 }
 .button-form-content {
   display: none;
