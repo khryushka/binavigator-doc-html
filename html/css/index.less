@@ -12,7 +12,13 @@
 html, body, div, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, dl, dt, dd, ol, ul, li, label, table, caption, tbody, tfoot, thead, tr, th, td, input, textarea, select, option {
 	font-family: @font, 'Arial', 'Calibri', 'Verdana', 'Tahoma', 'Times New Roman';
 	color: @text-color;
-	font-size: 13px;
+	font-size: 17px;
+}
+
+.body {
+	div, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, dl, dt, dd, ol, ul, li, label, table, caption, tbody, tfoot, thead, tr, th, td, input, textarea, select, option {
+		font-family: @fontL, @font, 'Arial', 'Calibri', 'Verdana', 'Tahoma', 'Times New Roman';
+	}
 }
 
 table td {
@@ -30,13 +36,12 @@ i {
 a {
 	&:link, &:visited {
 		&, * {
-			color: @light-red-color;
+			color: @text-color;
 			text-decoration: underline;
 		}
 	}
 	&:hover, &:active {
 		&, * {
-			color: @red-color;
 			text-decoration: none;
 		}
 	}
@@ -70,6 +75,96 @@ input[type="tel"] {
 	line-height: 39px;
 	*/
 }
+
+.center-text {
+	text-align: center;
+}
+.center-block {
+	margin: 0 auto;
+}
+
+/** Buttons **/
+.button, a.button {
+	&, &:link, &:active {
+		display: inline-block;
+		.border-radius();
+		min-width: 124px;
+		height: 51px;
+		padding: 0 15px;
+		/*
+		line-height: 48px;
+		font-family: @fontL;
+		font-style: 21;
+		color: @white-color;
+		*/
+		text-align: center;
+		font: 21px/48px @fontL;
+		color: @white-color;
+		background: @blue-color;
+		border-bottom: 3px solid @dark-blue-color;
+		text-decoration: none;
+	}
+	&:hover {
+		background-color: #4daee5;
+	}
+	&:active {
+		background-color: @dark-blue-color;
+	}
+
+	&.button-yellow {
+		&, &:link, &:active {
+			background: @yellow-color;
+			border-color: @dark-yellow-color;
+		}
+		&:hover {
+			background-color: @light-yellow-color;
+		}
+		&:active {
+			background-color: @dark-yellow-color;
+		}
+	}
+
+	&.button-green {
+		&, &:link, &:active {
+			background: @green-color;
+			border-color: @dark-green-color;
+		}
+		&:hover {
+			background-color: @light-green-color;
+		}
+		&:active {
+			background-color: @dark-green-color;
+		}
+	}
+
+	&.button-yellow {
+		&, &:link, &:active {
+			background: @yellow-color;
+			border-color: #c18d00;
+		}
+		&:hover {
+			background-color: #e5cf38;
+		}
+		&:active {
+			background-color: #c18d00;
+		}
+	}
+
+	&.button-red {
+		&, &:link, &:active {
+			background: @red-color;
+			border-color: @dark-red-color;
+		}
+		&:hover {
+			background-color: @light-red-color;
+		}
+		&:active {
+			background-color: @dark-red-color;
+		}
+	}
+}
+
+/** /Buttons **/
 
 /**/
 /**/
@@ -222,12 +317,11 @@ input[type="tel"] {
 /**/
 /** MainMenu **/
 .main-menu {
-	height: 100px;
 
 	.wrapper > ul {
 		overflow: hidden;
 		padding: 0 10px;
-		background: @light-blue-color;
+		background: #008bc5;
 		.border-radius(3px);
 
 		li {
@@ -270,6 +364,7 @@ input[type="tel"] {
 				ul {
 					display: none;
 					position: absolute;
+					z-index: 100;
 					padding: 0 9px;
 					.border-radius(3px);
 					background: #5fa3bf;
@@ -315,6 +410,116 @@ input[type="tel"] {
 }
 
 /** /MainMenu **/
+/**/
+/**/
+
+/**/
+/**/
+/** MiddleBlock **/
+.middle-block {
+	margin-bottom: 75px;
+}
+/** MiddleBlock **/
+/**/
+/**/
+
+/**/
+/**/
+/** BreadcrumbsBlock **/
+ul.breadcrumbs-block {
+	padding: 15px 0 35px 0;
+
+	li {
+		float: left;
+		padding-right: 5px;
+
+		+ li {
+			&:before {
+				content: " > ";
+			}
+		}
+	}
+}
+
+/** /BreadcrumbsBlock **/
+/**/
+/**/
+
+/**/
+/**/
+/** LeftColumn **/
+.left-column {
+	padding: 15px 0;
+}
+
+/** /LeftColumn **/
+/**/
+/**/
+
+/**/
+/**/
+/** RightColumn **/
+.right-column {
+	padding: 15px 0;
+}
+
+/** /RightColumn **/
+/**/
+/**/
+
+/**/
+/**/
+/** StepsBlock **/
+.steps-menu-block {
+	width: 168px;
+	margin: 0 auto;
+	border: 3px solid @blue-color;
+	.border-radius();
+
+	li {
+		a {
+			&:link, &:visited {
+				display: block;
+				width: 162px;
+				height: 42px;
+				line-height: 42px;
+				font-family: @fontL;
+				font-size: 21px;
+				text-align: center;
+				text-decoration: none;
+			}
+			&:hover, &:active {
+				background: @super-light-blue-color;
+			}
+		}
+		&.active {
+			a {
+				&:link, &:visited {
+					background: @super-light-blue-color;
+				}
+			}
+		}
+		+ li {
+			a {
+				&:link, &:visited {
+					height: 44px;
+					border-top: 2px solid @light-blue-color;
+				}
+			}
+		}
+	}
+}
+
+.steps-content-block {
+	li {
+		display: none;
+		.button-red {
+			min-width: 200px;
+		}
+	}
+}
+
+/** /StepsBlock **/
 /**/
 /**/
 

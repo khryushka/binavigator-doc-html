@@ -41,14 +41,14 @@
 .red-color-link:link,
 .red-color-link:visited {
   color: #ffffff;
-  background: #ff5b5d;
+  background: #ff394a;
 }
 .red-color-link:hover,
 .red-color-link:active {
-  background: #ff474a;
+  background: #ff000f;
 }
 .normal-color {
-  color: #9e9e9e !important;
+  color: #000000 !important;
 }
 .normal-link:link,
 .normal-link:visited {
@@ -80,13 +80,13 @@
   color: #7d8083;
 }
 .green-text {
-  color: #58823f;
+  color: #01d05d;
 }
 .red-text {
-  color: #ff474a;
+  color: #ff000f;
 }
 .yellow-text {
-  color: #e79905;
+  color: #f1cf00;
 }
 .orange-text {
   color: #ff6413;
@@ -160,7 +160,7 @@
   margin: 0;
 }
 .selected-text {
-  color: #ff5b5d;
+  color: #ff394a;
 }
 .dark-text {
   color: #1b1b1b;
@@ -242,6 +242,6 @@ div.simple-list > div + div {
   clear: both;
 }
 .required-field-sign {
-  color: #ff5b5d;
+  color: #ff394a;
   font-family: 'Ubuntu Bold';
 }
