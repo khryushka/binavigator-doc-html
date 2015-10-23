@@ -120,11 +120,11 @@
 			{
 				name: 'Общие сведения: Список сотрудников',
 				fileName: 'info-employees-list.php'
-			}/*,
+			},
 			{
 				name: 'Общие сведения: Список помещений',
-				fileName: '.php'
-			},
+				fileName: 'info-spaces.php'
+			}/*,
 			{
 				name: 'Общие сведения: О руководителе',
 				fileName: '.php'
