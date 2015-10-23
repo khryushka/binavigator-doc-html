@@ -104,11 +104,11 @@
 			{
 				name: 'Технические и эксплуатационные характеристики ИСПДн',
 				fileName: '.php'
-			},
+			}*/,
 			{
 				name: 'Общие сведения: Об организации',
-				fileName: '.php'
-			}*/,
+				fileName: 'info-about-organization.php'
+			},
 			{
 				name: 'Общие сведения: Структура подразделений',
 				fileName: 'info-ou-structure.php'

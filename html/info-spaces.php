@@ -78,7 +78,7 @@
 		<div class="right-column col-xs-8">
 
 			<!-- Caption -->
-			<h1 class="caption">Список помещений</h1>
+			<h1 class="caption-block">Список помещений</h1>
 			<!-- /Caption -->
 
 			<!-- Body -->

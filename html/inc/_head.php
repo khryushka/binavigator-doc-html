@@ -14,10 +14,10 @@
 
 	<!-- Bootstrap -->
 	<link type="text/css" href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 	<?
 		/*
 	?>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 		<link type="text/css" href="bootstrap/css/bootstrap-col24.css" rel="stylesheet"/>
 	<?
 		*/

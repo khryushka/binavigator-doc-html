@@ -85,9 +85,14 @@ input[type="tel"] {
 	}
 	margin: 5px 0;
 }
+
 .jq-selectbox {
 	margin: 5px 0;
 	min-width: 100%;
+}
+
+.jq-checkbox, .jq-radio {
+	box-sizing: content-box;
 }
 
 .center-text {
@@ -96,6 +101,14 @@ input[type="tel"] {
 
 .center-block {
 	margin: 0 auto;
+}
+
+.micro-text {
+	font-size: 12px;
+}
+
+.red-text, a.red-text:link, a.red-text:visited {
+	color: @red-color;
 }
 
 .caption-block {
@@ -109,7 +122,7 @@ input[type="tel"] {
 }
 
 /** Buttons **/
-.button, a.button {
+.button, a.button, input[type="file"] {
 	&, &:link, &:active {
 		display: inline-block;
 		.border-radius();
@@ -638,6 +651,18 @@ ul.breadcrumbs-block {
 }
 
 /** /StepsBlock **/
+/**/
+/**/
+
+/**/
+/**/
+/** JqueryUi **/
+.ui-tooltip {
+	//.box-shadow(0, 0, 0, 0);
+	border-color: @blue-color;
+}
+
+/** /JqueryUi **/
 /**/
 /**/
 
