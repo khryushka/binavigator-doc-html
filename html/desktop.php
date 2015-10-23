@@ -21,11 +21,13 @@
 		</ul>
 		<!-- /BreadcrumbsBlock -->
 
+		<div class="clearfix"></div>
+
 		<!-- LeftColumn -->
 		<div class="left-column col-xs-3">
 
-			<!-- StepsMenuBlock -->
-			<ul class="steps-menu-block">
+			<!-- LeftMenu -->
+			<ul class="left-menu steps-menu-block">
 				<li><a href="#">Шаг 1</a></li>
 				<li><a href="#">Шаг 2</a></li>
 				<li><a href="#">Шаг 3</a></li>
@@ -33,7 +35,7 @@
 				<li><a href="#">Шаг 5</a></li>
 				<li><a href="#">Шаг 6</a></li>
 			</ul>
-			<!-- /StepsMenuBlock -->
+			<!-- /LeftMenu -->
 
 		</div>
 		<!-- /LeftColumn -->

@@ -16,7 +16,8 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, dl, dt, dd, ol, 
 }
 
 .body {
-	div, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, dl, dt, dd, ol, ul, li, label, table, caption, tbody, tfoot, thead, tr, th, td, input, textarea, select, option {
+	&, div, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, dl, dt, dd, ol, ul, li, label, table, caption, tbody, tfoot, thead, tr, th, td, input, textarea, select, option {
+		line-height: 25px;
 		font-family: @fontL, @font, 'Arial', 'Calibri', 'Verdana', 'Tahoma', 'Times New Roman';
 	}
 }
@@ -79,8 +80,14 @@ input[type="tel"] {
 .center-text {
 	text-align: center;
 }
+
 .center-block {
 	margin: 0 auto;
+}
+
+.caption-block {
+	font-family: @font;
+	font-size: 21px;
 }
 
 /** Buttons **/
@@ -137,16 +144,16 @@ input[type="tel"] {
 		}
 	}
 
-	&.button-yellow {
+	&.button-dim-blue {
 		&, &:link, &:active {
-			background: @yellow-color;
-			border-color: #c18d00;
+			background: @dim-blue-color;
+			border-color: @dim-dark-blue-color;
 		}
 		&:hover {
-			background-color: #e5cf38;
+			background-color: @dim-light-blue-color;
 		}
 		&:active {
-			background-color: #c18d00;
+			background-color: @dim-dark-blue-color;
 		}
 	}
 
@@ -418,8 +425,29 @@ input[type="tel"] {
 /** MiddleBlock **/
 .middle-block {
 	margin-bottom: 75px;
+
+	// AskExpertBlock
+	.ask-expert-block {
+		a {
+			.u;
+			&:link, &:visited {
+				float: right;
+				display: block;
+				min-height: 22px;
+				padding: 0 30px 0 30px;
+				margin: 28px 30px 0 0;
+				.caption-block;
+				background: url('../images/icons/question-ring-red.png') no-repeat center right;
+			}
+			&:hover, &:active {
+
+			}
+		}
+	}
+	// /AskExpertBlock
 }
-/** MiddleBlock **/
+
+/** /MiddleBlock **/
 /**/
 /**/
 
@@ -450,6 +478,48 @@ ul.breadcrumbs-block {
 /** LeftColumn **/
 .left-column {
 	padding: 15px 0;
+
+	> .caption-block {
+		text-align: center;
+		margin-bottom: 25px;
+	}
+
+	// LeftColumnFrames
+	.frame-block {
+		width: 254px;
+		margin: 0 auto;
+		border: 2px solid @blue-color;
+		.border-radius();
+
+		&.frame-dark-blue {
+			border-color: @dark-blue-color;
+		}
+		&.frame-gray {
+			border-color: @gray-color;
+		}
+
+	}
+	.doc-block {
+		.frame-block;
+		.frame-dark-blue;
+		padding: 21px;
+		text-align: center;
+
+		.caption-block {
+			text-transform: uppercase;
+		}
+
+	}
+	.doc-counter-block {
+		.frame-block;
+		.frame-gray;
+		padding: 11px 0 11px 11px;
+
+		&, * {
+			font-family: @fontL;
+		}
+	}
+	// /LeftColumnFrames
 }
 
 /** /LeftColumn **/
@@ -469,23 +539,22 @@ ul.breadcrumbs-block {
 
 /**/
 /**/
-/** StepsBlock **/
-.steps-menu-block {
-	width: 168px;
+/** LeftMenu **/
+.left-menu {
+	width: 254px;
 	margin: 0 auto;
-	border: 3px solid @blue-color;
+	border: 2px solid @blue-color;
 	.border-radius();
 
 	li {
 		a {
 			&:link, &:visited {
 				display: block;
-				width: 162px;
-				height: 42px;
-				line-height: 42px;
+				//width: 162px;
+				padding: 9px 21px 8px 21px;
+				//height: 42px;
+				line-height: 25px;
 				font-family: @fontL;
-				font-size: 21px;
-				text-align: center;
 				text-decoration: none;
 			}
 			&:hover, &:active {
@@ -502,9 +571,29 @@ ul.breadcrumbs-block {
 		+ li {
 			a {
 				&:link, &:visited {
-					height: 44px;
 					border-top: 2px solid @light-blue-color;
 				}
+			}
+		}
+	}
+}
+
+/** /LeftMenu **/
+/**/
+/**/
+
+/**/
+/**/
+/** StepsBlock **/
+.steps-menu-block {
+	width: 168px;
+	border: 3px solid @blue-color;
+
+	li {
+		a {
+			&:link, &:visited {
+				font-size: 21px;
+				text-align: center;
 			}
 		}
 	}

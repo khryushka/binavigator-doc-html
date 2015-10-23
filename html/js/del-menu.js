@@ -108,11 +108,11 @@
 			{
 				name: 'Общие сведения: Об организации',
 				fileName: '.php'
-			},
+			}*/,
 			{
 				name: 'Общие сведения: Структура подразделений',
-				fileName: '.php'
-			},
+				fileName: 'info-ou-structure.php'
+			}/*,
 			{
 				name: 'Общие сведения: Список должностей',
 				fileName: '.php'
@@ -242,7 +242,7 @@
 				'font-size': '13px',
 				padding: '3px 5px 3px 10px'
 			}).parents('.del-menu').find('a.current:link, a.current:visited').css({
-				background: 'rgba(255,111,67,0.75)'
+				background: 'rgba(0,161,230,0.75)'
 			});
 			$('.del-menu').on('dblclick', function(){
 				$(this).hide();
