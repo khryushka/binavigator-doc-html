@@ -2,9 +2,13 @@
 	$(document).ready(function () {
 		var arMenu = Array(
 			{
+				name: 'Рабочий стол',
+				fileName: 'desktop.php'
+			}/*,
+			{
 				name: 'Главная',
 				fileName: 'index.php'
-			}/*,
+			},
 			{
 				name: 'Главная 2',
 				fileName: '.php'

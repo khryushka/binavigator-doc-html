@@ -1,3 +1,4 @@
+//@import "../bootstrap/css/bootstrap.css";
 @import "variables.less";
 @import "mixins.less";
 @import "static.less";
@@ -40,6 +41,7 @@ a {
 		}
 	}
 }
+
 /*
 a[href^="#"] {
 	&:link, &:visited {
@@ -72,6 +74,82 @@ input[type="tel"] {
 /**/
 /**/
 /** HeaderLine **/
+.header-line {
+	height: 51px;
+	background: #06374b;
+
+	* {
+		color: @white-color;
+		line-height: 51px;
+		font-family: @fontL;
+	}
+	a {
+		&:link, &:visited {
+			color: @white-color;
+		}
+		&:hover, &:active {
+
+		}
+	}
+
+	// SettingsBlock
+	.settings-block {
+		.pull-right;
+
+		li {
+			float: left;
+			a {
+				.u;
+				&:link, &:visited {
+					display: block;
+					margin-left: 25px;
+					padding-left: 30px;
+					background: url('../images/header-line-settings-sprite.png') no-repeat;
+				}
+				&:hover, &:active {
+
+				}
+			}
+			&.notifications-text {
+				a {
+					&:link, &:visited {
+						background-position: 0 0;
+					}
+				}
+			}
+			&.user-text {
+				a {
+					&:link, &:visited {
+						background-position: 0 -100px;
+					}
+				}
+			}
+			&.settings-text {
+				a {
+					&:link, &:visited {
+						background-position: 0 -200px;
+					}
+				}
+			}
+			&.exit-text {
+				a {
+					&:link, &:visited {
+						background-position: 0 -300px;
+					}
+				}
+			}
+		}
+	}
+	// /SettingsBlock
+
+	// TariffBlock
+	.tariff-block {
+		&, & * {
+			font-size: 17px;
+		}
+	}
+	// /TariffBlock
+}
 
 /** /HeaderLine **/
 /**/
@@ -80,8 +158,163 @@ input[type="tel"] {
 /**/
 /**/
 /** HeaderBlock **/
+.header-block {
+	padding: 18px 0 27px 0;
+
+	> .wrapper > * {
+		float: left;
+	}
+
+	// LogoBlock
+	.logo-block {
+		img {
+			padding: 6px 0;
+		}
+	}
+	// /LogoBlock
+
+	// PhoneBlock
+	.phone-block {
+		&, * {
+			padding-left: 83px;
+			color: @dark-gray-color;
+			text-align: center;
+			font-size: 17px;
+
+			a {
+				&:link, &:visited {
+					display: block;
+					padding: 26px 0 24px 0;
+					font-family: @fontM;
+					font-size: 26px;
+					text-decoration: none;
+				}
+				&:hover, &:active {
+
+				}
+			}
+		}
+	}
+	// /PhoneBlock
+
+	// RightBlock
+	.right-block {
+		.pull-right;
+		text-align: right;
+		padding-top: 44px;
+
+		a {
+			&:link, &:visited {
+				font-size: 21px;
+				color: @dark-gray-color;
+			}
+		}
+	}
+	// /RightBlock
+
+}
 
 /** /HeaderBlock **/
+/**/
+/**/
+
+/**/
+/**/
+/** MainMenu **/
+.main-menu {
+	height: 100px;
+
+	.wrapper > ul {
+		overflow: hidden;
+		padding: 0 10px;
+		background: @light-blue-color;
+		.border-radius(3px);
+
+		li {
+			float: left;
+
+			a {
+				&:link, &:visited {
+					display: block;
+					padding: 0 18px;
+					line-height: 62px;
+					font-size: 17px;
+					color: #c4cdd2;
+					text-decoration: none;
+				}
+			}
+			&.active a:link, &.active a:visited,
+			a:hover, a:active {
+				color: @white-color;
+			}
+
+			&.sub-menu-container {
+				a {
+					&:link, &:visited {
+
+					}
+					&:hover, &:active {
+						background: url('../images/bg-main-menu.png') no-repeat center bottom;
+					}
+				}
+				&.active {
+					a {
+						&:link, &:visited {
+							background: url('../images/bg-main-menu.png') no-repeat center bottom;
+						}
+						&:hover, &:active {
+
+						}
+					}
+				}
+				ul {
+					display: none;
+					position: absolute;
+					padding: 0 9px;
+					.border-radius(3px);
+					background: #5fa3bf;
+				}
+				&:hover {
+					ul {
+						display: inline-block;
+
+						li {
+							a {
+								&:link, &:visited {
+									padding: 0 14px;
+									color: @white-color;
+								}
+								&:hover, &:active {
+
+								}
+							}
+						}
+					}
+				}
+			}
+			&.n-1 ul {
+				margin-left: 0px;
+			}
+			&.n-2 ul {
+				margin-left: -110px;
+			}
+			&.n-3 ul {
+				margin-left: -290px;
+			}
+			&.n-4 ul {
+				margin-left: -200px;
+			}
+			&.n-5 ul {
+				margin-left: -50px;
+			}
+			&.n-6 ul {
+				margin-left: 0px;
+			}
+		}
+	}
+}
+
+/** /MainMenu **/
 /**/
 /**/
 

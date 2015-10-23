@@ -6,6 +6,23 @@
 		});
 		/**  /hr **/
 
+		/** pop-up-menu **/
+		$('.sub-menu-container').on('mouseover', function () {
+			var $this = $(this);
+			$this.addClass('active');
+		}).on('mouseout', function () {
+			var $this = $(this);
+			$this.removeClass('active');
+		});
+		$('.sub-menu-container > ul').on('mouseout', function () {
+			var $this = $(this);
+			$this.parent().removeClass('active');
+		}).on('mouseover', function () {
+			var $this = $(this);
+			$this.parent().addClass('active');
+		});
+		/** /pop-up-menu **/
+
 		/** body background **/
 		/*
 		$(window).resize(function () {

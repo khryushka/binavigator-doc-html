@@ -1,3 +1,6 @@
+<?
+	return;
+?>
 <!-- Windows -->
 <div id="win-block">
 

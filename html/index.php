@@ -1,7 +1,6 @@
 <?
 	include ('inc/_head.php');
 ?>
-
 <body>
 
 <?
