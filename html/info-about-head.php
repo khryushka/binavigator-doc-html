@@ -118,9 +118,10 @@
 				<div class="clearfix"></div>
 				<br/><br/><br/><br/><br/>
 
-				<div class="center-text"><a href="#" class="button">Добавить новый адрес</a></div>
+				<div class="center-text"><a href="#" class="button">Добавить</a></div>
 				<div class="clearfix"></div>
 				<br/><br/><br/><br/><br/>
+
 				<a href="#" class="button button-prev">Назад</a>
 				<a href="#" class="button button-next pull-right">Далее</a>
 

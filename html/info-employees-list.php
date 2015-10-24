@@ -35,9 +35,9 @@
 			<!-- LeftMenu -->
 			<ul class="left-menu">
 				<li><a href="#">Об организации</a></li>
-				<li class="active"><a href="#">Структура подразделений</a></li>
+				<li><a href="#">Структура подразделений</a></li>
 				<li><a href="#">Список должностей</a></li>
-				<li><a href="#">Список сотрудников</a></li>
+				<li class="active"><a href="#">Список сотрудников</a></li>
 				<li><a href="#">Список помещений</a></li>
 				<li><a href="#">О руководителе</a></li>
 			</ul>
@@ -89,12 +89,22 @@
 				Состав вводимой информации: фамилия, имя, отчество, должность (необходимо выбрать из списка ранее введённых должностей), подразделение (необходимо выбрать из списка ранее введённых подразделений).
 				Если в списке отсутствуют необходимые должности или подразделения, то следует вернуться в соответствующий раздел и внести недостающую информацию.
 
+
+				<div class="clearfix"></div>
+				<br/><br/><br/>
+
+				<form action="#">
+					<div class="row">
+
+						<div class="col-xs-7" style="line-height: 51px; display: table-cell; vertical-align: middle;">
+							<input type="text" name="field" style="width: 100%;">
+						</div>
+						<div class="col-xs-3"><a href="#" class="button">Добавить</a></div>
+					</div>
+				</form>
 				<div class="clearfix"></div>
 				<br/><br/><br/><br/><br/>
 
-				<div class="center-text"><a href="#" class="button">Добавить новое</a></div>
-				<div class="clearfix"></div>
-				<br/><br/><br/><br/><br/>
 				<a href="#" class="button button-prev">Назад</a>
 				<a href="#" class="button button-next pull-right">Далее</a>
 

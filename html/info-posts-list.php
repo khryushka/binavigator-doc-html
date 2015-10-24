@@ -98,11 +98,12 @@
 						<div class="col-xs-7" style="line-height: 51px; display: table-cell; vertical-align: middle;">
 							<input type="text" name="field" style="width: 100%;">
 						</div>
-						<div class="col-xs-3"><a href="#" class="button">Добавить новое</a></div>
+						<div class="col-xs-3"><a href="#" class="button">Добавить</a></div>
 					</div>
 				</form>
 				<div class="clearfix"></div>
 				<br/><br/><br/><br/><br/>
+
 				<a href="#" class="button button-prev">Назад</a>
 				<a href="#" class="button button-next pull-right">Далее</a>
 
