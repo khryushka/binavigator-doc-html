@@ -739,6 +739,14 @@ a.button:active,
 input[type="file"]:active {
   background-color: #007fb3;
 }
+.button.button-small,
+a.button.button-small,
+input[type="file"].button-small {
+  min-width: 84px;
+  height: 32px;
+  padding: 0 9px;
+  font: 17px/32px 'Ubuntu Light';
+}
 .button.button-yellow,
 a.button.button-yellow,
 input[type="file"].button-yellow,
@@ -1188,6 +1196,9 @@ ul.breadcrumbs-block li + li:before {
 /**/
 /** JqueryUi **/
 .ui-tooltip {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0);
   border-color: #00a1e6;
 }
 /** /JqueryUi **/

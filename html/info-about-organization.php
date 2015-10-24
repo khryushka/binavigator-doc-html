@@ -84,7 +84,7 @@
 			<!-- Body -->
 			<div class="body">
 
-				<form action="#">
+				<form id="fileupload-png" action="#" method="POST" enctype="multipart/form-data">
 
 					Организационно-правовая форма: <br/>
 
@@ -92,9 +92,9 @@
 						<div class="col-xs-11">
 							<input type="text" name="base" value="">
 
-							<div class="pull-left"><input type="checkbox" name="field[]" value="Y" id="field_1"><label for="field_1" class="micro-text">Не склонять</label></div>
+							<div class="pull-left"><input type="checkbox" name="field[]" value="Y" id="field_1" class="to-link-case-forms"><label for="field_1" class="micro-text">Не склонять</label></div>
 							<div class="pull-right">
-								<a href="#" class="micro-text red-text">Редактировать падежные формы</a>
+								<a href="#" class="micro-text red-text link-case-forms">Редактировать падежные формы</a>
 							</div>
 						</div>
 						<div class="col-xs-1">
@@ -109,9 +109,9 @@
 						<div class="col-xs-11">
 							<input type="text" name="base" value="">
 
-							<div class="pull-left"><input type="checkbox" name="field[]" value="Y" id="field_2"><label for="field_2" class="micro-text">Не склонять</label></div>
+							<div class="pull-left"><input type="checkbox" name="field[]" value="Y" id="field_2" class="to-link-case-forms"><label for="field_2" class="micro-text">Не склонять</label></div>
 							<div class="pull-right">
-								<a href="#" class="micro-text red-text">Редактировать падежные формы</a>
+								<a href="#" class="micro-text red-text link-case-forms">Редактировать падежные формы</a>
 							</div>
 						</div>
 						<div class="col-xs-1">
@@ -126,9 +126,9 @@
 						<div class="col-xs-11">
 							<input type="text" name="base" value="">
 
-							<div class="pull-left"><input type="checkbox" name="field[]" value="Y" id="field_3"><label for="field_3" class="micro-text">Не склонять</label></div>
+							<div class="pull-left"><input type="checkbox" name="field[]" value="Y" id="field_3" class="to-link-case-forms"><label for="field_3" class="micro-text">Не склонять</label></div>
 							<div class="pull-right">
-								<a href="#" class="micro-text red-text">Редактировать падежные формы</a>
+								<a href="#" class="micro-text red-text link-case-forms">Редактировать падежные формы</a>
 							</div>
 						</div>
 						<div class="col-xs-1">
@@ -143,9 +143,9 @@
 						<div class="col-xs-11">
 							<input type="text" name="base" value="">
 
-							<div class="pull-left"><input type="checkbox" name="field[]" value="Y" id="field_4"><label for="field_4" class="micro-text">Не склонять</label></div>
+							<div class="pull-left"><input type="checkbox" name="field[]" value="Y" id="field_4" class="to-link-case-forms"><label for="field_4" class="micro-text">Не склонять</label></div>
 							<div class="pull-right">
-								<a href="#" class="micro-text red-text">Редактировать падежные формы</a>
+								<a href="#" class="micro-text red-text link-case-forms">Редактировать падежные формы</a>
 							</div>
 						</div>
 						<div class="col-xs-1">
@@ -160,9 +160,9 @@
 						<div class="col-xs-11">
 							<input type="text" name="base" value="">
 
-							<div class="pull-left"><input type="checkbox" name="field[]" value="Y" id="field_5"><label for="field_5" class="micro-text">Не склонять</label></div>
+							<div class="pull-left"><input type="checkbox" name="field[]" value="Y" id="field_5" class="to-link-case-forms"><label for="field_5" class="micro-text">Не склонять</label></div>
 							<div class="pull-right">
-								<a href="#" class="micro-text red-text">Редактировать падежные формы</a>
+								<a href="#" class="micro-text red-text link-case-forms">Редактировать падежные формы</a>
 							</div>
 						</div>
 						<div class="col-xs-1">
@@ -224,7 +224,7 @@
 					<div class="row">
 						<div class="col-xs-11">
 							<select name="post">
-								<option value="Выберите из списка"></option>
+								<option>Выберите тип распорядительного документа</option>
 								<option value="1">Тип распорядительного документа 1</option>
 								<option value="2">Тип документа 2</option>
 								<option value="3">Тип распорядительного документа 3</option>
@@ -248,18 +248,39 @@
 					</div>
 					<br/>
 
-
 					Герб (логотип) организации: <br/>
-					<span class="small-text">Выберите файл в формате PNG размером до 1 МБ для загрузки</span> <br/>
 
-					<div class="row">
-						<div class="col-xs-11">
-							<input type="file" name="base" value="Обзор">
+					<div class="fileupload-buttonbar fileupload-png">
+						<div class="row">
+							<div class="col-xs-6">
+								<span class="small-text">Выберите файл в формате PNG размером <br/>до 1 МБ для загрузки</span> <br/>
+							</div>
+							<div class="col-xs-5">
+
+								<!-- The fileinput-button span is used to style the file input field as button -->
+								<span class="button button-green fileinput-button">
+									<i class="glyphicon glyphicon-plus"></i>
+									<span>Добавить файл...</span>
+									<input type="file" name="files[]" multiple>
+								</span>
+
+							</div>
+							<div class="col-xs-1">
+								<div class="question-icon icon-32x32" style="margin: 5px 0;" title="Поясняющая информация"></div>
+							</div>
 						</div>
-						<div class="col-xs-1">
-							<div class="question-icon icon-32x32" style="margin: 5px 0;" title="Поясняющая информация"></div>
+						<div class="row">
+							<div class="col-xs-12">
+
+								<!-- The table listing the files available for upload/download -->
+								<table role="presentation" class="table table-striped">
+									<tbody class="files"></tbody>
+								</table>
+
+							</div>
 						</div>
 					</div>
+
 					<br/>
 					<span class="small-text"><span class="red-text">*</span> Обязательно к заполнению</span>
 
