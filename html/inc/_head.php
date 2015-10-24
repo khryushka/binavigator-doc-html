@@ -14,10 +14,10 @@
 
 	<!-- Bootstrap -->
 	<link type="text/css" href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 	<?
 		/*
 	?>
-	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 		<link type="text/css" href="bootstrap/css/bootstrap-col24.css" rel="stylesheet"/>
 	<?
 		*/
@@ -92,6 +92,11 @@
 	<link type="text/css" href="form-styler/css/jquery.formstyler.css" rel="stylesheet"/>
 	<script type="text/javascript" src="form-styler/js/jquery.formstyler.js"></script>
 	<!-- /FormStyler -->
+
+	<!-- FileUpload part 1 -->
+	<link rel="stylesheet" href="jquery-file-upload/css/jquery.fileupload.css">
+	<link rel="stylesheet" href="jquery-file-upload/css/jquery.fileupload-ui.css">
+	<!-- /FileUpload part 1 -->
 
 	<link type="text/css" href="css/index.css?t=<?= time () ?>" rel="stylesheet"/>
 	<?
