@@ -701,13 +701,13 @@ a.red-text:visited {
 /** Buttons **/
 .button,
 a.button,
-input[type="file"],
+input[type="submit"],
 .button:link,
 a.button:link,
-input[type="file"]:link,
+input[type="submit"]:link,
 .button:active,
 a.button:active,
-input[type="file"]:active {
+input[type="submit"]:active {
   display: inline-block;
   -web-kit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -725,23 +725,24 @@ input[type="file"]:active {
   font: 21px/48px 'Ubuntu Light';
   color: #ffffff;
   background: #00a1e6;
+  border: 0;
   border-bottom: 3px solid #007fb3;
   text-decoration: none;
   white-space: nowrap;
 }
 .button:hover,
 a.button:hover,
-input[type="file"]:hover {
+input[type="submit"]:hover {
   background-color: #4daee5;
 }
 .button:active,
 a.button:active,
-input[type="file"]:active {
+input[type="submit"]:active {
   background-color: #007fb3;
 }
 .button.button-small,
 a.button.button-small,
-input[type="file"].button-small {
+input[type="submit"].button-small {
   min-width: 84px;
   height: 32px;
   padding: 0 9px;
@@ -749,90 +750,90 @@ input[type="file"].button-small {
 }
 .button.button-yellow,
 a.button.button-yellow,
-input[type="file"].button-yellow,
+input[type="submit"].button-yellow,
 .button.button-yellow:link,
 a.button.button-yellow:link,
-input[type="file"].button-yellow:link,
+input[type="submit"].button-yellow:link,
 .button.button-yellow:active,
 a.button.button-yellow:active,
-input[type="file"].button-yellow:active {
+input[type="submit"].button-yellow:active {
   background: #f1cf00;
   border-color: #c18d00;
 }
 .button.button-yellow:hover,
 a.button.button-yellow:hover,
-input[type="file"].button-yellow:hover {
+input[type="submit"].button-yellow:hover {
   background-color: #e5cf38;
 }
 .button.button-yellow:active,
 a.button.button-yellow:active,
-input[type="file"].button-yellow:active {
+input[type="submit"].button-yellow:active {
   background-color: #c18d00;
 }
 .button.button-green,
 a.button.button-green,
-input[type="file"].button-green,
+input[type="submit"].button-green,
 .button.button-green:link,
 a.button.button-green:link,
-input[type="file"].button-green:link,
+input[type="submit"].button-green:link,
 .button.button-green:active,
 a.button.button-green:active,
-input[type="file"].button-green:active {
+input[type="submit"].button-green:active {
   background: #01d05d;
   border-color: #009667;
 }
 .button.button-green:hover,
 a.button.button-green:hover,
-input[type="file"].button-green:hover {
+input[type="submit"].button-green:hover {
   background-color: #65cf7e;
 }
 .button.button-green:active,
 a.button.button-green:active,
-input[type="file"].button-green:active {
+input[type="submit"].button-green:active {
   background-color: #009667;
 }
 .button.button-dim-blue,
 a.button.button-dim-blue,
-input[type="file"].button-dim-blue,
+input[type="submit"].button-dim-blue,
 .button.button-dim-blue:link,
 a.button.button-dim-blue:link,
-input[type="file"].button-dim-blue:link,
+input[type="submit"].button-dim-blue:link,
 .button.button-dim-blue:active,
 a.button.button-dim-blue:active,
-input[type="file"].button-dim-blue:active {
+input[type="submit"].button-dim-blue:active {
   background: #20a5c1;
   border-color: #1b778c;
 }
 .button.button-dim-blue:hover,
 a.button.button-dim-blue:hover,
-input[type="file"].button-dim-blue:hover {
+input[type="submit"].button-dim-blue:hover {
   background-color: #67aec1;
 }
 .button.button-dim-blue:active,
 a.button.button-dim-blue:active,
-input[type="file"].button-dim-blue:active {
+input[type="submit"].button-dim-blue:active {
   background-color: #1b778c;
 }
 .button.button-red,
 a.button.button-red,
-input[type="file"].button-red,
+input[type="submit"].button-red,
 .button.button-red:link,
 a.button.button-red:link,
-input[type="file"].button-red:link,
+input[type="submit"].button-red:link,
 .button.button-red:active,
 a.button.button-red:active,
-input[type="file"].button-red:active {
+input[type="submit"].button-red:active {
   background: #ff000f;
   border-color: #d20000;
 }
 .button.button-red:hover,
 a.button.button-red:hover,
-input[type="file"].button-red:hover {
+input[type="submit"].button-red:hover {
   background-color: #ff394a;
 }
 .button.button-red:active,
 a.button.button-red:active,
-input[type="file"].button-red:active {
+input[type="submit"].button-red:active {
   background-color: #d20000;
 }
 /** /Buttons **/

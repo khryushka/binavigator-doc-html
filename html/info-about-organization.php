@@ -86,11 +86,11 @@
 
 				<form id="fileupload-png" action="#" method="POST" enctype="multipart/form-data">
 
-					Организационно-правовая форма: <br/>
+					Организационно-правовая форма: <span class="red-text">*</span> <br/>
 
 					<div class="row">
 						<div class="col-xs-11">
-							<input type="text" name="base" value="">
+							<input type="text" name="base" value="" class="validate[required]" data-prompt-position="bottomLeft:140">
 
 							<div class="pull-left"><input type="checkbox" name="field[]" value="Y" id="field_1" class="to-link-case-forms"><label for="field_1" class="micro-text">Не склонять</label></div>
 							<div class="pull-right">
@@ -103,11 +103,11 @@
 					</div>
 					<br/>
 
-					Организационно-правовая форма сокращенно: <br/>
+					Организационно-правовая форма сокращенно: <span class="red-text">*</span> <br/>
 
 					<div class="row">
 						<div class="col-xs-11">
-							<input type="text" name="base" value="">
+							<input type="text" name="base" value="" class="validate[required]" data-prompt-position="bottomLeft:140">
 
 							<div class="pull-left"><input type="checkbox" name="field[]" value="Y" id="field_2" class="to-link-case-forms"><label for="field_2" class="micro-text">Не склонять</label></div>
 							<div class="pull-right">
@@ -124,7 +124,7 @@
 
 					<div class="row">
 						<div class="col-xs-11">
-							<input type="text" name="base" value="">
+							<input type="text" name="base" value="" class="validate[required]" data-prompt-position="bottomLeft:140">
 
 							<div class="pull-left"><input type="checkbox" name="field[]" value="Y" id="field_3" class="to-link-case-forms"><label for="field_3" class="micro-text">Не склонять</label></div>
 							<div class="pull-right">
@@ -141,7 +141,7 @@
 
 					<div class="row">
 						<div class="col-xs-11">
-							<input type="text" name="base" value="">
+							<input type="text" name="base" value="" class="validate[required]" data-prompt-position="bottomLeft:140">
 
 							<div class="pull-left"><input type="checkbox" name="field[]" value="Y" id="field_4" class="to-link-case-forms"><label for="field_4" class="micro-text">Не склонять</label></div>
 							<div class="pull-right">
@@ -158,12 +158,7 @@
 
 					<div class="row">
 						<div class="col-xs-11">
-							<input type="text" name="base" value="">
-
-							<div class="pull-left"><input type="checkbox" name="field[]" value="Y" id="field_5" class="to-link-case-forms"><label for="field_5" class="micro-text">Не склонять</label></div>
-							<div class="pull-right">
-								<a href="#" class="micro-text red-text link-case-forms">Редактировать падежные формы</a>
-							</div>
+							<input type="text" name="base" value="" class="validate[required]">
 						</div>
 						<div class="col-xs-1">
 							<div class="question-icon icon-32x32" style="margin: 5px 0;" title="Поясняющая информация"></div>
@@ -175,7 +170,7 @@
 
 					<div class="row">
 						<div class="col-xs-11">
-							<input type="text" name="base" value="">
+							<input type="text" name="base" value="" class="validate[required]">
 						</div>
 						<div class="col-xs-1">
 							<div class="question-icon icon-32x32" style="margin: 5px 0;" title="Поясняющая информация"></div>
@@ -187,7 +182,7 @@
 
 					<div class="row">
 						<div class="col-xs-11">
-							<input type="text" name="base" value="">
+							<input type="text" name="base" value="" class="validate[required]">
 						</div>
 						<div class="col-xs-1">
 							<div class="question-icon icon-32x32" style="margin: 5px 0;" title="Поясняющая информация"></div>
@@ -199,7 +194,7 @@
 
 					<div class="row">
 						<div class="col-xs-11">
-							<input type="text" name="base" value="">
+							<input type="text" name="base" value="" class="validate[required]">
 						</div>
 						<div class="col-xs-1">
 							<div class="question-icon icon-32x32" style="margin: 5px 0;" title="Поясняющая информация"></div>
@@ -258,7 +253,7 @@
 							<div class="col-xs-5">
 
 								<!-- The fileinput-button span is used to style the file input field as button -->
-								<span class="button button-green fileinput-button">
+								<span class="button button-green button-small fileinput-button" style="margin-top: 10px;">
 									<i class="glyphicon glyphicon-plus"></i>
 									<span>Добавить файл...</span>
 									<input type="file" name="files[]" multiple>
@@ -287,7 +282,7 @@
 					<div class="clearfix"></div>
 					<br/><br/>
 
-					<div class="center-text"><a href="#" class="button">Сохранить изменение</a></div>
+					<div class="center-text"><input type="submit" value="Сохранить изменение"></div>
 					<div class="clearfix"></div>
 					<br/><br/><br/>
 					<a href="#" class="button button-prev">Назад</a>

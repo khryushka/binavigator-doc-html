@@ -229,6 +229,7 @@
 
 					$form.validationEngine('attach', {
 						bindMethod: "live",
+						promptPosition: "bottomLeft",
 						scroll: false,
 						onValidationComplete: function (form, status) {
 							var $this = $(form);
@@ -244,23 +245,24 @@
 									}
 								});
 								// /поля не заполенные и равные плейсхолдеру не отправляем ч.1
+								/*
+								 $.ajax({
+								 type: 'post',
+								 url: SITE_TEMPLATE_PATH + '/send-message.php?win=' + $this.attr('name'),
+								 data: form.serialize(),
+								 success: function (html) {
+								 centerMask();
+								 $('#result-content').html(html);
+								 $('.result-win').addClass('answer');
+								 $('.mask').show();
+								 },
+								 error: function () {
+								 alert('Ошибка отправки на стороне браузера');
+								 }
+								 });
 
-								$.ajax({
-									type: 'post',
-									url: SITE_TEMPLATE_PATH + '/send-message.php?win=' + $this.attr('name'),
-									data: form.serialize(),
-									success: function (html) {
-										centerMask();
-										$('#result-content').html(html);
-										$('.result-win').addClass('answer');
-										$('.mask').show();
-									},
-									error: function () {
-										alert('Ошибка отправки на стороне браузера');
-									}
-								});
-
-								return false;
+								 return false;
+								 */
 							}
 						}
 					});

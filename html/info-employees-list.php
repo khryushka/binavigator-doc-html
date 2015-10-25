@@ -97,9 +97,9 @@
 					<div class="row">
 
 						<div class="col-xs-7" style="line-height: 51px; display: table-cell; vertical-align: middle;">
-							<input type="text" name="field" style="width: 100%;">
+							<input type="text" name="field" class="validate[required]">
 						</div>
-						<div class="col-xs-3"><a href="#" class="button">Добавить</a></div>
+						<div class="col-xs-3"><input type="submit" value="Добавить"></div>
 					</div>
 				</form>
 				<div class="clearfix"></div>

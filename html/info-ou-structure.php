@@ -89,11 +89,20 @@
 				Для добавления нового подразделения необходимо нажать кнопку «Добавить новое», после чего в модальном окне ввести наименование подразделения. В случае необходимости также требуется выбрать вышестоящее подразделение. После создания списка нажмите кнопку «Далее». Для удаления нажмите «Удалить». Для изменения данных отредактируйте соответствующее поле.
 
 				<div class="clearfix"></div>
-				<br/><br/><br/><br/><br/>
+				<br/><br/><br/>
 
-				<div class="center-text"><a href="#" class="button">Добавить новое</a></div>
+				<form action="#">
+					<div class="row">
+
+						<div class="col-xs-7" style="line-height: 51px; display: table-cell; vertical-align: middle;">
+							<input type="text" name="field" class="validate[required]">
+						</div>
+						<div class="col-xs-3"><input type="submit" value="Добавить"></div>
+					</div>
+				</form>
 				<div class="clearfix"></div>
 				<br/><br/><br/><br/><br/>
+
 				<a href="#" class="button button-prev">Назад</a>
 				<a href="#" class="button button-next pull-right">Далее</a>
 
