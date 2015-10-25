@@ -106,27 +106,27 @@
 				fileName: '.php'
 			}*/,
 			{
-				name: 'Общие сведения: Об организации',
+				name: 'Общие сведения: <br/>Об организации',
 				fileName: 'info-about-organization.php'
 			},
 			{
-				name: 'Общие сведения: Структура подразделений',
+				name: 'Общие сведения: <br/>Структура подразделений',
 				fileName: 'info-ou-structure.php'
 			},
 			{
-				name: 'Общие сведения: Список должностей',
+				name: 'Общие сведения: <br/>Список должностей',
 				fileName: 'info-posts-list.php'
 			},
 			{
-				name: 'Общие сведения: Список сотрудников',
+				name: 'Общие сведения: <br/>Список сотрудников',
 				fileName: 'info-employees-list.php'
 			},
 			{
-				name: 'Общие сведения: Список помещений',
+				name: 'Общие сведения: <br/>Список помещений',
 				fileName: 'info-spaces.php'
 			},
 			{
-				name: 'Общие сведения: О руководителе',
+				name: 'Общие сведения: <br/>О руководителе',
 				fileName: 'info-about-head.php'
 			}/*,
 			{

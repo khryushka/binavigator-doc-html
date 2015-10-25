@@ -47,18 +47,14 @@
 		*/
 	?>
 	<!-- /Fonts -->
-	<?
-		/*
-	?>
+
 	<!-- Validation -->
 	<link rel="stylesheet" href="validation/css/validationEngine.jquery.css" type="text/css"/>
 	<link rel="stylesheet" href="validation/css/template.css" type="text/css"/>
 	<script src="validation/js/languages/jquery.validationEngine-ru.js" type="text/javascript" charset="utf-8"></script>
 	<script src="validation/js/jquery.validationEngine.js" type="text/javascript" charset="utf-8"></script>
 	<!-- /Validation -->
-	<?
-		*/
-	?>
+
 	<?
 		/*
 	?>

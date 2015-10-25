@@ -227,45 +227,43 @@
 				if (!$form.attr('init')) {
 					$form.attr('init', 1);
 
-					/*
-					 $form.validationEngine('attach', {
-					 bindMethod: "live",
-					 scroll: false,
-					 onValidationComplete: function (form, status) {
-					 var $this = $(form);
+					$form.validationEngine('attach', {
+						bindMethod: "live",
+						scroll: false,
+						onValidationComplete: function (form, status) {
+							var $this = $(form);
 
-					 if (status) {
+							if (status) {
 
-					 // поля не заполенные и равные плейсхолдеру не отправляем ч.1
-					 form.find('input').each(function () {
-					 var $input = $(this);
-					 if ($input.val() == $input.attr('rel')) {
-					 $input.attr('placeholder', $input.attr('rel'));
-					 $input.val('');
-					 }
-					 });
-					 // /поля не заполенные и равные плейсхолдеру не отправляем ч.1
+								// поля не заполенные и равные плейсхолдеру не отправляем ч.1
+								form.find('input').each(function () {
+									var $input = $(this);
+									if ($input.val() == $input.attr('rel')) {
+										$input.attr('placeholder', $input.attr('rel'));
+										$input.val('');
+									}
+								});
+								// /поля не заполенные и равные плейсхолдеру не отправляем ч.1
 
-					 $.ajax({
-					 type: 'post',
-					 url: SITE_TEMPLATE_PATH + '/send-message.php?win=' + $this.attr('name'),
-					 data: form.serialize(),
-					 success: function (html) {
-					 centerMask();
-					 $('#result-content').html(html);
-					 $('.result-win').addClass('answer');
-					 $('.mask').show();
-					 },
-					 error: function () {
-					 alert('Ошибка отправки на стороне браузера');
-					 }
-					 });
+								$.ajax({
+									type: 'post',
+									url: SITE_TEMPLATE_PATH + '/send-message.php?win=' + $this.attr('name'),
+									data: form.serialize(),
+									success: function (html) {
+										centerMask();
+										$('#result-content').html(html);
+										$('.result-win').addClass('answer');
+										$('.mask').show();
+									},
+									error: function () {
+										alert('Ошибка отправки на стороне браузера');
+									}
+								});
 
-					 return false;
-					 }
-					 }
-					 });
-					 */
+								return false;
+							}
+						}
+					});
 				}
 			});
 		}
