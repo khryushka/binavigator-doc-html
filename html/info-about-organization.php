@@ -90,11 +90,11 @@
 
 					<div class="row">
 						<div class="col-xs-11">
-							<input type="text" name="base" value="" class="validate[required]" data-prompt-position="bottomLeft:140">
+							<input type="text" name="base" value="" v="Общество с ограниченной ответственностью" class="validate[required]" data-prompt-position="bottomLeft:140">
 
 							<div class="pull-left"><input type="checkbox" name="field[]" value="Y" id="field_1" class="to-link-case-forms"><label for="field_1" class="micro-text">Не склонять</label></div>
 							<div class="pull-right">
-								<a href="#" class="micro-text red-text link-case-forms">Редактировать падежные формы</a>
+								<a href="#" class="micro-text red-text link-case-forms" data-toggle="modal" data-target="#edit-case-modal">Редактировать падежные формы</a>
 							</div>
 						</div>
 						<div class="col-xs-1">
@@ -107,11 +107,11 @@
 
 					<div class="row">
 						<div class="col-xs-11">
-							<input type="text" name="base" value="" class="validate[required]" data-prompt-position="bottomLeft:140">
+							<input type="text" name="base" value="Общество с ограниченной ответственностью" class="validate[required]" data-prompt-position="bottomLeft:140">
 
 							<div class="pull-left"><input type="checkbox" name="field[]" value="Y" id="field_2" class="to-link-case-forms"><label for="field_2" class="micro-text">Не склонять</label></div>
 							<div class="pull-right">
-								<a href="#" class="micro-text red-text link-case-forms">Редактировать падежные формы</a>
+								<a href="#" class="micro-text red-text link-case-forms" data-toggle="modal" data-target="#edit-case-modal">Редактировать падежные формы</a>
 							</div>
 						</div>
 						<div class="col-xs-1">
@@ -128,7 +128,7 @@
 
 							<div class="pull-left"><input type="checkbox" name="field[]" value="Y" id="field_3" class="to-link-case-forms"><label for="field_3" class="micro-text">Не склонять</label></div>
 							<div class="pull-right">
-								<a href="#" class="micro-text red-text link-case-forms">Редактировать падежные формы</a>
+								<a href="#" class="micro-text red-text link-case-forms" data-toggle="modal" data-target="#edit-case-modal">Редактировать падежные формы</a>
 							</div>
 						</div>
 						<div class="col-xs-1">
@@ -145,7 +145,7 @@
 
 							<div class="pull-left"><input type="checkbox" name="field[]" value="Y" id="field_4" class="to-link-case-forms"><label for="field_4" class="micro-text">Не склонять</label></div>
 							<div class="pull-right">
-								<a href="#" class="micro-text red-text link-case-forms">Редактировать падежные формы</a>
+								<a href="#" class="micro-text red-text link-case-forms" data-toggle="modal" data-target="#edit-case-modal">Редактировать падежные формы</a>
 							</div>
 						</div>
 						<div class="col-xs-1">

@@ -194,12 +194,19 @@
 				name: 'Окно: Информация о разделе «Оперативные мероприятия»',
 				fileName: '#',
 				click: "javascript: $('.mask.win2').show(); return false;"
-			},
-			{
-				name: 'Окно: Падежные формы',
-				fileName: '#',
-				click: "javascript: $('.mask.win2').show(); return false;"
-			}*/
+			}*/,
+			 {
+			 name: 'Окно: Редактирование падежных форм',
+			 fileName: '#',
+			 click: "",
+			 attrs: 'data-toggle="modal" data-target="#edit-case-modal"'
+			 }/*,
+			 {
+			 name: 'Окно: Падежные формы',
+			 fileName: '#',
+			 click: "javascript: $('.mask.win2').show(); return false;",
+			 attrs: 'data-toggle="modal" data-target="#edit-case-modal"'
+			 }*/
 		);
 		console.log(arMenu)
 		if (arMenu.length > 1) {
@@ -217,7 +224,7 @@
 				currentFileName = arMenu[0]['fileName'];
 			}
 			for (i in arMenu) {
-				$('.del-menu').append('<a href="' + arMenu[i]['fileName'] + '"' + (currentFileName == arMenu[i]['fileName'] || currentFileName + queryString == arMenu[i]['fileName'] || queryString == arMenu[i]['fileName'] ? ' class="current"' : '') + (arMenu[i]['click'] ? ' onclick="' + arMenu[i]['click'] + '"' : '') + '>' + arMenu[i]['name'] + '</a>');
+				$('.del-menu').append('<a href="' + arMenu[i]['fileName'] + '"' + (currentFileName == arMenu[i]['fileName'] || currentFileName + queryString == arMenu[i]['fileName'] || queryString == arMenu[i]['fileName'] ? ' class="current"' : '') + (arMenu[i]['click'] ? ' onclick="' + arMenu[i]['click'] + '"' : '') + (arMenu[i]['attrs'] ? ' ' + arMenu[i]['attrs'] + ' ' : '') + '>' + arMenu[i]['name'] + '</a>');
 			}
 			$('.del-menu').css({
 				position: 'absolute',

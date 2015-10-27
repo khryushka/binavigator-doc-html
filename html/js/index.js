@@ -268,7 +268,7 @@
 
 		/** SubmitForms **/
 		function initSubmitForm() {
-			$("form:visible").each(function () {
+			$("form:visible, .modal form").each(function () {
 				var $form = $(this);
 				if (!$form.attr('init')) {
 					$form.attr('init', 1);
@@ -327,6 +327,17 @@
 		 initAutocomplete();
 		 */
 		/** /search autocomplete **/
+
+
+		/** фокус на первый элемент при открытии формы **/
+		$('.modal').on('shown.bs.modal',
+			function (e) {
+				var $this = $(this);
+				$this.find('input[type=text],input[type=password],textarea').eq(0).focus();
+			}
+		);
+		/** /фокус на первый элемент при открытии формы **/
+
 	});
 
 	/*
