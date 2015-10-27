@@ -679,11 +679,20 @@ input[type="tel"].error {
 .center-text {
   text-align: center;
 }
+.right-text {
+  text-align: right;
+}
 .center-block {
   margin: 0 auto;
 }
 .micro-text {
   font-size: 12px;
+}
+.big-text {
+  font-size: 21px;
+}
+.light-text {
+  font-family: 'Ubuntu Light';
 }
 .red-text,
 a.red-text:link,
@@ -693,6 +702,17 @@ a.red-text:visited {
 .caption-block {
   font-family: 'Ubuntu Regular';
   font-size: 21px;
+}
+.avatar-big-block {
+  display: table-cell;
+  width: 200px;
+  height: 200px;
+  border: 2px solid #00a1e6;
+  -web-kit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-align: center;
+  vertical-align: middle;
 }
 /** Icons **/
 .question-icon.icon-32x32 {
@@ -746,7 +766,7 @@ input[type="submit"].button-small {
   min-width: 84px;
   height: 32px;
   padding: 0 9px;
-  font: 17px/32px 'Ubuntu Light';
+  font: 17px/30px 'Ubuntu Light';
 }
 .button.button-yellow,
 a.button.button-yellow,
@@ -1123,6 +1143,9 @@ ul.breadcrumbs-block li + li:before {
 .left-column .doc-counter-block * {
   font-family: 'Ubuntu Light';
 }
+.left-column.left-column-border-right {
+  border-right: 2px solid #00a1e6;
+}
 /** /LeftColumn **/
 /**/
 /**/
@@ -1203,6 +1226,21 @@ ul.breadcrumbs-block li + li:before {
   border-color: #00a1e6;
 }
 /** /JqueryUi **/
+/**/
+/**/
+/**/
+/**/
+/** Datepicker **/
+input.datepicker {
+  width: 150px;
+  min-width: auto;
+  padding-right: 32px;
+  background: url('../images/icons/icon-calendar.png') no-repeat right center;
+}
+.ui-datepicker {
+  z-index: 1000 !important;
+}
+/** /Datepicker **/
 /**/
 /**/
 /**/

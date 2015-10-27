@@ -69,6 +69,7 @@
 		$('.steps-menu-block li').eq(0).find('a').trigger('click');
 		/** /StepsMenuBlock **/
 
+
 		/** чекбокс "не склонять" **/
 		$('input.to-link-case-forms').each(function (i) {
 			var $this = $(this);
@@ -83,24 +84,69 @@
 				}
 			})
 		});
+		/** /чекбокс "не склонять" **/
+
+
+		/** DatePicker **/
+		$.datepicker.regional['ru'] = {
+			closeText: 'Закрыть',
+			prevText: '<',
+			nextText: '>',
+			currentText: 'Сегодня',
+			monthNames: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',
+				'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+			monthNamesShort: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн',
+				'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
+			dayNames: ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'],
+			dayNamesShort: ['вск', 'пнд', 'втр', 'срд', 'чтв', 'птн', 'сбт'],
+			dayNamesMin: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+			weekHeader: 'Не',
+			dateFormat: 'dd.mm.yy',
+			firstDay: 1,
+			isRTL: false,
+			showMonthAfterYear: false,
+			//numberOfMonths: 1,
+			//showCurrentAtPos: 1,
+			yearSuffix: ''
+		};
+		$.datepicker.setDefaults($.datepicker.regional['ru']);
+		$(".datepicker").datepicker();
+		/** /DatePicker **/
+
 
 		/** FileUploadPlugin **/
 		'use strict';
 
 		// Initialize the jQuery File Upload widget:
-		$('.fileupload-png').fileupload({
-			// Uncomment the following to send cross-domain cookies:
-			//xhrFields: {withCredentials: true},
-			url: SITE_TEMPLATE_PATH + '/jquery-file-upload/server/php/',
-			maxFileSize: 1024 * 1024,
-			acceptFileTypes: /(\.|\/)(png)$/i,
-			maxNumberOfFiles: 1,
-			messages: {
-				maxNumberOfFiles: 'Максимальное количество файлов превышено',
-				acceptFileTypes: 'Тип файла не допускается',
-				maxFileSize: 'Файл слишком большой',
-				minFileSize: 'Файл слишком мал'
+		$('[id*="fileupload"]').each(function () {
+			var $this = $(this);
+			var fileTypes = [];
+			var acceptFileTypes = '';
+
+			if ($this.hasClass('fileupload-images')) {
+				fileTypes = ['png', 'jpg', 'jpeg', 'gif'];
 			}
+			if ($this.hasClass('fileupload-png')) {
+				fileTypes.push('png');
+			}
+			if (fileTypes.length > 0) {
+				acceptFileTypes = eval('\/(\\.|\\\/)(' + fileTypes.join('|') + ')$\/i');
+			}
+
+			$this.fileupload({
+				// Uncomment the following to send cross-domain cookies:
+				//xhrFields: {withCredentials: true},
+				url: SITE_TEMPLATE_PATH + '/jquery-file-upload/server/php/',
+				maxFileSize: 1024 * 1024,
+				acceptFileTypes: acceptFileTypes,
+				maxNumberOfFiles: 1,
+				messages: {
+					maxNumberOfFiles: 'Максимальное количество файлов превышено',
+					acceptFileTypes: 'Тип файла не допускается',
+					maxFileSize: 'Файл слишком большой',
+					minFileSize: 'Файл слишком мал'
+				}
+			});
 		});
 
 		// Enable iframe cross-domain access via redirect option:
@@ -237,13 +283,15 @@
 							if (status) {
 
 								// поля не заполенные и равные плейсхолдеру не отправляем ч.1
-								form.find('input').each(function () {
-									var $input = $(this);
-									if ($input.val() == $input.attr('rel')) {
-										$input.attr('placeholder', $input.attr('rel'));
-										$input.val('');
-									}
-								});
+								/*
+								 form.find('input').each(function () {
+								 var $input = $(this);
+								 if ($input.val() == $input.attr('rel')) {
+								 $input.attr('placeholder', $input.attr('rel'));
+								 $input.val('');
+								 }
+								 });
+								 */
 								// /поля не заполенные и равные плейсхолдеру не отправляем ч.1
 								/*
 								 $.ajax({
@@ -263,6 +311,7 @@
 
 								 return false;
 								 */
+								return true;
 							}
 						}
 					});

@@ -33,6 +33,7 @@
 {% } %}
 
 
+
 </script>
 <!-- The template to display files available for download -->
 <script id="template-download" type="text/x-tmpl">
@@ -78,6 +79,7 @@
 {% } %}
 
 
+
 </script>
 <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script-->
 <!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
@@ -91,7 +93,7 @@
 <!-- Bootstrap JS is not required, but included for the responsive demo navigation -->
 <!--script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script-->
 <!-- blueimp Gallery script -->
-<script src="jquery-file-upload/js/blueimp/jquery.blueimp-gallery.min.js"></script>
+<!--script src="jquery-file-upload/js/blueimp/jquery.blueimp-gallery.min.js"></script-->
 <!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
 <script src="jquery-file-upload/js/jquery.iframe-transport.js"></script>
 <!-- The basic File Upload plugin -->

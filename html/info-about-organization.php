@@ -84,7 +84,7 @@
 			<!-- Body -->
 			<div class="body">
 
-				<form id="fileupload-png" action="#" method="POST" enctype="multipart/form-data">
+				<form id="fileupload" class="fileupload-png" action="#t=<?= time() ?>" method="POST" enctype="multipart/form-data">
 
 					Организационно-правовая форма: <span class="red-text">*</span> <br/>
 
@@ -193,11 +193,8 @@
 					Дата регистрации юридического лица: <span class="red-text">*</span> <br/>
 
 					<div class="row">
-						<div class="col-xs-11">
-							<input type="text" name="base" value="" class="validate[required]">
-						</div>
-						<div class="col-xs-1">
-							<div class="question-icon icon-32x32" style="margin: 5px 0;" title="Поясняющая информация"></div>
+						<div class="col-xs-12">
+							<input type="text" name="registration-date" value="" class="datepicker validate[required]">
 						</div>
 					</div>
 					<br/>
@@ -234,11 +231,8 @@
 					Дата внесения оператора в реестр: <br/>
 
 					<div class="row">
-						<div class="col-xs-11">
-							<input type="text" name="base" value="">
-						</div>
-						<div class="col-xs-1">
-							<div class="question-icon icon-32x32" style="margin: 5px 0;" title="Поясняющая информация"></div>
+						<div class="col-xs-12">
+							<input type="text" name="registry-date" value="" class="datepicker">
 						</div>
 					</div>
 					<br/>
@@ -282,7 +276,7 @@
 					<div class="clearfix"></div>
 					<br/><br/>
 
-					<div class="center-text"><input type="submit" value="Сохранить изменение"></div>
+					<div class="center-text"><input type="submit" value="Сохранить изменения"></div>
 					<div class="clearfix"></div>
 					<br/><br/><br/>
 					<a href="#" class="button button-prev">Назад</a>

@@ -99,12 +99,24 @@ input[type="tel"] {
 	text-align: center;
 }
 
+.right-text {
+	text-align: right;
+}
+
 .center-block {
 	margin: 0 auto;
 }
 
 .micro-text {
 	font-size: 12px;
+}
+
+.big-text {
+	font-size: 21px;
+}
+
+.light-text {
+	font-family: @fontL;
 }
 
 .red-text, a.red-text:link, a.red-text:visited {
@@ -114,6 +126,16 @@ input[type="tel"] {
 .caption-block {
 	font-family: @font;
 	font-size: 21px;
+}
+
+.avatar-big-block {
+	display: table-cell;
+	width: 200px;
+	height: 200px;
+	border: 2px solid @blue-color;
+	.border-radius();
+	text-align: center;
+	vertical-align: middle;
 }
 
 /** Icons **/
@@ -155,7 +177,7 @@ input[type="tel"] {
 		min-width: 84px;
 		height: 32px;
 		padding: 0 9px;
-		font: 17px/32px @fontL;
+		font: 17px/30px @fontL;
 	}
 
 	&.button-yellow {
@@ -560,6 +582,10 @@ ul.breadcrumbs-block {
 		}
 	}
 	// /LeftColumnFrames
+
+	&.left-column-border-right {
+		border-right: 2px solid @blue-color;
+	}
 }
 
 /** /LeftColumn **/
@@ -671,6 +697,22 @@ ul.breadcrumbs-block {
 }
 
 /** /JqueryUi **/
+/**/
+/**/
+
+/**/
+/**/
+/** Datepicker **/
+input.datepicker {
+	width: 150px;
+	min-width: auto;
+	padding-right: 32px;
+	background: url('../images/icons/icon-calendar.png') no-repeat right center;
+}
+.ui-datepicker {
+	z-index: 1000 !important;
+}
+/** /Datepicker **/
 /**/
 /**/
 

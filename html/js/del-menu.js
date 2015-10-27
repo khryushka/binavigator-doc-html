@@ -16,11 +16,11 @@
 			{
 				name: 'Управление профилем',
 				fileName: 'profile.php'
-			},
+			}*/,
 			{
 				name: 'Настройка профиля',
-				fileName: 'profile-settings.php'
-			},
+				fileName: 'page-profile-settings.php'
+			}/*,
 			{
 				name: 'Настройка стилей документации',
 				fileName: 'doc-styles-settings.php'
@@ -148,11 +148,11 @@
 			{
 				name: 'Организация: Ответственные отделы',
 				fileName: '.php'
-			},
+			}*/,
 			{
 				name: 'Ответственные лица, комиссия',
-				fileName: '.php'
-			},
+				fileName: 'page-responsible-person.php'
+			}/*,
 			{
 				name: 'Общая статистика по подведомственным организациям',
 				fileName: '.php'
