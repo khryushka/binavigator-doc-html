@@ -165,14 +165,13 @@
 </div>
 <!-- /RegistrationWindow -->
 
-
-<!-- FormWindow -->
-<div class="modal fade" id="form-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<!-- PartnershipWindow -->
+<div class="modal fade" id="partnership-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-				<div class="modal-title">Форма</div>
+				<div class="modal-title">Заявка на партнёрство</div>
 			</div>
 			<form action="#">
 				<div class="modal-body">
@@ -244,7 +243,7 @@
 				<div class="modal-footer">
 					<div class="row">
 						<div class="col-xs-6 col-xs-offset-3 center-text">
-							<input type="submit" class="button" value="Зарегистрироваться">
+							<input type="submit" class="button" value="Отправить заявку">
 						</div>
 						<!--
 						<div class="col-xs-3 pull-right">
@@ -257,7 +256,82 @@
 		</div>
 	</div>
 </div>
-<!-- /FormWindow -->
+<!-- /PartnershipWindow -->
+
+<!-- FeedbackWindow -->
+<div class="modal fade" id="feedback-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<div class="modal-title">Отправка вопроса</div>
+			</div>
+			<form action="#">
+				<div class="modal-body">
+
+					<div class="row">
+						<div class="col-xs-5 text-right" style="margin: 7px 0;">
+							ФИО <span class="red-text">*</span>:
+						</div>
+						<div class="col-xs-6">
+							<input type="text" name="name" value="" class="validate[required]">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-5 text-right" style="margin: 7px 0;">
+							Город:
+						</div>
+						<div class="col-xs-6">
+							<input type="text" name="city" value="">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-5 text-right" style="margin: 7px 0;">
+							E-mail <span class="red-text">*</span>:
+						</div>
+						<div class="col-xs-6">
+							<input type="text" name="email" value="" class="validate[required,custom[email]]">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-5 text-right" style="margin: 7px 0;">
+							Телефон:
+						</div>
+						<div class="col-xs-6">
+							<input type="text" name="phone" value="" class="validate[custom[phone]]">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-5 text-right" style="margin: 7px 0;">
+							Вопрос <span class="red-text">*</span>:
+						</div>
+						<div class="col-xs-6">
+							<textarea name="message" class="validate[required]"></textarea>
+						</div>
+					</div>
+
+				</div>
+				<div class="modal-footer">
+					<div class="row">
+						<div class="col-xs-6 col-xs-offset-3 center-text">
+							<input type="submit" class="button" value="Отправить вопрос">
+						</div>
+						<!--
+						<div class="col-xs-3 pull-right">
+							<button type="button" class="btn btn-default" data-dismiss="modal" aria-hidden="true">Закрыть</button>
+						</div>
+						 -->
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- /FeedbackWindow -->
 
 <!-- EditCaseWindow -->
 <div class="modal fade" id="edit-case-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

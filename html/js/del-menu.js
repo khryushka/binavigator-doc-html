@@ -2,13 +2,13 @@
 	$(document).ready(function () {
 		var arMenu = Array(
 			{
+				name: 'Главная',
+				fileName: 'index.php'
+			},
+			{
 				name: 'Рабочий стол',
 				fileName: 'desktop.php'
 			}/*,
-			 {
-			 name: 'Главная',
-			 fileName: 'index.php'
-			 },
 			 {
 			 name: 'Главная 2',
 			 fileName: '.php'
@@ -176,16 +176,17 @@
 				attrs: 'data-toggle="modal" data-target="#registration-modal"'
 			},
 			{
-				name: 'Окно: Форма',
+				name: 'Окно: Отправка вопроса',
 				fileName: '#',
 				click: "",
-				attrs: 'data-toggle="modal" data-target="#form-modal"'
+				attrs: 'data-toggle="modal" data-target="#feedback-modal"'
+			},
+			{
+				name: 'Окно: Заявка на партнёрство',
+				fileName: '#',
+				click: "",
+				attrs: 'data-toggle="modal" data-target="#partnership-modal"'
 			}/*,
-			 {
-			 name: 'Окно: Без названия 2',
-			 fileName: '#',
-			 click: "javascript: $('.mask.win2').show(); return false;"
-			 },
 			 {
 			 name: 'Окно: Выбор шапки документов',
 			 fileName: '#',
