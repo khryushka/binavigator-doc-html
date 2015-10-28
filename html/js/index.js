@@ -338,6 +338,10 @@
 			function (e) {
 				var $this = $(this);
 				$this.find('input[type=text],input[type=password],textarea').eq(0).focus();
+
+				$this.find('input[type=checkbox], input[type=radio], select').styler({
+					selectSearch: true
+				});
 			}
 		);
 		/** /фокус на первый элемент при открытии формы **/
