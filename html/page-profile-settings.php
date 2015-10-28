@@ -136,7 +136,7 @@
 							E-mail <span class="red-text">*</span>:
 						</div>
 						<div class="col-xs-8">
-							<input type="text" name="email" value="" class="validate[required]">
+							<input type="text" name="email" value="" class="validate[required,custom[email]]">
 						</div>
 						<div class="col-xs-1">
 							<div class="question-icon icon-32x32" style="margin: 5px 0;" title="Поясняющая информация"></div>

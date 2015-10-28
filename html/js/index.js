@@ -330,10 +330,46 @@
 
 
 		/** фокус на первый элемент при открытии формы **/
+		var modalList = [];
+		var defaultZIndex = parseInt($('.modal').eq(0).css('z-index')) + 20;
+
+		$('.modal').each(function (i) {
+			$(this).on('show.bs.modal',
+				function (e) {
+
+					// z-index для нескольких окон
+					modalList.push(i);
+					for (var n = 0; n < modalList.length; n++) {
+						$('.modal').eq(modalList[n]).css('z-index', defaultZIndex - (modalList.length - n) * 20)
+					}
+					$('.modal-backdrop').each(function () {
+						var modalBackdrop = $(this);
+						var zIndex = parseInt(modalBackdrop.css('z-index'));
+						modalBackdrop.css('z-index', zIndex - 20);
+					});
+					// z-index для нескольких окон
+
+				}
+			);
+		})
 		$('.modal').on('shown.bs.modal',
 			function (e) {
 				var $this = $(this);
 				$this.find('input[type=text],input[type=password],textarea').eq(0).focus();
+			}
+		);
+		$('.modal').on('hidden.bs.modal',
+			function (e) {
+
+				// z-index для нескольких окон при закрытии
+				var l = $('.modal:visible').length;
+				$('.modal:visible').each(function (i) {
+					var modal = $(this);
+					var zIndex = parseInt(modal.css('z-index'));
+					$('.modal-backdrop:visible').eq(l - i - 1).css('z-index', zIndex - 10);
+				});
+				// /z-index для нескольких окон при закрытии
+
 			}
 		);
 		/** /фокус на первый элемент при открытии формы **/

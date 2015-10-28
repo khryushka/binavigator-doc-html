@@ -5,106 +5,106 @@
 				name: 'Рабочий стол',
 				fileName: 'desktop.php'
 			}/*,
-			{
-				name: 'Главная',
-				fileName: 'index.php'
-			},
-			{
-				name: 'Главная 2',
-				fileName: '.php'
-			},
-			{
-				name: 'Управление профилем',
-				fileName: 'profile.php'
-			}*/,
+			 {
+			 name: 'Главная',
+			 fileName: 'index.php'
+			 },
+			 {
+			 name: 'Главная 2',
+			 fileName: '.php'
+			 },
+			 {
+			 name: 'Управление профилем',
+			 fileName: 'profile.php'
+			 }*/,
 			{
 				name: 'Настройка профиля',
 				fileName: 'page-profile-settings.php'
 			}/*,
-			{
-				name: 'Настройка стилей документации',
-				fileName: 'doc-styles-settings.php'
-			},
-			{
-				name: 'Тарифы и цены',
-				fileName: 'tariffs.php'
-			},
-			{
-				name: 'Настройка оформления: Приказы/Распоряжения',
-				fileName: '.php'
-			},
-			{
-				name: 'Настройка оформления: Положения/Политики/Акты',
-				fileName: '.php'
-			},
-			{
-				name: 'Стать партнёром',
-				fileName: '.php'
-			},
-			{
-				name: 'Вопросы эксперту 1',
-				fileName: '.php'
-			},
-			{
-				name: 'Вопросы эксперту 2',
-				fileName: '.php'
-			},
-			{
-				name: 'Текущие документы',
-				fileName: '.php'
-			},
-			{
-				name: 'Шаги: Шаг 1',
-				fileName: 'step-1.php'
-			},
-			{
-				name: 'Шаги: Шаг 2',
-				fileName: 'step-2.php'
-			},
-			{
-				name: 'Шаги: Шаг 3',
-				fileName: 'step-3.php'
-			},
-			{
-				name: 'Шаги: Шаг 4',
-				fileName: 'step-4.php'
-			},
-			{
-				name: 'Шаги: Шаг 5',
-				fileName: 'step-5.php'
-			},
-			{
-				name: 'Шаги: Шаг 6',
-				fileName: 'step-6.php'
-			},
-			{
-				name: 'Сведения конфиденциального характера',
-				fileName: '.php'
-			},
-			{
-				name: 'Меню: Меню 1',
-				fileName: 'menu-1.php'
-			},
-			{
-				name: 'Меню: Меню 2',
-				fileName: 'menu-2.php'
-			},
-			{
-				name: 'Меню: Меню 3',
-				fileName: 'menu-3.php'
-			},
-			{
-				name: 'Меню: Меню 4',
-				fileName: 'menu-4.php'
-			},
-			{
-				name: 'Документооборот',
-				fileName: '.php'
-			},
-			{
-				name: 'Технические и эксплуатационные характеристики ИСПДн',
-				fileName: '.php'
-			}*/,
+			 {
+			 name: 'Настройка стилей документации',
+			 fileName: 'doc-styles-settings.php'
+			 },
+			 {
+			 name: 'Тарифы и цены',
+			 fileName: 'tariffs.php'
+			 },
+			 {
+			 name: 'Настройка оформления: Приказы/Распоряжения',
+			 fileName: '.php'
+			 },
+			 {
+			 name: 'Настройка оформления: Положения/Политики/Акты',
+			 fileName: '.php'
+			 },
+			 {
+			 name: 'Стать партнёром',
+			 fileName: '.php'
+			 },
+			 {
+			 name: 'Вопросы эксперту 1',
+			 fileName: '.php'
+			 },
+			 {
+			 name: 'Вопросы эксперту 2',
+			 fileName: '.php'
+			 },
+			 {
+			 name: 'Текущие документы',
+			 fileName: '.php'
+			 },
+			 {
+			 name: 'Шаги: Шаг 1',
+			 fileName: 'step-1.php'
+			 },
+			 {
+			 name: 'Шаги: Шаг 2',
+			 fileName: 'step-2.php'
+			 },
+			 {
+			 name: 'Шаги: Шаг 3',
+			 fileName: 'step-3.php'
+			 },
+			 {
+			 name: 'Шаги: Шаг 4',
+			 fileName: 'step-4.php'
+			 },
+			 {
+			 name: 'Шаги: Шаг 5',
+			 fileName: 'step-5.php'
+			 },
+			 {
+			 name: 'Шаги: Шаг 6',
+			 fileName: 'step-6.php'
+			 },
+			 {
+			 name: 'Сведения конфиденциального характера',
+			 fileName: '.php'
+			 },
+			 {
+			 name: 'Меню: Меню 1',
+			 fileName: 'menu-1.php'
+			 },
+			 {
+			 name: 'Меню: Меню 2',
+			 fileName: 'menu-2.php'
+			 },
+			 {
+			 name: 'Меню: Меню 3',
+			 fileName: 'menu-3.php'
+			 },
+			 {
+			 name: 'Меню: Меню 4',
+			 fileName: 'menu-4.php'
+			 },
+			 {
+			 name: 'Документооборот',
+			 fileName: '.php'
+			 },
+			 {
+			 name: 'Технические и эксплуатационные характеристики ИСПДн',
+			 fileName: '.php'
+			 }*/,
 			{
 				name: 'Общие сведения: <br/>Об организации',
 				fileName: 'info-about-organization.php'
@@ -129,78 +129,84 @@
 				name: 'Общие сведения: <br/>О руководителе',
 				fileName: 'info-about-head.php'
 			}/*,
-			{
-				name: 'Общие сведения: О руководителе (уменьшенные вопросы)',
-				fileName: '.php'
-			},
-			{
-				name: 'Формирование технического решения',
-				fileName: '.php'
-			},
-			{
-				name: 'Уведомление об обработке персональных данных',
-				fileName: '.php'
-			},
-			{
-				name: 'Организация: Ответственные лица',
-				fileName: '.php'
-			},
-			{
-				name: 'Организация: Ответственные отделы',
-				fileName: '.php'
-			}*/,
+			 {
+			 name: 'Общие сведения: О руководителе (уменьшенные вопросы)',
+			 fileName: '.php'
+			 },
+			 {
+			 name: 'Формирование технического решения',
+			 fileName: '.php'
+			 },
+			 {
+			 name: 'Уведомление об обработке персональных данных',
+			 fileName: '.php'
+			 },
+			 {
+			 name: 'Организация: Ответственные лица',
+			 fileName: '.php'
+			 },
+			 {
+			 name: 'Организация: Ответственные отделы',
+			 fileName: '.php'
+			 }*/,
 			{
 				name: 'Ответственные лица, комиссия',
 				fileName: 'page-responsible-person.php'
 			}/*,
-			{
-				name: 'Общая статистика по подведомственным организациям',
-				fileName: '.php'
-			},
-
+			 {
+			 name: 'Общая статистика по подведомственным организациям',
+			 fileName: '.php'
+			 }*//*,
+			 {
+			 name: 'Примеры ссылок на интерактивные карты',
+			 fileName: 'link-on-maps.php'
+			 }*/,
 
 
 			{
 				name: 'Окно: Введите логин и пароль',
 				fileName: '#',
-				click: "javascript: $('.mask.win2').show(); return false;"
+				click: "",
+				attrs: 'data-toggle="modal" data-target="#entry-modal"'
 			},
 			{
 				name: 'Окно: Регистрация',
 				fileName: '#',
-				click: "javascript: $('.mask.win2').show(); return false;"
+				click: "",
+				attrs: 'data-toggle="modal" data-target="#registration-modal"'
 			},
 			{
-				name: 'Окно: Без названия 1',
+				name: 'Окно: Форма',
 				fileName: '#',
-				click: "javascript: $('.mask.win2').show(); return false;"
-			},
-			{
-				name: 'Окно: Без названия 2',
-				fileName: '#',
-				click: "javascript: $('.mask.win2').show(); return false;"
-			},
-			{
-				name: 'Окно: Выбор шапки документов',
-				fileName: '#',
-				click: "javascript: $('.mask.win2').show(); return false;"
-			},
-			{
-				name: 'Окно: Заявка на повторное формирование документов',
-				fileName: '#',
-				click: "javascript: $('.mask.win2').show(); return false;"
-			},
-			{
-				name: 'Окно: Информация о разделе «Оперативные мероприятия»',
-				fileName: '#',
-				click: "javascript: $('.mask.win2').show(); return false;"
-			}*/,
+				click: "",
+				attrs: 'data-toggle="modal" data-target="#form-modal"'
+			}/*,
 			 {
-			 name: 'Окно: Редактирование падежных форм',
+			 name: 'Окно: Без названия 2',
 			 fileName: '#',
-			 click: "",
-			 attrs: 'data-toggle="modal" data-target="#edit-case-modal"'
-			 }/*,
+			 click: "javascript: $('.mask.win2').show(); return false;"
+			 },
+			 {
+			 name: 'Окно: Выбор шапки документов',
+			 fileName: '#',
+			 click: "javascript: $('.mask.win2').show(); return false;"
+			 },
+			 {
+			 name: 'Окно: Заявка на повторное формирование документов',
+			 fileName: '#',
+			 click: "javascript: $('.mask.win2').show(); return false;"
+			 },
+			 {
+			 name: 'Окно: Информация о разделе «Оперативные мероприятия»',
+			 fileName: '#',
+			 click: "javascript: $('.mask.win2').show(); return false;"
+			 }*/,
+			{
+				name: 'Окно: Редактирование падежных форм',
+				fileName: '#',
+				click: "",
+				attrs: 'data-toggle="modal" data-target="#edit-case-modal"'
+			}/*,
 			 {
 			 name: 'Окно: Падежные формы',
 			 fileName: '#',
@@ -251,7 +257,7 @@
 			}).parents('.del-menu').find('a.current:link, a.current:visited').css({
 				background: 'rgba(0,161,230,0.75)'
 			});
-			$('.del-menu').on('dblclick', function(){
+			$('.del-menu').on('dblclick', function () {
 				$(this).hide();
 			});
 			$('.del-menu').draggable({
