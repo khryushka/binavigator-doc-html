@@ -518,7 +518,9 @@ form.personal-data .st-spacing-between-cells tr td:first-child {
 table.vertical-align-middle td {
   vertical-align: middle;
 }
-
+/**/
+/********************* file: pages *********************/
+/**/
 /** Tariffs **/
 .tariffs-caption .col-xs-2 {
   text-align: center;
@@ -582,7 +584,6 @@ table.vertical-align-middle td {
   padding: 0;
 }
 /** /Tariffs **/
-
 /** Contacts **/
 .contacts-block .points-block {
   text-align: center;
@@ -1553,3 +1554,90 @@ label.error {
   height: 26px;
   background: url('../images/icons/close-white-bg.png') center;
 }
+/**/
+/********************* file: pages *********************/
+/**/
+/** Tariffs **/
+.tariffs-caption .col-xs-2 {
+  text-align: center;
+  font-family: 'Ubuntu Bold';
+  font-size: 15px;
+  padding: 10px 0;
+}
+.table-tariffs {
+  border-top: 5px solid #e5e5e5;
+  -web-kit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -web-kit-border-top-left-radius: 5px;
+  -moz-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.table-tariffs td {
+  height: 100px;
+  padding: 10px 15px;
+  vertical-align: middle;
+}
+.table-tariffs tr:last-child td {
+  height: auto;
+}
+.table-tariffs td {
+  border-right: 5px solid #e5e5e5;
+  border-bottom: 5px solid #e5e5e5;
+  border-left: 5px solid #e5e5e5;
+}
+.table-tariffs td.col-xs-2 {
+  text-align: center;
+}
+.table-tariffs .tariff-icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: url('../images/icons/tariff-check-sprite.png') no-repeat;
+}
+.table-tariffs .tariff-icon.n-1 {
+  background-position: 0 0;
+}
+.table-tariffs .tariff-icon.n-2 {
+  background-position: 0 -50px;
+}
+.table-tariffs .tariff-icon.n-3 {
+  background-position: 0 -100px;
+}
+.table-tariffs .tariff-icon.n-4 {
+  background-position: 0 -150px;
+}
+.table-tariffs tr.height-auto td {
+  height: auto;
+}
+.table-tariffs tr:last-child td {
+  height: auto;
+  padding: 0;
+  border: 0;
+}
+.table-tariffs tr:last-child td .button {
+  width: 96%;
+  padding: 0;
+}
+/** /Tariffs **/
+/** Contacts **/
+.contacts-block .points-block {
+  text-align: center;
+}
+.contacts-block .points-block .caption-block {
+  display: inline-block;
+  margin: 11px 0;
+  font-family: 'Ubuntu Regular' !important;
+  padding-left: 34px;
+  background: url('../images/icons/icon-32x32-sprite.png') no-repeat;
+}
+.contacts-block .points-block .caption-block.phone-block {
+  background-position: 0 -32px;
+}
+.contacts-block .points-block .caption-block.address-block {
+  background-position: 0 -64px;
+}
+.contacts-block .points-block .caption-block.email-block {
+  background-position: 0 -96px;
+}
+/** /Contacts **/
