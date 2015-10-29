@@ -346,6 +346,16 @@
 		);
 		/** /фокус на первый элемент при открытии формы **/
 
+		/** responsibility **/
+		$('.responsibility-list li').each(function (i) {
+			var $this = $(this);
+			$this.on('mouseover click', function () {
+				$('.responsibility-data').hide();
+				$('.responsibility-data').eq(i).show();
+			});
+		});
+		/** /responsibility **/
+
 	});
 
 	/*

@@ -18,6 +18,10 @@
 			 fileName: 'profile.php'
 			 }*/,
 			{
+				name: 'Ответственность',
+				fileName: 'page-responsibility.php'
+			},
+			{
 				name: 'Настройка профиля',
 				fileName: 'page-profile-settings.php'
 			}/*,
