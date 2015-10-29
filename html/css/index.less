@@ -4,6 +4,7 @@
 @import "static.less";
 @import "skin.less";
 @import "bitrix.less";
+@import "pages.less";
 
 /**/
 /********************* file: index *********************/
@@ -33,6 +34,11 @@ b, strong {
 i, .italic-text {
 	font-family: @fontI;
 }
+
+.regular-text {
+	font-family: @font !important;
+}
+
 .body {
 	i, .italic-text {
 		font-family: @fontLI;
@@ -138,6 +144,12 @@ textarea {
 	font-size: 21px;
 }
 
+.caption-big-bold-block {
+	font-family: @fontPtsB !important;
+	font-size: 40px;
+	line-height: 50px !important;
+}
+
 .avatar-big-block {
 	display: table-cell;
 	width: 200px;
@@ -188,6 +200,14 @@ textarea {
 		height: 32px;
 		padding: 0 9px;
 		font: 17px/30px @fontL;
+	}
+
+	&.button-big {
+		min-width: 184px;
+		height: 80px;
+		padding: 0 55px;
+		font: 26px/76px @fontL;
+		border-bottom-width: 4px;
 	}
 
 	&.button-yellow {
@@ -605,7 +625,7 @@ ul.breadcrumbs-block {
 /**/
 /**/
 /** RightColumn **/
-.right-column, .center-column {
+.right-column {
 	padding-top: 15px;
 
 	> .caption-block {
@@ -620,6 +640,27 @@ ul.breadcrumbs-block {
 }
 
 /** /RightColumn **/
+/**/
+/**/
+
+/**/
+/**/
+/** CenterColumn **/
+.center-column {
+	padding-top: 15px;
+
+	> * > .caption-block {
+		margin-bottom: 20px;
+	}
+
+	// Body
+	.body {
+
+	}
+	// /Body
+}
+
+/** /CenterColumn **/
 /**/
 /**/
 
@@ -670,6 +711,29 @@ ul.breadcrumbs-block {
 
 /**/
 /**/
+/** FooterBlock **/
+.footer-block {
+
+	.copyright {
+		padding-top: 18px;
+		padding-bottom: 28px;
+		border-top: 1px solid @dark-blue-color;
+
+		&, *, a:link, a:visited {
+			line-height: 36px;
+			font-family: @fontL;
+			color: @dark-gray-color;
+		}
+	}
+
+}
+
+/** /FooterBlock **/
+/**/
+/**/
+
+/**/
+/**/
 /** StepsBlock **/
 .steps-menu-block {
 	width: 168px;
@@ -697,6 +761,12 @@ ul.breadcrumbs-block {
 /** /StepsBlock **/
 /**/
 /**/
+
+.full-width-border-block {
+	border: 3px solid #81d1f3;
+	.border-radius(3px);
+	padding: 50px;
+}
 
 /**/
 /**/
@@ -734,6 +804,7 @@ input.datepicker {
 body {
 	padding-right: 0 !important;
 }
+
 .modal-dialog {
 	width: 700px;
 }

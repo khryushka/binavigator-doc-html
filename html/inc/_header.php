@@ -41,7 +41,7 @@
 
 		<!-- RightBlock -->
 		<div class="right-block">
-			<a href="#">Задать вопрос</a>
+			<a href="#" data-toggle="modal" data-target="#feedback-modal">Задать вопрос</a>
 		</div>
 		<!-- /RightBlock -->
 
