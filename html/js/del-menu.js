@@ -54,30 +54,6 @@
 			 fileName: '.php'
 			 },
 			 {
-			 name: 'Шаги: Шаг 1',
-			 fileName: 'step-1.php'
-			 },
-			 {
-			 name: 'Шаги: Шаг 2',
-			 fileName: 'step-2.php'
-			 },
-			 {
-			 name: 'Шаги: Шаг 3',
-			 fileName: 'step-3.php'
-			 },
-			 {
-			 name: 'Шаги: Шаг 4',
-			 fileName: 'step-4.php'
-			 },
-			 {
-			 name: 'Шаги: Шаг 5',
-			 fileName: 'step-5.php'
-			 },
-			 {
-			 name: 'Шаги: Шаг 6',
-			 fileName: 'step-6.php'
-			 },
-			 {
 			 name: 'Сведения конфиденциального характера',
 			 fileName: '.php'
 			 },
@@ -161,8 +137,10 @@
 			 name: 'Примеры ссылок на интерактивные карты',
 			 fileName: 'link-on-maps.php'
 			 }*/,
-
-
+			{
+				name: 'Контакты',
+				fileName: 'page-contacts.php'
+			},
 			{
 				name: 'Окно: Введите логин и пароль',
 				fileName: '#',
@@ -215,7 +193,7 @@
 			 attrs: 'data-toggle="modal" data-target="#edit-case-modal"'
 			 }*/
 		);
-		console.log(arMenu)
+		console.log(arMenu);
 		if (arMenu.length > 1) {
 			$('body').append('<div class="del-menu"><span>Страницы:</span></div>');
 			var currentFileName = '/';
@@ -230,7 +208,7 @@
 			if (currentFileName == '/') {
 				currentFileName = arMenu[0]['fileName'];
 			}
-			for (i in arMenu) {
+			for (var i in arMenu) {
 				$('.del-menu').append('<a href="' + arMenu[i]['fileName'] + '"' + (currentFileName == arMenu[i]['fileName'] || currentFileName + queryString == arMenu[i]['fileName'] || queryString == arMenu[i]['fileName'] ? ' class="current"' : '') + (arMenu[i]['click'] ? ' onclick="' + arMenu[i]['click'] + '"' : '') + (arMenu[i]['attrs'] ? ' ' + arMenu[i]['attrs'] + ' ' : '') + '>' + arMenu[i]['name'] + '</a>');
 			}
 			$('.del-menu').css({

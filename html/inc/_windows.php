@@ -178,19 +178,19 @@
 
 					<div class="row">
 						<div class="col-xs-5 text-right" style="margin: 7px 0;">
-							Наименование организации:
+							Наименование организации <span class="red-text">*</span>:
 						</div>
 						<div class="col-xs-6">
-							<input type="text" name="company-name" value="" class="">
+							<input type="text" name="company-name" value="" class="validate[required]">
 						</div>
 					</div>
 
 					<div class="row">
 						<div class="col-xs-5 text-right" style="margin: 7px 0;">
-							ИНН:
+							ИНН <span class="red-text">*</span>:
 						</div>
 						<div class="col-xs-6">
-							<input type="text" name="inn" value="" class="">
+							<input type="text" name="inn" value="" class="validate[required]">
 						</div>
 					</div>
 
@@ -205,28 +205,28 @@
 
 					<div class="row">
 						<div class="col-xs-5 text-right" style="margin: 7px 0;">
-							Город:
+							Город <span class="red-text">*</span>:
 						</div>
 						<div class="col-xs-6">
-							<input type="text" name="city" value="">
+							<input type="text" name="city" value="" class="validate[required]">
 						</div>
 					</div>
 
 					<div class="row">
 						<div class="col-xs-5 text-right" style="margin: 7px 0;">
-							E-mail:
+							E-mail <span class="red-text">*</span>:
 						</div>
 						<div class="col-xs-6">
-							<input type="text" name="email" value="" class="validate[custom[email]]">
+							<input type="text" name="email" value="" class="validate[required,custom[email]]">
 						</div>
 					</div>
 
 					<div class="row">
 						<div class="col-xs-5 text-right" style="margin: 7px 0;">
-							Телефон:
+							Телефон <span class="red-text">*</span>:
 						</div>
 						<div class="col-xs-6">
-							<input type="text" name="phone" value="" class="validate[custom[phone]]">
+							<input type="text" name="phone" value="" class="validate[required,custom[phone]]">
 						</div>
 					</div>
 

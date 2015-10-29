@@ -30,8 +30,13 @@ b, strong {
 	font-family: @fontB;
 }
 
-i {
+i, .italic-text {
 	font-family: @fontI;
+}
+.body {
+	i, .italic-text {
+		font-family: @fontLI;
+	}
 }
 
 a {
@@ -600,7 +605,7 @@ ul.breadcrumbs-block {
 /**/
 /**/
 /** RightColumn **/
-.right-column {
+.right-column, .center-column {
 	padding-top: 15px;
 
 	> .caption-block {

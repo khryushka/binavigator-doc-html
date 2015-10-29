@@ -1,6 +1,6 @@
 <?
 	header ('Content-Type: text/html; charset=utf-8');
-	include('functions.php');
+	include('++');
 ?>
 <!DOCTYPE html>
 
@@ -38,11 +38,11 @@
 	<link type="text/css" href="fonts/ubuntu-medium/stylesheet.css" rel="stylesheet"/>
 	<link type="text/css" href="fonts/ubuntu-bold/stylesheet.css" rel="stylesheet"/>
 	<link type="text/css" href="fonts/ubuntu-italic/stylesheet.css" rel="stylesheet"/>
+	<link type="text/css" href="fonts/ubuntu-light-italic/stylesheet.css" rel="stylesheet" />
 	<?
 		/*
 	?>
 	<link type="text/css" href="fonts/ubuntu-bold-italic/stylesheet.css" rel="stylesheet" />
-	<link type="text/css" href="fonts/ubuntu-light-italic/stylesheet.css" rel="stylesheet" />
 	<link type="text/css" href="fonts/ubuntu-medium-italic/stylesheet.css" rel="stylesheet" />
 	<?
 		*/

@@ -275,19 +275,16 @@ body {
 * html body {
   height: 100%;
 }
-/*
 .middle-block {
-	height: 100%;
-	min-height: 350px;
-	padding-bottom: 300px;
+  height: 100%;
+  min-height: 350px;
+  padding-bottom: 300px;
 }
-
 .footer-block {
-	position: absolute;
-	width: 100%;
-	bottom: 0;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
-*/
 .container,
 .wrapper {
   overflow: hidden;
@@ -593,8 +590,13 @@ b,
 strong {
   font-family: 'Ubuntu Bold';
 }
-i {
+i,
+.italic-text {
   font-family: 'Ubuntu Italic';
+}
+.body i,
+.body .italic-text {
+  font-family: 'Ubuntu Light Italic';
 }
 a:link,
 a:visited,
@@ -1156,10 +1158,12 @@ ul.breadcrumbs-block li + li:before {
 /**/
 /**/
 /** RightColumn **/
-.right-column {
+.right-column,
+.center-column {
   padding-top: 15px;
 }
-.right-column > .caption-block {
+.right-column > .caption-block,
+.center-column > .caption-block {
   margin-bottom: 20px;
 }
 /** /RightColumn **/
