@@ -5,11 +5,15 @@
 /********************* file: mixins *********************/
 /**/
 .u:link,
-.u:visited {
+.u:visited,
+.u:link *,
+.u:visited * {
   text-decoration: none;
 }
 .u:hover,
-.u:active {
+.u:active,
+.u:hover *,
+.u:active * {
   text-decoration: underline;
 }
 .caption {
@@ -23,11 +27,15 @@
   font-family: 'Ubuntu Italic';
 }
 .more-button:link,
-.more-button:visited {
+.more-button:visited,
+.more-button:link *,
+.more-button:visited * {
   text-decoration: none;
 }
 .more-button:hover,
-.more-button:active {
+.more-button:active,
+.more-button:hover *,
+.more-button:active * {
   text-decoration: underline;
 }
 .font-italic,
@@ -278,7 +286,7 @@ body {
 .middle-block {
   height: 100%;
   min-height: 350px;
-  padding-bottom: 300px;
+  padding-bottom: 150px;
 }
 .footer-block {
   position: absolute;
@@ -510,6 +518,27 @@ form.personal-data .st-spacing-between-cells tr td:first-child {
 table.vertical-align-middle td {
   vertical-align: middle;
 }
+/** Contacts **/
+.contacts-block .points-block {
+  text-align: center;
+}
+.contacts-block .points-block .caption-block {
+  display: inline-block;
+  margin: 11px 0;
+  font-family: 'Ubuntu Regular' !important;
+  padding-left: 34px;
+  background: url('../images/icons/icon-32x32-sprite.png') no-repeat;
+}
+.contacts-block .points-block .caption-block.phone-block {
+  background-position: 0 -32px;
+}
+.contacts-block .points-block .caption-block.address-block {
+  background-position: 0 -64px;
+}
+.contacts-block .points-block .caption-block.email-block {
+  background-position: 0 -96px;
+}
+/** /Contacts **/
 /**/
 /********************* file: index *********************/
 /**/
@@ -593,6 +622,9 @@ strong {
 i,
 .italic-text {
   font-family: 'Ubuntu Italic';
+}
+.regular-text {
+  font-family: 'Ubuntu Regular' !important;
 }
 .body i,
 .body .italic-text {
@@ -709,6 +741,11 @@ a.red-text:visited {
   font-family: 'Ubuntu Regular';
   font-size: 21px;
 }
+.caption-big-bold-block {
+  font-family: 'PT Sans Bold' !important;
+  font-size: 40px;
+  line-height: 50px !important;
+}
 .avatar-big-block {
   display: table-cell;
   width: 200px;
@@ -773,6 +810,15 @@ input[type="submit"].button-small {
   height: 32px;
   padding: 0 9px;
   font: 17px/30px 'Ubuntu Light';
+}
+.button.button-big,
+a.button.button-big,
+input[type="submit"].button-big {
+  min-width: 184px;
+  height: 80px;
+  padding: 0 55px;
+  font: 26px/76px 'Ubuntu Light';
+  border-bottom-width: 4px;
 }
 .button.button-yellow,
 a.button.button-yellow,
@@ -886,11 +932,15 @@ input[type="submit"].button-red:active {
   float: left;
 }
 .header-line .settings-block li a:link,
-.header-line .settings-block li a:visited {
+.header-line .settings-block li a:visited,
+.header-line .settings-block li a:link *,
+.header-line .settings-block li a:visited * {
   text-decoration: none;
 }
 .header-line .settings-block li a:hover,
-.header-line .settings-block li a:active {
+.header-line .settings-block li a:active,
+.header-line .settings-block li a:hover *,
+.header-line .settings-block li a:active * {
   text-decoration: underline;
 }
 .header-line .settings-block li a:link,
@@ -1048,11 +1098,15 @@ input[type="submit"].button-red:active {
   margin-bottom: 75px;
 }
 .middle-block .ask-expert-block a:link,
-.middle-block .ask-expert-block a:visited {
+.middle-block .ask-expert-block a:visited,
+.middle-block .ask-expert-block a:link *,
+.middle-block .ask-expert-block a:visited * {
   text-decoration: none;
 }
 .middle-block .ask-expert-block a:hover,
-.middle-block .ask-expert-block a:active {
+.middle-block .ask-expert-block a:active,
+.middle-block .ask-expert-block a:hover *,
+.middle-block .ask-expert-block a:active * {
   text-decoration: underline;
 }
 .middle-block .ask-expert-block a:link,
@@ -1158,15 +1212,25 @@ ul.breadcrumbs-block li + li:before {
 /**/
 /**/
 /** RightColumn **/
-.right-column,
-.center-column {
+.right-column {
   padding-top: 15px;
 }
-.right-column > .caption-block,
-.center-column > .caption-block {
+.right-column > .caption-block {
   margin-bottom: 20px;
 }
 /** /RightColumn **/
+/**/
+/**/
+/**/
+/**/
+/** CenterColumn **/
+.center-column {
+  padding-top: 15px;
+}
+.center-column > * > .caption-block {
+  margin-bottom: 20px;
+}
+/** /CenterColumn **/
 /**/
 /**/
 /**/
@@ -1205,6 +1269,25 @@ ul.breadcrumbs-block li + li:before {
 /**/
 /**/
 /**/
+/** FooterBlock **/
+.footer-block .copyright {
+  padding-top: 18px;
+  padding-bottom: 28px;
+  border-top: 1px solid #007fb3;
+}
+.footer-block .copyright,
+.footer-block .copyright *,
+.footer-block .copyright a:link,
+.footer-block .copyright a:visited {
+  line-height: 36px;
+  font-family: 'Ubuntu Light';
+  color: #1b1b1b;
+}
+/** /FooterBlock **/
+/**/
+/**/
+/**/
+/**/
 /** StepsBlock **/
 .steps-menu-block {
   width: 168px;
@@ -1224,6 +1307,13 @@ ul.breadcrumbs-block li + li:before {
 /** /StepsBlock **/
 /**/
 /**/
+.full-width-border-block {
+  border: 3px solid #81d1f3;
+  -web-kit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 50px;
+}
 /**/
 /**/
 /** JqueryUi **/

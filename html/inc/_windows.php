@@ -343,58 +343,58 @@
 			</div>
 			<form action="#">
 				<div class="modal-body">
+					<div class="row">
+						<div class="col-xs-10 col-xs-offset-1">
 
-					<div class="col-xs-10 col-xs-offset-1">
-
-						<div class="row">
-							<div class="col-xs-12">
-								Изменительный падеж (Кто? Что?) <span class="red-text">*</span><br/>
-								<input type="text" name="" value="" class="validate[required]">
+							<div class="row">
+								<div class="col-xs-12">
+									Изменительный падеж (Кто? Что?) <span class="red-text">*</span><br/>
+									<input type="text" name="" value="" class="validate[required]">
+								</div>
 							</div>
-						</div>
-						<br/>
+							<br/>
 
-						<div class="row">
-							<div class="col-xs-12">
-								Родительный падеж (Кого? Чего?) <span class="red-text">*</span><br/>
-								<input type="text" name="" value="" class="validate[required]">
+							<div class="row">
+								<div class="col-xs-12">
+									Родительный падеж (Кого? Чего?) <span class="red-text">*</span><br/>
+									<input type="text" name="" value="" class="validate[required]">
+								</div>
 							</div>
-						</div>
-						<br/>
+							<br/>
 
-						<div class="row">
-							<div class="col-xs-12">
-								Дательный падеж (Кому? Чему?) <span class="red-text">*</span><br/>
-								<input type="text" name="" value="" class="validate[required]">
+							<div class="row">
+								<div class="col-xs-12">
+									Дательный падеж (Кому? Чему?) <span class="red-text">*</span><br/>
+									<input type="text" name="" value="" class="validate[required]">
+								</div>
 							</div>
-						</div>
-						<br/>
+							<br/>
 
-						<div class="row">
-							<div class="col-xs-12">
-								Винительный падеж (Кого? Что?) <span class="red-text">*</span><br/>
-								<input type="text" name="" value="" class="validate[required]">
+							<div class="row">
+								<div class="col-xs-12">
+									Винительный падеж (Кого? Что?) <span class="red-text">*</span><br/>
+									<input type="text" name="" value="" class="validate[required]">
+								</div>
 							</div>
-						</div>
-						<br/>
+							<br/>
 
-						<div class="row">
-							<div class="col-xs-12">
-								Творительный падеж (Кем? Чем?) <span class="red-text">*</span><br/>
-								<input type="text" name="" value="" class="validate[required]">
+							<div class="row">
+								<div class="col-xs-12">
+									Творительный падеж (Кем? Чем?) <span class="red-text">*</span><br/>
+									<input type="text" name="" value="" class="validate[required]">
+								</div>
 							</div>
-						</div>
-						<br/>
+							<br/>
 
-						<div class="row">
-							<div class="col-xs-12">
-								Предложный падеж (О ком? О чём?) <span class="red-text">*</span><br/>
-								<input type="text" name="" value="" class="validate[required]">
+							<div class="row">
+								<div class="col-xs-12">
+									Предложный падеж (О ком? О чём?) <span class="red-text">*</span><br/>
+									<input type="text" name="" value="" class="validate[required]">
+								</div>
 							</div>
-						</div>
 
+						</div>
 					</div>
-
 				</div>
 				<div class="modal-footer">
 					<div class="row">

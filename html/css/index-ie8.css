@@ -5,11 +5,15 @@
 /********************* file: mixins *********************/
 /**/
 .u:link,
-.u:visited {
+.u:visited,
+.u:link *,
+.u:visited * {
   text-decoration: none;
 }
 .u:hover,
-.u:active {
+.u:active,
+.u:hover *,
+.u:active * {
   text-decoration: underline;
 }
 .caption {
@@ -23,11 +27,15 @@
   font-family: 'Ubuntu Italic';
 }
 .more-button:link,
-.more-button:visited {
+.more-button:visited,
+.more-button:link *,
+.more-button:visited * {
   text-decoration: none;
 }
 .more-button:hover,
-.more-button:active {
+.more-button:active,
+.more-button:hover *,
+.more-button:active * {
   text-decoration: underline;
 }
 .font-italic,
