@@ -24,11 +24,11 @@
 			 {
 			 name: 'Настройка стилей документации',
 			 fileName: 'doc-styles-settings.php'
-			 },
+			 }*/,
 			 {
 			 name: 'Тарифы и цены',
-			 fileName: 'tariffs.php'
-			 },
+			 fileName: 'page-tariffs.php'
+			 }/*,
 			 {
 			 name: 'Настройка оформления: Приказы/Распоряжения',
 			 fileName: '.php'
