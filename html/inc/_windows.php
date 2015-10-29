@@ -1,5 +1,70 @@
 <!-- Windows -->
 
+<!-- ErrorWindow -->
+<div class="modal fade error-modal" id="error-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<div class="modal-title">Заявка на повторное формирование пакета документов</div>
+			</div>
+			<div class="modal-body">
+
+				<div class="center-text">
+					Выполнение данной операции в демо-режиме невозможно.
+					<br/><br/>
+					Для перехода в расширенную версию сервиса подключитесь по одному из представленных тарифов
+				</div>
+
+			</div>
+			<div class="modal-footer">
+				<div class="pull-right">
+					<button type="button" class="button button-small button-dim-blue" data-dismiss="modal" aria-hidden="true">Закрыть</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /ErrorWindow -->
+
+<!-- InfoSectionWindow -->
+<div class="modal fade" id="info-section-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<div class="modal-title">Информация о разделе «Оперативные мероприятия»</div>
+			</div>
+			<form action="#">
+				<div class="modal-body">
+
+					Данный раздел представляет собой сборник задач, которые могут ежедневно встречаться в деятельности Организации и Администратора информационной безопасности, в частности. <br/><br/>
+					В этом разделе вы можете производить действия по созданию, удалению и редактированию пользователей, ответственных лиц. информационных систем, подразделений, кабинетов в которых осуществляется обработка ПДн. <br/><br/>
+					После вышеуказанных действий сервис автоматически добавит изменения в необходимые документы и предоставит вам соответствующиенормативные акты о внесении изменений. <br/><br/>
+					Также в разделе собраны все необходимые журналы и акты.
+
+				</div>
+				<div class="modal-footer">
+					<div class="row">
+						<div class="col-xs-6 col-xs-offset-3 center-text">
+							<!--
+							<input type="submit" class="button" value="Войти">
+
+							<br/><br/><br/>
+							<a href="#">Регистрация</a>
+							 -->
+						</div>
+						<div class="col-xs-3 pull-right">
+							<button type="button" class="button" data-dismiss="modal" aria-hidden="true">Закрыть</button>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- /InfoSectionWindow -->
+
 <!-- EntryWindow -->
 <div class="modal fade" id="entry-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">

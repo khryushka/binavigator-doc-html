@@ -29,10 +29,10 @@
 			 name: 'Настройка стилей документации',
 			 fileName: 'doc-styles-settings.php'
 			 }*/,
-			 {
-			 name: 'Тарифы и цены',
-			 fileName: 'page-tariffs.php'
-			 }/*,
+			{
+				name: 'Тарифы и цены',
+				fileName: 'page-tariffs.php'
+			}/*,
 			 {
 			 name: 'Настройка оформления: Приказы/Распоряжения',
 			 fileName: '.php'
@@ -146,6 +146,18 @@
 				fileName: 'page-contacts.php'
 			},
 			{
+				name: 'Окно: Внимание!',
+				fileName: '#',
+				click: "",
+				attrs: 'data-toggle="modal" data-target="#error-modal"'
+			},
+			{
+				name: 'Окно: Информация о разделе',
+				fileName: '#',
+				click: "",
+				attrs: 'data-toggle="modal" data-target="#info-section-modal"'
+			},
+			{
 				name: 'Окно: Введите логин и пароль',
 				fileName: '#',
 				click: "",
@@ -178,24 +190,13 @@
 			 name: 'Окно: Заявка на повторное формирование документов',
 			 fileName: '#',
 			 click: "javascript: $('.mask.win2').show(); return false;"
-			 },
-			 {
-			 name: 'Окно: Информация о разделе «Оперативные мероприятия»',
-			 fileName: '#',
-			 click: "javascript: $('.mask.win2').show(); return false;"
 			 }*/,
 			{
 				name: 'Окно: Редактирование падежных форм',
 				fileName: '#',
 				click: "",
 				attrs: 'data-toggle="modal" data-target="#edit-case-modal"'
-			}/*,
-			 {
-			 name: 'Окно: Падежные формы',
-			 fileName: '#',
-			 click: "javascript: $('.mask.win2').show(); return false;",
-			 attrs: 'data-toggle="modal" data-target="#edit-case-modal"'
-			 }*/
+			}
 		);
 		console.log(arMenu);
 		if (arMenu.length > 1) {

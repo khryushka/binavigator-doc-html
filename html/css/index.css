@@ -558,36 +558,67 @@ option {
   font-size: 17px;
 }
 .body,
+.modal,
 .body div,
+.modal div,
 .body h1,
+.modal h1,
 .body h2,
+.modal h2,
 .body h3,
+.modal h3,
 .body h4,
+.modal h4,
 .body h5,
+.modal h5,
 .body h6,
+.modal h6,
 .body p,
+.modal p,
 .body blockquote,
+.modal blockquote,
 .body pre,
+.modal pre,
 .body a,
+.modal a,
 .body dl,
+.modal dl,
 .body dt,
+.modal dt,
 .body dd,
+.modal dd,
 .body ol,
+.modal ol,
 .body ul,
+.modal ul,
 .body li,
+.modal li,
 .body label,
+.modal label,
 .body table,
+.modal table,
 .body caption,
+.modal caption,
 .body tbody,
+.modal tbody,
 .body tfoot,
+.modal tfoot,
 .body thead,
+.modal thead,
 .body tr,
+.modal tr,
 .body th,
+.modal th,
 .body td,
+.modal td,
 .body input,
+.modal input,
 .body textarea,
+.modal textarea,
 .body select,
-.body option {
+.modal select,
+.body option,
+.modal option {
   line-height: 25px;
   font-family: 'Ubuntu Light', 'Ubuntu Regular', 'Arial', 'Calibri', 'Verdana', 'Tahoma', 'Times New Roman';
 }
@@ -1351,7 +1382,10 @@ body {
   padding-right: 0 !important;
 }
 .modal-dialog {
-  width: 700px;
+  width: 650px;
+}
+.modal-dialog.modal-sm {
+  width: 330px;
 }
 .modal-header {
   border-bottom: 0;
@@ -1364,6 +1398,17 @@ body {
 .modal-footer {
   padding-bottom: 30px;
   border-top: 0;
+}
+.error-modal .close {
+  color: #ffffff;
+  text-shadow: 0px 1px 0px #1b1b1b;
+}
+.error-modal .modal-content {
+  background: #cd4545 url('../images/sign-question.png') no-repeat center;
+}
+.error-modal .modal-content,
+.error-modal .modal-content * {
+  color: #ffffff;
 }
 /** /Bootstrap **/
 /**/
