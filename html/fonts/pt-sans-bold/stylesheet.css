@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'PT Sans Bold';
+    src: url('pt-sans-bold.eot');
+    src: url('pt-sans-bold.eot') format('embedded-opentype'),
+         url('pt-sans-bold.woff2') format('woff2'),
+         url('pt-sans-bold.woff') format('woff'),
+         url('pt-sans-bold.ttf') format('truetype'),
+         url('pt-sans-bold.svg#PTSansBold') format('svg');
+}

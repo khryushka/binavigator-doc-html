@@ -1,6 +1,6 @@
 <?
 	header ('Content-Type: text/html; charset=utf-8');
-	include('++');
+	include('functions.php');
 ?>
 <!DOCTYPE html>
 
@@ -47,6 +47,7 @@
 	<?
 		*/
 	?>
+	<link type="text/css" href="fonts/pt-sans-bold/stylesheet.css" rel="stylesheet" />
 	<!-- /Fonts -->
 
 	<!-- Validation -->
