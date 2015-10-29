@@ -122,6 +122,7 @@
 			var $this = $(this);
 			var fileTypes = [];
 			var acceptFileTypes = '';
+			var maxNumberOfFiles = parseInt($this.data('max-number-of-files')) ? $this.data('max-number-of-files') : 100;
 
 			if ($this.hasClass('fileupload-images')) {
 				fileTypes = ['png', 'jpg', 'jpeg', 'gif'];
@@ -139,7 +140,7 @@
 				url: SITE_TEMPLATE_PATH + '/jquery-file-upload/server/php/',
 				maxFileSize: 1024 * 1024,
 				acceptFileTypes: acceptFileTypes,
-				maxNumberOfFiles: 1,
+				maxNumberOfFiles: maxNumberOfFiles,
 				messages: {
 					maxNumberOfFiles: 'Максимальное количество файлов превышено',
 					acceptFileTypes: 'Тип файла не допускается',

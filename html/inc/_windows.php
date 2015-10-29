@@ -1,12 +1,85 @@
 <!-- Windows -->
 
+<!-- SelectHeaderWindow -->
+<div class="modal fade" id="select-header-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<div class="modal-title">Выбор шапки</div>
+			</div>
+			<form id="fileupload" class="fileupload-images" action="#t=<?= time () ?>" method="POST" enctype="multipart/form-data">
+				<div class="modal-body">
+
+					<div class="row">
+						<div class="col-xs-5">
+							Файл шапки документов
+						</div>
+						<div class="col-xs-7">
+							<select name="">
+								<option>Выберите из списка</option>
+								<option value="1">Значение 1</option>
+								<option value="2">Значение 2</option>
+								<option value="3">Значение 3</option>
+							</select>
+
+							<div class="clearfix"></div>
+
+							<!-- The fileinput-button span is used to style the file input field as button -->
+							<span class="button button-green button-small fileinput-button" style="margin-top: 10px;">
+								<i class="glyphicon glyphicon-plus"></i>
+								<span>Добавить файл...</span>
+								<input type="file" name="files[]" multiple>
+							</span>
+
+
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-12 center-text">
+
+
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-12">
+
+							<!-- The table listing the files available for upload/download -->
+							<table role="presentation" class="table table-striped">
+								<tbody class="files"></tbody>
+							</table>
+
+						</div>
+					</div>
+
+				</div>
+				<div class="modal-footer">
+					<div class="row">
+						<div class="col-xs-6 col-xs-offset-3 center-text">
+							<input type="submit" class="button" value="Сохранить">
+						</div>
+						<!--
+						<div class="col-xs-3 pull-right">
+							<button type="button" class="btn btn-default" data-dismiss="modal" aria-hidden="true">Закрыть</button>
+						</div>
+						 -->
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- /SelectHeaderWindow -->
+
 <!-- ErrorWindow -->
 <div class="modal fade error-modal" id="error-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
 	<div class="modal-dialog modal-sm">
 		<div class="modal-content">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<div class="modal-title">Заявка на повторное формирование пакета документов</div>
+				<div class="modal-title">Заявка на повторное формирование пакета документов</div>
 			</div>
 			<div class="modal-body">
 

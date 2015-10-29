@@ -93,7 +93,7 @@
 			<!-- Body -->
 			<div class="body">
 
-				<form id="fileupload" class="fileupload-images" action="#t=<?= time () ?>" method="POST" enctype="multipart/form-data">
+				<form id="fileupload" class="fileupload-images" data-max-number-of-files="1" action="#t=<?= time () ?>" method="POST" enctype="multipart/form-data">
 
 					<div class="row">
 						<div class="col-xs-3 text-right" style="margin: 7px 0;">

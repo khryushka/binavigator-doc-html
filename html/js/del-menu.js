@@ -62,22 +62,6 @@
 			 fileName: '.php'
 			 },
 			 {
-			 name: 'Меню: Меню 1',
-			 fileName: 'menu-1.php'
-			 },
-			 {
-			 name: 'Меню: Меню 2',
-			 fileName: 'menu-2.php'
-			 },
-			 {
-			 name: 'Меню: Меню 3',
-			 fileName: 'menu-3.php'
-			 },
-			 {
-			 name: 'Меню: Меню 4',
-			 fileName: 'menu-4.php'
-			 },
-			 {
 			 name: 'Документооборот',
 			 fileName: '.php'
 			 },
@@ -180,12 +164,13 @@
 				fileName: '#',
 				click: "",
 				attrs: 'data-toggle="modal" data-target="#partnership-modal"'
+			},
+			{
+				name: 'Окно: Выбор шапки документов',
+				fileName: '#',
+				click: "",
+				attrs: 'data-toggle="modal" data-target="#select-header-modal"'
 			}/*,
-			 {
-			 name: 'Окно: Выбор шапки документов',
-			 fileName: '#',
-			 click: "javascript: $('.mask.win2').show(); return false;"
-			 },
 			 {
 			 name: 'Окно: Заявка на повторное формирование документов',
 			 fileName: '#',
@@ -223,7 +208,7 @@
 				top: 0,
 				right: 0,
 				width: '235px',
-				'margin-top': '141px', // 131px
+				'margin-top': '49px', // 131px
 				padding: '11px',
 				border: '1px solid #999',
 				// background: 'rgba(255,111,67,0.6)' // orange
