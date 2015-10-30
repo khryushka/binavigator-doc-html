@@ -39,6 +39,8 @@
 						<div class="col-xs-2">Профессиональный</div>
 					</div>
 
+					<div class="clearfix"></div>
+
 					<table class="table-tariffs">
 						<!--
 						<tr class="row">
@@ -51,59 +53,99 @@
 						 -->
 						<tr class="row">
 							<td class="col-xs-4">Автоматическая генерация пяти базовых документов, разработка комплекса организационных мер</td>
-							<td class="col-xs-2"><div class="tariff-icon n-1"></div></td>
-							<td class="col-xs-2"><div class="tariff-icon n-2"></div></td>
-							<td class="col-xs-2"><div class="tariff-icon n-3"></div></td>
-							<td class="col-xs-2"><div class="tariff-icon n-4"></div></td>
+							<td class="col-xs-2">
+								<div class="tariff-icon n-1"></div>
+							</td>
+							<td class="col-xs-2">
+								<div class="tariff-icon n-2"></div>
+							</td>
+							<td class="col-xs-2">
+								<div class="tariff-icon n-3"></div>
+							</td>
+							<td class="col-xs-2">
+								<div class="tariff-icon n-4"></div>
+							</td>
 						</tr>
 						<tr class="row">
 							<td class="col-xs-4">Консультации по E-mail и доступ к дополнительным материалам</td>
-							<td class="col-xs-2"><div class="tariff-icon n-1"></div></td>
-							<td class="col-xs-2"><div class="tariff-icon n-2"></div></td>
-							<td class="col-xs-2"><div class="tariff-icon n-3"></div></td>
-							<td class="col-xs-2"><div class="tariff-icon n-4"></div></td>
+							<td class="col-xs-2">
+								<div class="tariff-icon n-1"></div>
+							</td>
+							<td class="col-xs-2">
+								<div class="tariff-icon n-2"></div>
+							</td>
+							<td class="col-xs-2">
+								<div class="tariff-icon n-3"></div>
+							</td>
+							<td class="col-xs-2">
+								<div class="tariff-icon n-4"></div>
+							</td>
 						</tr>
 						<tr class="row">
 							<td class="col-xs-4">Индивидуальная разработка комплекта документов</td>
 							<td class="col-xs-2"></td>
-							<td class="col-xs-2"><div class="tariff-icon n-2"></div></td>
-							<td class="col-xs-2"><div class="tariff-icon n-3"></div></td>
-							<td class="col-xs-2"><div class="tariff-icon n-4"></div></td>
+							<td class="col-xs-2">
+								<div class="tariff-icon n-2"></div>
+							</td>
+							<td class="col-xs-2">
+								<div class="tariff-icon n-3"></div>
+							</td>
+							<td class="col-xs-2">
+								<div class="tariff-icon n-4"></div>
+							</td>
 						</tr>
 						<tr class="row">
 							<td class="col-xs-4">Доработка документов при изменении законодательства</td>
 							<td class="col-xs-2"></td>
-							<td class="col-xs-2"><div class="tariff-icon n-2"></div></td>
-							<td class="col-xs-2"><div class="tariff-icon n-3"></div></td>
-							<td class="col-xs-2"><div class="tariff-icon n-4"></div></td>
+							<td class="col-xs-2">
+								<div class="tariff-icon n-2"></div>
+							</td>
+							<td class="col-xs-2">
+								<div class="tariff-icon n-3"></div>
+							</td>
+							<td class="col-xs-2">
+								<div class="tariff-icon n-4"></div>
+							</td>
 						</tr>
 						<tr class="row">
 							<td class="col-xs-4">Разработка технической документации</td>
 							<td class="col-xs-2"></td>
 							<td class="col-xs-2"></td>
-							<td class="col-xs-2"><div class="tariff-icon n-3"></div></td>
-							<td class="col-xs-2"><div class="tariff-icon n-4"></div></td>
+							<td class="col-xs-2">
+								<div class="tariff-icon n-3"></div>
+							</td>
+							<td class="col-xs-2">
+								<div class="tariff-icon n-4"></div>
+							</td>
 						</tr>
 						<tr class="row">
 							<td class="col-xs-4">Подбор средств защиты информации</td>
 							<td class="col-xs-2"></td>
 							<td class="col-xs-2"></td>
-							<td class="col-xs-2"><div class="tariff-icon n-3"></div></td>
-							<td class="col-xs-2"><div class="tariff-icon n-4"></div></td>
+							<td class="col-xs-2">
+								<div class="tariff-icon n-3"></div>
+							</td>
+							<td class="col-xs-2">
+								<div class="tariff-icon n-4"></div>
+							</td>
 						</tr>
 						<tr class="row">
-							<td class="col-xs-4">Консультанты по юридическим и техническим вопросам </td>
+							<td class="col-xs-4">Консультанты по юридическим и техническим вопросам</td>
 							<td class="col-xs-2"></td>
 							<td class="col-xs-2"></td>
 							<td class="col-xs-2"></td>
-							<td class="col-xs-2"><div class="tariff-icon n-4"></div></td>
+							<td class="col-xs-2">
+								<div class="tariff-icon n-4"></div>
+							</td>
 						</tr>
 						<tr class="row">
 							<td class="col-xs-4">Оценка эффективности системы защиты</td>
 							<td class="col-xs-2"></td>
 							<td class="col-xs-2"></td>
 							<td class="col-xs-2"></td>
-							<td class="col-xs-2"><div class="tariff-icon n-4"></div></td>
+							<td class="col-xs-2">
+								<div class="tariff-icon n-4"></div>
+							</td>
 						</tr>
 						<tr class="row height-auto">
 							<td class="col-xs-4">Срок обслуживания</td>
@@ -134,7 +176,6 @@
 
 						<br/>
 					</div>
-
 
 				</div>
 				<!-- /Body -->

@@ -18,6 +18,10 @@
 			 fileName: 'profile.php'
 			 }*/,
 			{
+				name: 'Ответственность',
+				fileName: 'page-responsibility.php'
+			},
+			{
 				name: 'Настройка профиля',
 				fileName: 'page-profile-settings.php'
 			}/*,
@@ -25,10 +29,10 @@
 			 name: 'Настройка стилей документации',
 			 fileName: 'doc-styles-settings.php'
 			 }*/,
-			 {
-			 name: 'Тарифы и цены',
-			 fileName: 'page-tariffs.php'
-			 }/*,
+			{
+				name: 'Тарифы и цены',
+				fileName: 'page-tariffs.php'
+			}/*,
 			 {
 			 name: 'Настройка оформления: Приказы/Распоряжения',
 			 fileName: '.php'
@@ -56,22 +60,6 @@
 			 {
 			 name: 'Сведения конфиденциального характера',
 			 fileName: '.php'
-			 },
-			 {
-			 name: 'Меню: Меню 1',
-			 fileName: 'menu-1.php'
-			 },
-			 {
-			 name: 'Меню: Меню 2',
-			 fileName: 'menu-2.php'
-			 },
-			 {
-			 name: 'Меню: Меню 3',
-			 fileName: 'menu-3.php'
-			 },
-			 {
-			 name: 'Меню: Меню 4',
-			 fileName: 'menu-4.php'
 			 },
 			 {
 			 name: 'Документооборот',
@@ -142,6 +130,18 @@
 				fileName: 'page-contacts.php'
 			},
 			{
+				name: 'Окно: Внимание!',
+				fileName: '#',
+				click: "",
+				attrs: 'data-toggle="modal" data-target="#error-modal"'
+			},
+			{
+				name: 'Окно: Информация о разделе',
+				fileName: '#',
+				click: "",
+				attrs: 'data-toggle="modal" data-target="#info-section-modal"'
+			},
+			{
 				name: 'Окно: Введите логин и пароль',
 				fileName: '#',
 				click: "",
@@ -164,19 +164,15 @@
 				fileName: '#',
 				click: "",
 				attrs: 'data-toggle="modal" data-target="#partnership-modal"'
+			},
+			{
+				name: 'Окно: Выбор шапки документов',
+				fileName: '#',
+				click: "",
+				attrs: 'data-toggle="modal" data-target="#select-header-modal"'
 			}/*,
 			 {
-			 name: 'Окно: Выбор шапки документов',
-			 fileName: '#',
-			 click: "javascript: $('.mask.win2').show(); return false;"
-			 },
-			 {
 			 name: 'Окно: Заявка на повторное формирование документов',
-			 fileName: '#',
-			 click: "javascript: $('.mask.win2').show(); return false;"
-			 },
-			 {
-			 name: 'Окно: Информация о разделе «Оперативные мероприятия»',
 			 fileName: '#',
 			 click: "javascript: $('.mask.win2').show(); return false;"
 			 }*/,
@@ -185,13 +181,7 @@
 				fileName: '#',
 				click: "",
 				attrs: 'data-toggle="modal" data-target="#edit-case-modal"'
-			}/*,
-			 {
-			 name: 'Окно: Падежные формы',
-			 fileName: '#',
-			 click: "javascript: $('.mask.win2').show(); return false;",
-			 attrs: 'data-toggle="modal" data-target="#edit-case-modal"'
-			 }*/
+			}
 		);
 		console.log(arMenu);
 		if (arMenu.length > 1) {

@@ -84,7 +84,7 @@
 			<!-- Body -->
 			<div class="body">
 
-				<form id="fileupload" class="fileupload-png" action="#t=<?= time() ?>" method="POST" enctype="multipart/form-data">
+				<form id="fileupload" class="fileupload-png" data-max-number-of-files="1" action="#t=<?= time() ?>" method="POST" enctype="multipart/form-data">
 
 					Организационно-правовая форма: <span class="red-text">*</span> <br/>
 

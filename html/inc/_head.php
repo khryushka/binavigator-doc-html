@@ -47,6 +47,7 @@
 	<?
 		*/
 	?>
+	<link type="text/css" href="fonts/pt-sans-regular/stylesheet.css" rel="stylesheet"/>
 	<link type="text/css" href="fonts/pt-sans-bold/stylesheet.css" rel="stylesheet"/>
 	<!-- /Fonts -->
 
