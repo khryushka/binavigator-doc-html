@@ -19,45 +19,47 @@
 		<!-- /BreadcrumbsBlock -->
 
 		<div class="clearfix"></div>
+		<div class="row">
 
-		<!-- CenterColumn -->
-		<div class="center-column row">
-			<div class="col-xs-12">
+			<!-- CenterColumn -->
+			<div class="center-column">
+				<div class="col-xs-12">
 
-				<!-- Caption -->
-				<h1 class="caption-block">Текущие документы</h1>
-				<!-- /Caption -->
+					<!-- Caption -->
+					<h1 class="caption-block">Текущие документы</h1>
+					<!-- /Caption -->
 
-				<!-- Body -->
-				<div class="body">
+					<!-- Body -->
+					<div class="body">
 
-					<table class="simple-table">
-						<tr>
-							<th>Наименования и версия</th>
-							<th>ЭП</th>
-							<th>Эксперты</th>
-						</tr>
-						<tr>
-							<td>Наименование...</td>
-							<td>...</td>
-							<td>...</td>
-						</tr>
-						<tr>
-							<td>Наименование...</td>
-							<td>...</td>
-							<td>...</td>
-						</tr>
-					</table>
+						<table class="simple-table">
+							<tr>
+								<th>Наименования и версия</th>
+								<th>ЭП</th>
+								<th>Эксперты</th>
+							</tr>
+							<tr>
+								<td>Наименование...</td>
+								<td>...</td>
+								<td>...</td>
+							</tr>
+							<tr>
+								<td>Наименование...</td>
+								<td>...</td>
+								<td>...</td>
+							</tr>
+						</table>
 
+
+					</div>
+					<!-- /Body -->
 
 				</div>
-				<!-- /Body -->
 
 			</div>
+			<!-- CenterColumn -->
 
 		</div>
-		<!-- CenterColumn -->
-
 	</div>
 </div>
 <!-- /MiddleBlock -->

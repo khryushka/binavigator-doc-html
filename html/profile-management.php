@@ -19,35 +19,37 @@
 		<!-- /BreadcrumbsBlock -->
 
 		<div class="clearfix"></div>
+		<div class="row">
 
-		<!-- Caption -->
-		<h1 class="caption-block">Управление профилем</h1>
-		<!-- /Caption -->
+			<!-- Caption -->
+			<h1 class="caption-block">Управление профилем</h1>
+			<!-- /Caption -->
 
-		<!-- LeftColumn -->
-		<div class="left-column col-xs-8">
+			<!-- LeftColumn -->
+			<div class="left-column col-xs-8">
 
-			<!-- ProfileFormColumn -->
-			<?
-				include('inc/__profile-form-column.php');
-			?>
-			<!-- /ProfileFormColumn -->
+				<!-- ProfileFormColumn -->
+				<?
+					include ('inc/__profile-form-column.php');
+				?>
+				<!-- /ProfileFormColumn -->
+
+			</div>
+			<!-- /LeftColumn -->
+
+			<!-- RightColumn -->
+			<div class="right-column col-xs-4 column-border-left">
+
+				<!-- ProfileInfoColumn -->
+				<?
+					include ('inc/__profile-info-column.php');
+				?>
+				<!-- /ProfileInfoColumn -->
+
+			</div>
+			<!-- /RightColumn -->
 
 		</div>
-		<!-- /LeftColumn -->
-
-		<!-- RightColumn -->
-		<div class="right-column col-xs-4 column-border-left">
-
-			<!-- ProfileInfoColumn -->
-			<?
-				include('inc/__profile-info-column.php');
-			?>
-			<!-- /ProfileInfoColumn -->
-
-		</div>
-		<!-- /RightColumn -->
-
 	</div>
 </div>
 <!-- /MiddleBlock -->

@@ -19,122 +19,130 @@
 		<!-- /BreadcrumbsBlock -->
 
 		<div class="clearfix"></div>
+		<div class="row">
 
-		<!-- CenterColumn -->
-		<div class="center-column row">
-			<div class="col-xs-12">
+			<!-- CenterColumn -->
+			<div class="center-column">
+				<div class="col-xs-12">
 
-				<!-- Caption -->
-				<!--h1 class="caption-block">Ответственность за нарушения и проверки контролирующих органов </h1-->
-				<!-- /Caption -->
+					<!-- Caption -->
+					<!--h1 class="caption-block">Ответственность за нарушения и проверки контролирующих органов </h1-->
+					<!-- /Caption -->
 
-				<!-- Body -->
-				<div class="body">
+					<!-- Body -->
+					<div class="body">
 
-					<div class="caption-pts-block caption-middle-block center-text">Ответственность за нарушения и проверки контролирующих органов</div>
+						<div class="caption-pts-block caption-middle-block center-text">Ответственность за нарушения и проверки контролирующих органов</div>
 
-					За несоблюдение законодательства и нормативных документов, регламентирующих вопросы защиты персональных данных, предусмотрены следующие виды ответственности:
+						За несоблюдение законодательства и нормативных документов, регламентирующих вопросы защиты персональных данных, предусмотрены следующие виды ответственности:
 
-					<div>&nbsp;</div>
-					<div>&nbsp;</div>
+						<div>&nbsp;</div>
+						<div>&nbsp;</div>
 
-					<!-- ResponsibilityList -->
-					<ul class="row li-block" data-container="li-data-block-1">
-						<li class="col-xs-4">
-							<div class="title">Уголовная</div>
-							<div class="img"><img src="images/content/responsibility-01.png" width="283" height="281" alt="Уголовная"></div>
-						</li>
-						<li class="col-xs-4">
-							<div class="title">Административная</div>
-							<div class="img"><img src="images/content/responsibility-02.png" width="283" height="281" alt="Административная"></div>
-						</li>
-						<li class="col-xs-4">
-							<div class="title">Гражданская</div>
-							<div class="img"><img src="images/content/responsibility-03.png" width="283" height="281" alt="Гражданская"></div>
-						</li>
-					</ul>
+						<!-- ResponsibilityList -->
+						<ul class="row li-block" data-container="li-data-block-1">
+							<li class="col-xs-4">
+								<div class="title">Уголовная</div>
+								<div class="img"><img src="images/content/responsibility-01.png" width="283" height="281" alt="Уголовная"></div>
+							</li>
+							<li class="col-xs-4">
+								<div class="title">Административная</div>
+								<div class="img"><img src="images/content/responsibility-02.png" width="283" height="281" alt="Административная"></div>
+							</li>
+							<li class="col-xs-4">
+								<div class="title">Гражданская</div>
+								<div class="img"><img src="images/content/responsibility-03.png" width="283" height="281" alt="Гражданская"></div>
+							</li>
+						</ul>
 
-					<div class="full-width-border-text-block li-data-block li-data-block-1">
-						<div class="li-data">
-							<div class="row"><div class="col-xs-4 corner-white"></div></div>
-							<div class="text-block">
-								<p>Статья 137 Уголовного кодекса РФ. Нарушение неприкоственности частной жизни</p>
+						<div class="full-width-border-text-block li-data-block li-data-block-1">
+							<div class="li-data">
+								<div class="row">
+									<div class="col-xs-4 corner-white"></div>
+								</div>
+								<div class="text-block">
+									<p>Статья 137 Уголовного кодекса РФ. Нарушение неприкоственности частной жизни</p>
 
-								<p>Незаконное собирание или распространение сведений о частной жизни лица, составляющих его личную или семейную тайну, без его согласия либо распространение таких сведений в публичном выступлении, публично демонстрирующемся произведении или в СМИ.</p>
+									<p>Незаконное собирание или распространение сведений о частной жизни лица, составляющих его личную или семейную тайну, без его согласия либо распространение таких сведений в публичном выступлении, публично демонстрирующемся произведении или в СМИ.</p>
 
-								<p>Максимальное наказание за данное преступление предусматривает лишение свободы нарушителя на срок до 4 лет с лишением права определенные должности или заниматься определенной деятельностью на срок до 5 лет.</p>
+									<p>Максимальное наказание за данное преступление предусматривает лишение свободы нарушителя на срок до 4 лет с лишением права определенные должности или заниматься определенной деятельностью на срок до 5 лет.</p>
+								</div>
+							</div>
+							<div class="li-data">
+								<div class="row">
+									<div class="col-xs-4 col-xs-offset-4 corner-white"></div>
+								</div>
+								<div class="text-block">
+									<p>Статья 137 Уголовного кодекса РФ</p>
+
+									<p>Незаконное собирание или распространение сведений о частной жизни лица, составляющих его личную или семейную тайну, без его согласия либо распространение таких сведений в публичном выступлении, публично демонстрирующемся произведении или в СМИ.</p>
+
+									<p>Максимальное наказание за данное преступление предусматривает лишение свободы нарушителя на срок до 4 лет с лишением права определенные должности или заниматься определенной деятельностью на срок до 5 лет.</p>
+								</div>
+							</div>
+							<div class="li-data">
+								<div class="row">
+									<div class="col-xs-4 col-xs-offset-8 corner-white"></div>
+								</div>
+								<div class="text-block">
+									<p>Статья 137</p>
+
+									<p>Незаконное собирание или распространение сведений о частной жизни лица, составляющих его личную или семейную тайну, без его согласия либо распространение таких сведений в публичном выступлении, публично демонстрирующемся произведении или в СМИ.</p>
+
+									<p>Максимальное наказание за данное преступление предусматривает лишение свободы нарушителя на срок до 4 лет с лишением права определенные должности или заниматься определенной деятельностью на срок до 5 лет.</p>
+								</div>
 							</div>
 						</div>
-						<div class="li-data">
-							<div class="row"><div class="col-xs-4 col-xs-offset-4 corner-white"></div></div>
-							<div class="text-block">
-								<p>Статья 137 Уголовного кодекса РФ</p>
+						<div>&nbsp;</div>
+						<div>&nbsp;</div>
+						<!-- /ResponsibilityList -->
 
-								<p>Незаконное собирание или распространение сведений о частной жизни лица, составляющих его личную или семейную тайну, без его согласия либо распространение таких сведений в публичном выступлении, публично демонстрирующемся произведении или в СМИ.</p>
+						<!-- ControlAndSupervision -->
+						<div class="caption-pts-block caption-big-block center-text">Контроль и надзор</div>
 
-								<p>Максимальное наказание за данное преступление предусматривает лишение свободы нарушителя на срок до 4 лет с лишением права определенные должности или заниматься определенной деятельностью на срок до 5 лет.</p>
-							</div>
-						</div>
-						<div class="li-data">
-							<div class="row"><div class="col-xs-4 col-xs-offset-8 corner-white"></div></div>
-							<div class="text-block">
-								<p>Статья 137</p>
-
-								<p>Незаконное собирание или распространение сведений о частной жизни лица, составляющих его личную или семейную тайну, без его согласия либо распространение таких сведений в публичном выступлении, публично демонстрирующемся произведении или в СМИ.</p>
-
-								<p>Максимальное наказание за данное преступление предусматривает лишение свободы нарушителя на срок до 4 лет с лишением права определенные должности или заниматься определенной деятельностью на срок до 5 лет.</p>
-							</div>
-						</div>
-					</div>
-					<div>&nbsp;</div>
-					<div>&nbsp;</div>
-					<!-- /ResponsibilityList -->
-
-					<!-- ControlAndSupervision -->
-					<div class="caption-pts-block caption-big-block center-text">Контроль и надзор</div>
-
-					<ul class="row li-block">
-						<li class="col-xs-4">
-							<div class="img"><img src="images/content/control-01.png" width="283" height="281" alt=""></div>
-							<div class="title">Роскомнадзор</div>
-							<div class="desc">Обеспечение контроля и надзора за соответствием обработки персональных данных требования законодательства и подзаконных актов возлагается на Федеральную службу по надзору в сфере связи, информационных технологии и массовых коммуникаций</div>
-						</li>
-						<li class="col-xs-4">
-							<div class="img"><img src="images/content/control-02.png" width="283" height="281" alt=""></div>
-							<div class="title">Федеральная служба <br/>по техническому и экспортному контролю</div>
-							<div class="desc">Полномочия по контролю за выполнением технических и организационных мер по защите персональных данных, установленных законодательством, возлагаются на Федеральную службу по технической и экспортному контролю (в части технической защите информации)</div>
-						</li>
-						<li class="col-xs-4">
-							<div class="img"><img src="images/content/control-03.png" width="283" height="281" alt=""></div>
-							<div class="title">Федеральная служба безопасности</div>
-							<div class="desc">Полномочия по контролю за выполнением техническихи организационных мер по защите персональных данных, установленных законодательством, возлагаются на Федеральную службу безопасности (в части криптографической защиты)</div>
-						</li>
-					</ul>
-					<br/><br/>
-					<!-- /ControlAndSupervision -->
-
-					<!-- BigButtonBlock -->
-					<div class="full-width-border-block center-text">
-						<br/>
-
-						<div class="caption-big-bold-block">Начать работу прямо сейчас</div>
-
+						<ul class="row li-block">
+							<li class="col-xs-4">
+								<div class="img"><img src="images/content/control-01.png" width="283" height="281" alt=""></div>
+								<div class="title">Роскомнадзор</div>
+								<div class="desc">Обеспечение контроля и надзора за соответствием обработки персональных данных требования законодательства и подзаконных актов возлагается на Федеральную службу по надзору в сфере связи, информационных технологии и массовых коммуникаций</div>
+							</li>
+							<li class="col-xs-4">
+								<div class="img"><img src="images/content/control-02.png" width="283" height="281" alt=""></div>
+								<div class="title">Федеральная служба <br/>по техническому и экспортному контролю</div>
+								<div class="desc">Полномочия по контролю за выполнением технических и организационных мер по защите персональных данных, установленных законодательством, возлагаются на Федеральную службу по технической и экспортному контролю (в части технической защите информации)</div>
+							</li>
+							<li class="col-xs-4">
+								<div class="img"><img src="images/content/control-03.png" width="283" height="281" alt=""></div>
+								<div class="title">Федеральная служба безопасности</div>
+								<div class="desc">Полномочия по контролю за выполнением техническихи организационных мер по защите персональных данных, установленных законодательством, возлагаются на Федеральную службу безопасности (в части криптографической защиты)</div>
+							</li>
+						</ul>
 						<br/><br/>
+						<!-- /ControlAndSupervision -->
 
-						<a href="#" class="button button-big" data-toggle="modal" data-target="#feedback-modal">Демо-доступ</a>
+						<!-- BigButtonBlock -->
+						<div class="full-width-border-block center-text">
+							<br/>
 
-						<br/>
+							<div class="caption-big-bold-block">Начать работу прямо сейчас</div>
+
+							<br/><br/>
+
+							<a href="#" class="button button-big" data-toggle="modal" data-target="#feedback-modal">Демо-доступ</a>
+
+							<br/>
+						</div>
+						<!-- /BigButtonBlock -->
+
 					</div>
-					<!-- /BigButtonBlock -->
+					<!-- /Body -->
 
 				</div>
-				<!-- /Body -->
 
 			</div>
+			<!-- CenterColumn -->
 
 		</div>
-		<!-- CenterColumn -->
-
 	</div>
 </div>
 <!-- /MiddleBlock -->

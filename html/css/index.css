@@ -1304,7 +1304,7 @@ ul.breadcrumbs-block li + li:before {
 /**/
 /** LeftMenu **/
 .left-menu {
-  width: 254px;
+  max-width: 254px;
   margin: 0 auto;
   border: 2px solid #00a1e6;
   -web-kit-border-radius: 5px;
