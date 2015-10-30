@@ -38,7 +38,8 @@
 					<div>&nbsp;</div>
 					<div>&nbsp;</div>
 
-					<ul class="row responsibility-list">
+					<!-- ResponsibilityList -->
+					<ul class="row li-block" data-container="li-data-block-1">
 						<li class="col-xs-4">
 							<div class="title">Уголовная</div>
 							<div class="img"><img src="images/content/responsibility-01.png" width="283" height="281" alt="Уголовная"></div>
@@ -53,9 +54,9 @@
 						</li>
 					</ul>
 
-					<div class="full-width-border-text-block responsibility-data-block">
-						<div class="responsibility-data">
-							<div class="col-xs-4 corner-white"></div>
+					<div class="full-width-border-text-block li-data-block li-data-block-1">
+						<div class="li-data">
+							<div class="row"><div class="col-xs-4 corner-white"></div></div>
 							<div class="text-block">
 								<p>Статья 137 Уголовного кодекса РФ. Нарушение неприкоственности частной жизни</p>
 
@@ -64,8 +65,8 @@
 								<p>Максимальное наказание за данное преступление предусматривает лишение свободы нарушителя на срок до 4 лет с лишением права определенные должности или заниматься определенной деятельностью на срок до 5 лет.</p>
 							</div>
 						</div>
-						<div class="responsibility-data">
-							<div class="col-xs-4 col-xs-offset-4 corner-white"></div>
+						<div class="li-data">
+							<div class="row"><div class="col-xs-4 col-xs-offset-4 corner-white"></div></div>
 							<div class="text-block">
 								<p>Статья 137 Уголовного кодекса РФ</p>
 
@@ -74,8 +75,8 @@
 								<p>Максимальное наказание за данное преступление предусматривает лишение свободы нарушителя на срок до 4 лет с лишением права определенные должности или заниматься определенной деятельностью на срок до 5 лет.</p>
 							</div>
 						</div>
-						<div class="responsibility-data">
-							<div class="col-xs-4 col-xs-offset-8 corner-white"></div>
+						<div class="li-data">
+							<div class="row"><div class="col-xs-4 col-xs-offset-8 corner-white"></div></div>
 							<div class="text-block">
 								<p>Статья 137</p>
 
@@ -85,13 +86,14 @@
 							</div>
 						</div>
 					</div>
-
 					<div>&nbsp;</div>
 					<div>&nbsp;</div>
+					<!-- /ResponsibilityList -->
 
+					<!-- ControlAndSupervision -->
 					<div class="caption-pts-block caption-big-block center-text">Контроль и надзор</div>
 
-					<ul class="row control-list">
+					<ul class="row li-block">
 						<li class="col-xs-4">
 							<div class="img"><img src="images/content/control-01.png" width="283" height="281" alt=""></div>
 							<div class="title">Роскомнадзор</div>
@@ -108,9 +110,8 @@
 							<div class="desc">Полномочия по контролю за выполнением техническихи организационных мер по защите персональных данных, установленных законодательством, возлагаются на Федеральную службу безопасности (в части криптографической защиты)</div>
 						</li>
 					</ul>
-
-
 					<br/><br/>
+					<!-- /ControlAndSupervision -->
 
 					<!-- BigButtonBlock -->
 					<div class="full-width-border-block center-text">

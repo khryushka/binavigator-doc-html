@@ -15,6 +15,7 @@
 
 	<!-- Bootstrap -->
 	<link type="text/css" href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+	<link type="text/css" href="bootstrap/css/bootstrap-col-15.css" rel="stylesheet"/>
 	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 	<?
 		/*

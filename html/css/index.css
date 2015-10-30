@@ -557,67 +557,67 @@ option {
   color: #000000;
   font-size: 17px;
 }
-.body,
+.middle-block,
 .modal,
-.body div,
+.middle-block div,
 .modal div,
-.body h1,
+.middle-block h1,
 .modal h1,
-.body h2,
+.middle-block h2,
 .modal h2,
-.body h3,
+.middle-block h3,
 .modal h3,
-.body h4,
+.middle-block h4,
 .modal h4,
-.body h5,
+.middle-block h5,
 .modal h5,
-.body h6,
+.middle-block h6,
 .modal h6,
-.body p,
+.middle-block p,
 .modal p,
-.body blockquote,
+.middle-block blockquote,
 .modal blockquote,
-.body pre,
+.middle-block pre,
 .modal pre,
-.body a,
+.middle-block a,
 .modal a,
-.body dl,
+.middle-block dl,
 .modal dl,
-.body dt,
+.middle-block dt,
 .modal dt,
-.body dd,
+.middle-block dd,
 .modal dd,
-.body ol,
+.middle-block ol,
 .modal ol,
-.body ul,
+.middle-block ul,
 .modal ul,
-.body li,
+.middle-block li,
 .modal li,
-.body label,
+.middle-block label,
 .modal label,
-.body table,
+.middle-block table,
 .modal table,
-.body caption,
+.middle-block caption,
 .modal caption,
-.body tbody,
+.middle-block tbody,
 .modal tbody,
-.body tfoot,
+.middle-block tfoot,
 .modal tfoot,
-.body thead,
+.middle-block thead,
 .modal thead,
-.body tr,
+.middle-block tr,
 .modal tr,
-.body th,
+.middle-block th,
 .modal th,
-.body td,
+.middle-block td,
 .modal td,
-.body input,
+.middle-block input,
 .modal input,
-.body textarea,
+.middle-block textarea,
 .modal textarea,
-.body select,
+.middle-block select,
 .modal select,
-.body option,
+.middle-block option,
 .modal option {
   line-height: 25px;
   font-family: 'Ubuntu Light', 'Ubuntu Regular', 'Arial', 'Calibri', 'Verdana', 'Tahoma', 'Times New Roman';
@@ -637,8 +637,8 @@ i,
 .regular-text {
   font-family: 'Ubuntu Regular' !important;
 }
-.body i,
-.body .italic-text {
+.middle-block i,
+.middle-block .italic-text {
   font-family: 'Ubuntu Light Italic';
 }
 a:link,
@@ -737,9 +737,6 @@ textarea {
 .micro-text {
   font-size: 12px;
 }
-.big-text {
-  font-size: 21px;
-}
 .light-text {
   font-family: 'Ubuntu Light';
 }
@@ -748,7 +745,18 @@ a.red-text:link,
 a.red-text:visited {
   color: #ff000f;
 }
+.caption-text,
+.caption-text * {
+  text-align: center;
+  font-family: 'Ubuntu Regular';
+  font-size: 21px;
+}
 .caption-block {
+  margin-bottom: 1.5em;
+}
+.caption-block,
+.caption-block * {
+  text-align: center;
   font-family: 'Ubuntu Regular';
   font-size: 21px;
 }
@@ -784,6 +792,18 @@ a.red-text:visited {
   text-align: center;
   vertical-align: middle;
 }
+/** LinkBlock **/
+.link-block {
+  margin-bottom: 1.5em;
+  padding-top: 15px;
+}
+.link-block,
+.link-block * {
+  text-align: center;
+  font-family: 'Ubuntu Regular';
+  font-size: 21px;
+}
+/** /LinkBlock **/
 /** Icons **/
 .question-icon.icon-32x32 {
   background-position: 0 1px;
@@ -1138,14 +1158,21 @@ input[type="submit"].button-red:active {
 }
 .middle-block .ask-expert-block a:link,
 .middle-block .ask-expert-block a:visited {
+  margin-bottom: 1.5em;
   float: right;
   display: block;
   min-height: 22px;
   padding: 0 30px 0 30px;
   margin: 28px 30px 0 0;
+  background: url('../images/icons/question-ring-red.png') no-repeat center right;
+}
+.middle-block .ask-expert-block a:link,
+.middle-block .ask-expert-block a:visited,
+.middle-block .ask-expert-block a:link *,
+.middle-block .ask-expert-block a:visited * {
+  text-align: center;
   font-family: 'Ubuntu Regular';
   font-size: 21px;
-  background: url('../images/icons/question-ring-red.png') no-repeat center right;
 }
 /** /MiddleBlock **/
 /**/
@@ -1174,7 +1201,6 @@ ul.breadcrumbs-block li + li:before {
 }
 .left-column > .caption-block {
   text-align: center;
-  margin-bottom: 25px;
 }
 .left-column .frame-block {
   width: 254px;
@@ -1199,6 +1225,7 @@ ul.breadcrumbs-block li + li:before {
   border-radius: 5px;
   border-color: #007fb3;
   padding: 21px;
+  margin-top: 3em;
   text-align: center;
 }
 .left-column .doc-block.frame-dark-blue {
@@ -1219,6 +1246,7 @@ ul.breadcrumbs-block li + li:before {
   border-radius: 5px;
   border-color: #7d8083;
   padding: 11px 0 11px 11px;
+  margin-top: 3em;
 }
 .left-column .doc-counter-block.frame-dark-blue {
   border-color: #007fb3;
@@ -1230,20 +1258,20 @@ ul.breadcrumbs-block li + li:before {
 .left-column .doc-counter-block * {
   font-family: 'Ubuntu Light';
 }
-.left-column.left-column-border-right {
-  border-right: 2px solid #00a1e6;
-}
 /** /LeftColumn **/
 /**/
 /**/
+.column-border-right {
+  border-right: 2px solid #00a1e6;
+}
+.column-border-left {
+  border-left: 2px solid #00a1e6;
+}
 /**/
 /**/
 /** RightColumn **/
 .right-column {
   padding-top: 15px;
-}
-.right-column > .caption-block {
-  margin-bottom: 20px;
 }
 /** /RightColumn **/
 /**/
@@ -1253,9 +1281,6 @@ ul.breadcrumbs-block li + li:before {
 /** CenterColumn **/
 .center-column {
   padding-top: 15px;
-}
-.center-column > * > .caption-block {
-  margin-bottom: 20px;
 }
 /** /CenterColumn **/
 /**/
@@ -1347,6 +1372,7 @@ ul.breadcrumbs-block li + li:before {
   -moz-border-radius: 3px;
   border-radius: 3px;
   padding: 20px;
+  margin: 10px 0;
 }
 /**/
 /**/
@@ -1387,16 +1413,26 @@ body {
 .modal-dialog.modal-sm {
   width: 330px;
 }
-.modal-header {
+.modal-dialog .modal-header {
   border-bottom: 0;
 }
-.modal-title {
-  font-family: 'Ubuntu Regular';
-  font-size: 21px;
+.modal-dialog .modal-title {
+  margin-bottom: 1.5em;
   text-align: center;
 }
-.modal-footer {
+.modal-dialog .modal-title,
+.modal-dialog .modal-title * {
+  text-align: center;
+  font-family: 'Ubuntu Regular';
+  font-size: 21px;
+}
+.modal-dialog .modal-body {
+  padding: 15px 30px;
+}
+.modal-dialog .modal-footer {
+  padding-right: 15px;
   padding-bottom: 30px;
+  padding-left: 15px;
   border-top: 0;
 }
 .error-modal .close {
@@ -1622,56 +1658,58 @@ label.error {
   background-position: 0 -96px;
 }
 /** /Contacts **/
-/** Responsibility **/
-.responsibility-list > li {
+/** ListBllock **/
+.li-block > li {
   cursor: pointer;
 }
-.responsibility-list .title {
+.li-block .title {
   font-size: 26px;
   line-height: 33.8px !important;
   margin-bottom: 26px;
   font-family: 'PT Sans Regular' !important;
   text-align: center;
+  height: 100px;
   margin-bottom: 29px;
 }
-.responsibility-list .img {
+.li-block .img {
   margin: 0 auto;
 }
-.responsibility-data-block {
+.li-block.li-block-small .img {
+  margin: 0 auto 20px auto;
+}
+.li-block.li-block-small .title {
+  font-size: 17px;
+  line-height: 25px !important;
+  height: 50px;
+  margin-bottom: 25px;
+}
+.li-data-block {
   margin-top: 60px;
   padding: 0;
 }
-.responsibility-data-block .responsibility-data {
+.li-data-block .li-data {
   display: none;
 }
-.responsibility-data-block .responsibility-data:first-child {
+.li-data-block .li-data:first-child {
   display: block;
 }
-.responsibility-data-block .responsibility-data .corner-white {
+.li-data-block .li-data .corner-white {
   margin-top: -34px;
   float: none;
   height: 34px;
   background: url('../images/corner-white-up.png') no-repeat center;
 }
-.responsibility-data-block .responsibility-data .corner-white:before,
-.responsibility-data-block .responsibility-data .corner-white:after {
+.li-data-block .li-data .corner-white:before,
+.li-data-block .li-data .corner-white:after {
   content: " ";
   display: table;
 }
-.responsibility-data-block .responsibility-data .corner-white:after {
+.li-data-block .li-data .corner-white:after {
   clear: both;
 }
-.responsibility-data-block .responsibility-data .text-block {
+.li-data-block .li-data .text-block {
   padding: 20px;
 }
-.control-list .img {
-  margin: 0 auto 20px auto;
-}
-.control-list .title {
-  font-family: 'Ubuntu Regular';
-  font-size: 21px;
-  text-align: center;
-  height: 75px;
-  margin-bottom: 25px;
-}
-/** /Responsibility **/
+/** /ListBlock **/
+/** Profile **/
+/** Profile **/

@@ -348,13 +348,18 @@
 		/** /фокус на первый элемент при открытии формы **/
 
 		/** responsibility **/
-		$('.responsibility-list li').each(function (i) {
+		$('.li-block').each(function () {
 			var $this = $(this);
-			$this.on('mouseover click', function () {
-				$('.responsibility-data').hide();
-				$('.responsibility-data').eq(i).show();
-			});
-		});
+			if ($this.data('container')) {
+				$this.find('li').each(function (i) {
+					var li = $(this);
+					li.on('mouseover click', function () {
+						$('.li-data').hide();
+						$('.li-data').eq(i).show();
+					});
+				});
+			}
+		})
 		/** /responsibility **/
 
 	});
