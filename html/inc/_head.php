@@ -59,10 +59,10 @@
 	<script src="validation/js/jquery.validationEngine.js" type="text/javascript" charset="utf-8"></script>
 	<!-- /Validation -->
 
+	<!-- Sliders -->
 	<?
 		/*
 	?>
-	<!-- Sliders -->
 	<script type="text/javascript" src="sliders/carouFredSel/js/jquery.ba-throttle-debounce.min.js"></script>
 	<script type="text/javascript" src="sliders/carouFredSel/js/jquery.carouFredSel-6.2.1-packed.js"></script>
 	<script type="text/javascript" src="sliders/carouFredSel/js/jquery.touchSwipe.min.js"></script>
@@ -71,10 +71,14 @@
 
 	<link type="text/css" href="sliders/jcarousel/css/jcarousel.skin.css" rel="stylesheet"/>
 	<script type="text/javascript" src="sliders/jcarousel/js/jquery.jcarousel.min.js"></script>
-	<!-- /Sliders -->
+
 	<?
 		*/
 	?>
+	<link type="text/css" href="sliders/owl-carousel/css/owl.carousel.css" rel="stylesheet"/>
+	<link type="text/css" href="sliders/owl-carousel/css/owl.theme.default.min.css" rel="stylesheet"/>
+	<script type="text/javascript" src="sliders/owl-carousel/js/owl.carousel.min.js"></script>
+	<!-- /Sliders -->
 	<?
 		/*
 	?>

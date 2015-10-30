@@ -6,6 +6,40 @@
 		});
 		/**  /hr **/
 
+		/** BigSlider **/
+		$('.owl-carousel').owlCarousel({
+			loop: true,
+			margin: 0,
+			responsiveClass: true,
+			autoplay: true,
+			autoplayTimeout: 3000,
+			stopOnHover: true,
+			transitionStyle: 'fade',
+			transition: 'fade',
+			easing: 'fade',
+
+			responsive: {
+				0: {
+					items: 1,
+					nav: true,
+					fallbackEasing: 'linear'
+				}
+				/*,
+				 600: {
+				 items: 3,
+				 nav: false
+				 },
+				 1000: {
+				 items: 5,
+				 nav: true,
+				 loop: false,
+				 margin: 20
+				 }
+				 */
+			}
+		});
+		/** /BigSlider **/
+
 		/** FormStyler **/
 		$('.middle-block input[type=checkbox], .middle-block input[type=radio], .middle-block select, .modal input[type=checkbox], .modal input[type=radio], .modal select').styler({
 			selectSearch: true
