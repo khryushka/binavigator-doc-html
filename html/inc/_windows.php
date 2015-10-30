@@ -183,7 +183,7 @@
 
 					<div class="row">
 						<div class="col-xs-4 text-right" style="margin: 7px 0;">
-							ЄП:
+							ЭП:
 						</div>
 						<div class="col-xs-6">
 							<select name="">
@@ -315,7 +315,7 @@
 				<div class="modal-body">
 
 					<div class="row">
-						<div class="col-xs-5 text-right" style="margin: 7px 0;">
+						<div class="col-xs-6 text-right" style="margin: 7px 0;">
 							Наименование организации <span class="red-text">*</span>:
 						</div>
 						<div class="col-xs-6">
@@ -324,7 +324,7 @@
 					</div>
 
 					<div class="row">
-						<div class="col-xs-5 text-right" style="margin: 7px 0;">
+						<div class="col-xs-6 text-right" style="margin: 7px 0;">
 							ИНН <span class="red-text">*</span>:
 						</div>
 						<div class="col-xs-6">
@@ -333,7 +333,7 @@
 					</div>
 
 					<div class="row">
-						<div class="col-xs-5 text-right" style="margin: 7px 0;">
+						<div class="col-xs-6 text-right" style="margin: 7px 0;">
 							ФИО <span class="red-text">*</span>:
 						</div>
 						<div class="col-xs-6">
@@ -342,7 +342,7 @@
 					</div>
 
 					<div class="row">
-						<div class="col-xs-5 text-right" style="margin: 7px 0;">
+						<div class="col-xs-6 text-right" style="margin: 7px 0;">
 							Город <span class="red-text">*</span>:
 						</div>
 						<div class="col-xs-6">
@@ -351,7 +351,7 @@
 					</div>
 
 					<div class="row">
-						<div class="col-xs-5 text-right" style="margin: 7px 0;">
+						<div class="col-xs-6 text-right" style="margin: 7px 0;">
 							E-mail <span class="red-text">*</span>:
 						</div>
 						<div class="col-xs-6">
@@ -360,7 +360,7 @@
 					</div>
 
 					<div class="row">
-						<div class="col-xs-5 text-right" style="margin: 7px 0;">
+						<div class="col-xs-6 text-right" style="margin: 7px 0;">
 							Телефон <span class="red-text">*</span>:
 						</div>
 						<div class="col-xs-6">
@@ -369,7 +369,7 @@
 					</div>
 
 					<div class="row">
-						<div class="col-xs-5 text-right" style="margin: 7px 0;">
+						<div class="col-xs-6 text-right" style="margin: 7px 0;">
 							Комментарий <span class="red-text">*</span>:
 						</div>
 						<div class="col-xs-6">

@@ -15,7 +15,7 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, dl, dt, dd, ol, 
 	font-size: 17px;
 }
 
-.body, .modal {
+.middle-block, .modal {
 	&, div, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, dl, dt, dd, ol, ul, li, label, table, caption, tbody, tfoot, thead, tr, th, td, input, textarea, select, option {
 		line-height: 25px;
 		font-family: @fontL, @font, 'Arial', 'Calibri', 'Verdana', 'Tahoma', 'Times New Roman';
@@ -38,7 +38,7 @@ i, .italic-text {
 	font-family: @font !important;
 }
 
-.body {
+.middle-block {
 	i, .italic-text {
 		font-family: @fontLI;
 	}
@@ -126,10 +126,6 @@ textarea {
 	font-size: 12px;
 }
 
-.big-text {
-	font-size: 21px;
-}
-
 .light-text {
 	font-family: @fontL;
 }
@@ -138,9 +134,17 @@ textarea {
 	color: @red-color;
 }
 
+.caption-text {
+	&, * {
+		text-align: center;
+		font-family: @font;
+		font-size: 21px;
+	}
+}
+
 .caption-block {
-	font-family: @font;
-	font-size: 21px;
+	.caption-text;
+	margin-bottom: 1.5em;
 }
 
 .caption-big-bold-block {
@@ -178,6 +182,15 @@ textarea {
 	text-align: center;
 	vertical-align: middle;
 }
+
+/** LinkBlock **/
+.link-block {
+	.caption-block;
+
+	padding-top: 15px;
+}
+
+/** /LinkBlock **/
 
 /** Icons **/
 .question-icon.icon-32x32 {
@@ -542,12 +555,13 @@ textarea {
 		a {
 			.u;
 			&:link, &:visited {
+				.caption-block;
+
 				float: right;
 				display: block;
 				min-height: 22px;
 				padding: 0 30px 0 30px;
 				margin: 28px 30px 0 0;
-				.caption-block;
 				background: url('../images/icons/question-ring-red.png') no-repeat center right;
 			}
 			&:hover, &:active {
@@ -592,7 +606,6 @@ ul.breadcrumbs-block {
 
 	> .caption-block {
 		text-align: center;
-		margin-bottom: 25px;
 	}
 
 	// LeftColumnFrames
@@ -614,6 +627,7 @@ ul.breadcrumbs-block {
 		.frame-block;
 		.frame-dark-blue;
 		padding: 21px;
+		margin-top: 3em;
 		text-align: center;
 
 		.caption-block {
@@ -625,6 +639,7 @@ ul.breadcrumbs-block {
 		.frame-block;
 		.frame-gray;
 		padding: 11px 0 11px 11px;
+		margin-top: 3em;
 
 		&, * {
 			font-family: @fontL;
@@ -632,24 +647,25 @@ ul.breadcrumbs-block {
 	}
 	// /LeftColumnFrames
 
-	&.left-column-border-right {
-		border-right: 2px solid @blue-color;
-	}
 }
 
 /** /LeftColumn **/
 /**/
 /**/
 
+.column-border-right {
+	border-right: 2px solid @blue-color;
+}
+
+.column-border-left {
+	border-left: 2px solid @blue-color;
+}
+
 /**/
 /**/
 /** RightColumn **/
 .right-column {
 	padding-top: 15px;
-
-	> .caption-block {
-		margin-bottom: 20px;
-	}
 
 	// Body
 	.body {
@@ -667,10 +683,6 @@ ul.breadcrumbs-block {
 /** CenterColumn **/
 .center-column {
 	padding-top: 15px;
-
-	> * > .caption-block {
-		margin-bottom: 20px;
-	}
 
 	// Body
 	.body {
@@ -837,20 +849,27 @@ body {
 	&.modal-sm {
 		width: 330px;
 	}
-}
 
-.modal-header {
-	border-bottom: 0;
-}
+	.modal-header {
+		border-bottom: 0;
+	}
 
-.modal-title {
-	.caption-block;
-	.center-text;
-}
+	.modal-title {
+		.caption-block;
+		.center-text;
+	}
 
-.modal-footer {
-	padding-bottom: 30px;
-	border-top: 0;
+	.modal-body {
+		padding: 15px 30px;
+	}
+
+	.modal-footer {
+		padding-right: 15px;
+		padding-bottom: 30px;
+		padding-left: 15px;
+		border-top: 0;
+	}
+
 }
 
 .error-modal {
@@ -1156,3 +1175,7 @@ label.error {
 }
 
 /** /Responsibility **/
+
+/** Profile **/
+
+/** Profile **/

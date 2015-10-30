@@ -7,13 +7,13 @@
 		/**  /hr **/
 
 		/** FormStyler **/
-		$('.body input[type=checkbox], .body input[type=radio], .body select').styler({
+		$('.middle-block input[type=checkbox], .middle-block input[type=radio], .middle-block select, .modal input[type=checkbox], .modal input[type=radio], .modal select').styler({
 			selectSearch: true
 		});
 		/** /FormStyler **/
 
 		/** Tooltip **/
-		$('.body [title]').tooltip();
+		$('.middle-block [title]').tooltip();
 		/** /Tooltip **/
 
 		/** pop-up-menu **/

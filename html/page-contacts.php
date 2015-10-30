@@ -72,6 +72,7 @@
 
 					<br/><br/>
 
+					<!-- BigButtonBlock -->
 					<div class="full-width-border-block center-text">
 						<br/>
 
@@ -83,7 +84,7 @@
 
 						<br/>
 					</div>
-
+					<!-- /BigButtonBlock -->
 
 				</div>
 				<!-- /Body -->
