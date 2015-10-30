@@ -208,7 +208,7 @@
 				top: 0,
 				right: 0,
 				width: '235px',
-				'margin-top': '141px', // 131px
+				'margin-top': '49px', // 131px
 				padding: '11px',
 				border: '1px solid #999',
 				// background: 'rgba(255,111,67,0.6)' // orange

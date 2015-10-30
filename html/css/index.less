@@ -4,7 +4,6 @@
 @import "static.less";
 @import "skin.less";
 @import "bitrix.less";
-@import "pages.less";
 
 /**/
 /********************* file: index *********************/
@@ -16,7 +15,7 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, dl, dt, dd, ol, 
 	font-size: 17px;
 }
 
-.body {
+.body, .modal {
 	&, div, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, dl, dt, dd, ol, ul, li, label, table, caption, tbody, tfoot, thead, tr, th, td, input, textarea, select, option {
 		line-height: 25px;
 		font-family: @fontL, @font, 'Arial', 'Calibri', 'Verdana', 'Tahoma', 'Times New Roman';
@@ -148,6 +147,26 @@ textarea {
 	font-family: @fontPtsB !important;
 	font-size: 40px;
 	line-height: 50px !important;
+}
+
+.caption-middle-block {
+	font-size: 26px;
+	line-height: 26*1.3px !important;
+	margin-bottom: 26px;
+}
+
+.caption-big-block {
+	font-size: 40px;
+	line-height: 40*1.3px !important;
+	margin-bottom: 40px;
+}
+
+.caption-pts-block {
+	font-family: @fontPts !important;
+}
+
+.caption-pts-bold-block {
+	font-family: @fontPtsB !important;
 }
 
 .avatar-big-block {
@@ -763,9 +782,15 @@ ul.breadcrumbs-block {
 /**/
 
 .full-width-border-block {
-	border: 3px solid #81d1f3;
+	border: 3px solid @dark-blue-color;
 	.border-radius(3px);
 	padding: 50px;
+}
+
+.full-width-border-text-block {
+	border: 1px solid @dark-blue-color;
+	.border-radius(3px);
+	padding: 20px;
 }
 
 /**/
@@ -806,7 +831,12 @@ body {
 }
 
 .modal-dialog {
-	width: 700px;
+	//	width: 700px;
+	width: 650px;
+
+	&.modal-sm {
+		width: 330px;
+	}
 }
 
 .modal-header {
@@ -821,6 +851,19 @@ body {
 .modal-footer {
 	padding-bottom: 30px;
 	border-top: 0;
+}
+
+.error-modal {
+	.close {
+		color: @white-color;
+		text-shadow: 0px 1px 0px @dark-gray-color;
+	}
+	.modal-content {
+		background: #cd4545 url('../images/sign-question.png') no-repeat center;
+		&, * {
+			color: @white-color;
+		}
+	}
 }
 
 /** /Bootstrap **/
@@ -960,7 +1003,6 @@ label.error {
 	background: url('../images/icons/close-white-bg.png') center;
 }
 
-
 /**/
 /********************* file: pages *********************/
 /**/
@@ -1058,4 +1100,59 @@ label.error {
 		}
 	}
 }
+
 /** /Contacts **/
+
+/** Responsibility **/
+.responsibility-list {
+	> li {
+		cursor: pointer;
+	}
+	.title {
+		.caption-middle-block;
+		.caption-pts-block;
+		.center-text;
+		margin-bottom: 29px;
+	}
+	.img {
+		margin: 0 auto;
+	}
+}
+
+.responsibility-data-block {
+	margin-top: 60px;
+	padding: 0;
+
+	.responsibility-data {
+		display: none;
+
+		&:first-child {
+			display: block;
+		}
+
+		.corner-white {
+			margin-top: -34px;
+			float: none;
+			height: 34px;
+			background: url('../images/corner-white-up.png') no-repeat center;
+			.clearfix;
+		}
+		.text-block {
+			padding: 20px;
+		}
+	}
+}
+
+.control-list {
+	.img {
+		margin: 0 auto 20px auto;
+	}
+	.title {
+		.caption-block;
+		.center-text;
+		height: 75px;
+		margin-bottom: 25px;
+	}
+}
+
+/** /Responsibility **/
