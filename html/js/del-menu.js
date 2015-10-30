@@ -8,15 +8,11 @@
 			{
 				name: 'Рабочий стол',
 				fileName: 'desktop.php'
-			}/*,
-			 {
-			 name: 'Главная 2',
-			 fileName: '.php'
-			 },
-			 {
-			 name: 'Управление профилем',
-			 fileName: 'profile.php'
-			 }*/,
+			},
+			{
+				name: 'Управление профилем',
+				fileName: 'profile-management.php'
+			},
 			{
 				name: 'Ответственность',
 				fileName: 'page-responsibility.php'
