@@ -435,6 +435,8 @@ body {
 /** Простая таблица с полосками сверху и снизу строк **/
 .simple-top-bottom-border-table {
   width: 100%;
+  border-top: 2px solid #00a1e6;
+  border-right: 2px solid #00a1e6;
   border-top: 1px solid #dbdbdb;
 }
 .simple-top-bottom-border-table tr td {
@@ -443,6 +445,18 @@ body {
 }
 .simple-top-bottom-border-table tr td img {
   margin-bottom: 0;
+}
+.simple-top-bottom-border-table th,
+.simple-top-bottom-border-table td {
+  border-bottom: 2px solid #00a1e6;
+  border-left: 2px solid #00a1e6;
+}
+.simple-top-bottom-border-table th {
+  padding: 15px 20px;
+  font-family: 'Ubuntu Regular' !important;
+}
+.simple-top-bottom-border-table td {
+  padding: 10px 20px !important;
 }
 .simple-top-bottom-border-table tr td {
   border-bottom: 1px solid #dbdbdb;
@@ -1446,6 +1460,22 @@ body {
 .error-modal .modal-content,
 .error-modal .modal-content * {
   color: #ffffff;
+}
+.simple-table {
+  border-top: 2px solid #00a1e6;
+  border-right: 2px solid #00a1e6;
+}
+.simple-table th,
+.simple-table td {
+  border-bottom: 2px solid #00a1e6;
+  border-left: 2px solid #00a1e6;
+}
+.simple-table th {
+  padding: 15px 20px;
+  font-family: 'Ubuntu Regular' !important;
+}
+.simple-table td {
+  padding: 10px 20px !important;
 }
 /** /Bootstrap **/
 /**/

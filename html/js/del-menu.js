@@ -48,11 +48,11 @@
 			 {
 			 name: 'Вопросы эксперту 2',
 			 fileName: '.php'
-			 },
-			 {
-			 name: 'Текущие документы',
-			 fileName: '.php'
-			 },
+			 }*/,
+			{
+				name: 'Текущие документы',
+				fileName: 'page-current-documents.php'
+			}/*,
 			 {
 			 name: 'Сведения конфиденциального характера',
 			 fileName: '.php'
@@ -89,10 +89,6 @@
 				name: 'Общие сведения: <br/>О руководителе',
 				fileName: 'info-about-head.php'
 			}/*,
-			 {
-			 name: 'Общие сведения: О руководителе (уменьшенные вопросы)',
-			 fileName: '.php'
-			 },
 			 {
 			 name: 'Формирование технического решения',
 			 fileName: '.php'
