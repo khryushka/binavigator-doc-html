@@ -1,7 +1,6 @@
 /**/
 /********************* file: variables *********************/
 /**/
-/*#008bc5*/
 /**/
 /********************* file: mixins *********************/
 /**/
@@ -277,7 +276,7 @@ body {
   border: 0;
   position: relative;
   width: 100%;
-  min-width: 960px;
+  min-width: 980px;
   height: 100%;
   min-height: 500px;
 }
@@ -297,7 +296,7 @@ body {
 .container,
 .wrapper {
   overflow: hidden;
-  width: 960px;
+  width: 980px;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -823,6 +822,10 @@ a.red-text:visited {
 .question-icon.icon-32x32 {
   background-position: 0 1px;
 }
+.col-xs-1 .question-icon {
+  margin-left: -30px !important;
+}
+/** /Icons **/
 /** Buttons **/
 .button,
 a.button,
@@ -1282,11 +1285,36 @@ ul.breadcrumbs-block li + li:before {
 .column-border-left {
   border-left: 2px solid #00a1e6;
 }
+.form-line {
+  margin-top: 5px;
+  margin-bottom: 13px;
+}
+.form-line-list > div {
+  margin-top: 5px;
+  margin-bottom: 13px;
+}
 /**/
 /**/
 /** RightColumn **/
 .right-column {
   padding-top: 15px;
+}
+.right-column .doc-list-block {
+  padding: 10px;
+  -web-kit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: #00597c;
+}
+.right-column .doc-list-block,
+.right-column .doc-list-block * {
+  color: #ffffff;
+}
+.right-column .doc-list-block ul {
+  padding: 10px 0;
+}
+.right-column .doc-list-block ul li {
+  padding: 10px 0;
 }
 /** /RightColumn **/
 /**/
@@ -1461,6 +1489,20 @@ body {
 .error-modal .modal-content * {
   color: #ffffff;
 }
+.progress-box {
+  height: 11px;
+  margin-bottom: 8px;
+  background: #9aaab0;
+  -web-kit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.progress-box .progress-bar {
+  background: #ddf3fc url('../images/progress-st.png') no-repeat right;
+}
+/** /Bootstrap **/
+/**/
+/**/
 .simple-table {
   border-top: 2px solid #00a1e6;
   border-right: 2px solid #00a1e6;
@@ -1477,9 +1519,6 @@ body {
 .simple-table td {
   padding: 10px 20px !important;
 }
-/** /Bootstrap **/
-/**/
-/**/
 /**/
 /**/
 /**/
@@ -1699,11 +1738,13 @@ label.error {
   margin-bottom: 26px;
   font-family: 'PT Sans Regular' !important;
   text-align: center;
-  height: 100px;
-  margin-bottom: 29px;
 }
 .li-block .img {
   margin: 0 auto;
+}
+.li-block .img + .title {
+  height: 100px;
+  margin-bottom: 29px;
 }
 .li-block.li-block-small .img {
   margin: 0 auto 20px auto;

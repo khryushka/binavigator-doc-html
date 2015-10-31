@@ -197,6 +197,14 @@ textarea {
 	background-position: 0 1px;
 }
 
+.col-xs-1 {
+	.question-icon {
+		margin-left: -30px !important;
+	}
+}
+
+/** /Icons **/
+
 /** Buttons **/
 .button, a.button, input[type="submit"] {
 	&, &:link, &:active {
@@ -271,13 +279,13 @@ textarea {
 	&.button-dim-blue {
 		&, &:link, &:active {
 			background: @dim-blue-color;
-			border-color: @dim-dark-blue-color;
+			border-color: @dark-dim-blue-color;
 		}
 		&:hover {
-			background-color: @dim-light-blue-color;
+			background-color: @light-dim-blue-color;
 		}
 		&:active {
-			background-color: @dim-dark-blue-color;
+			background-color: @dark-dim-blue-color;
 		}
 	}
 
@@ -661,6 +669,16 @@ ul.breadcrumbs-block {
 	border-left: 2px solid @blue-color;
 }
 
+.form-line {
+	margin-top: 5px;
+	margin-bottom: 13px;
+}
+.form-line-list {
+	> div {
+		.form-line;
+	}
+}
+
 /**/
 /**/
 /** RightColumn **/
@@ -672,6 +690,24 @@ ul.breadcrumbs-block {
 
 	}
 	// /Body
+
+	.doc-list-block {
+		padding: 10px;
+		.border-radius;
+
+		background: @super-dark-blue-color;
+		&, * {
+			color: @white-color;
+		}
+
+		ul {
+			padding: 10px 0;
+			li {
+				padding: 10px 0;
+			}
+		}
+
+	}
 }
 
 /** /RightColumn **/
@@ -886,6 +922,21 @@ body {
 	}
 }
 
+.progress-box {
+	height: 11px;
+	margin-bottom: 8px;
+	background: #9aaab0;
+	.border-radius();
+
+	.progress-bar {
+		background: #ddf3fc url('../images/progress-st.png') no-repeat right;
+	}
+}
+
+/** /Bootstrap **/
+/**/
+/**/
+
 .simple-table {
 	border-top: 2px solid @blue-color;
 	border-right: 2px solid @blue-color;
@@ -903,10 +954,6 @@ body {
 		padding: 10px 20px !important;
 	}
 }
-
-/** /Bootstrap **/
-/**/
-/**/
 
 /**/
 /**/
@@ -1150,12 +1197,13 @@ label.error {
 		.caption-middle-block;
 		.caption-pts-block;
 		.center-text;
-
-		height: 100px;
-		margin-bottom: 29px;
 	}
 	.img {
 		margin: 0 auto;
+	}
+	.img + .title {
+		height: 100px;
+		margin-bottom: 29px;
 	}
 	&.li-block-small {
 		.img {
