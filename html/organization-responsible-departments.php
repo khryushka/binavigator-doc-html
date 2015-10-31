@@ -22,7 +22,7 @@
 			<li><a href="#">Рабочий стол</a></li>
 			<li><a href="#">Организация</a></li>
 			<li><a href="#">Ответственные лица, комиссия</a></li>
-			<li><a href="#">Ответственные лица</a></li>
+			<li><a href="#">Ответственные отделы</a></li>
 		</ul>
 		<!-- /BreadcrumbsBlock -->
 
@@ -36,8 +36,8 @@
 
 				<!-- LeftMenu -->
 				<ul class="left-menu">
-					<li class="active"><a href="#">Ответственные лица</a></li>
-					<li><a href="#">Ответственные отделы</a></li>
+					<li><a href="#">Ответственные лица</a></li>
+					<li class="active"><a href="#">Ответственные отделы</a></li>
 					<li><a href="#">Комиссии</a></li>
 				</ul>
 				<!-- /LeftMenu -->
@@ -61,12 +61,16 @@
 				<!-- Body -->
 				<div class="body">
 
-					В данном разделе необходимо выбрать ответственных из списка сотрудников В случае отсутствия в списке необходимого сотрудника, вернитесь к разделу «Об организации -» Список сотрудников» <br/>
-					<br/>
+					В данном разделе необходимо выбрать ответственных из справочников. <br/>
+					В случае отсутствия в списке необходимой информации, вернитесь к следующим разделам: <br/>
+					«<a href="#">Об организации</a> — <a href="#">Список должностей</a>». <br/>
+					«<a href="#">Об организации</a> — <a href="#">Список подразделений</a>».
+
+					<br/><br/><br/>
 
 					<form name="person-form" class="form-line-list" action="#" method="POST" enctype="multipart/form-data">
 
-						Действующий на основании (в родительном падеже): <br/>
+						Отделы, ответственные за обеспечение функционирования информационных систем: <br/>
 
 						<div class="row">
 							<div class="col-xs-11">
@@ -82,7 +86,7 @@
 							</div>
 						</div>
 
-						Ответственный за ознакомление с приказами: <br/>
+						Отделы, ответственные за кадровое обеспечение: <br/>
 
 						<div class="row">
 							<div class="col-xs-11">
@@ -98,7 +102,7 @@
 							</div>
 						</div>
 
-						Ответственный за ПД: <br/>
+						Должность руководителя отдела, ответственного кадровое обеспечение: <br/>
 
 						<div class="row">
 							<div class="col-xs-11">
@@ -114,103 +118,7 @@
 							</div>
 						</div>
 
-						Ответственный за безопасность ПД: <br/>
-
-						<div class="row">
-							<div class="col-xs-11">
-								<select name="">
-									<option>Выберите из списка</option>
-									<option value="1">Значение 1</option>
-									<option value="2">Значение 2</option>
-									<option value="3">Значение 3</option>
-								</select>
-							</div>
-							<div class="col-xs-1">
-								<div class="question-icon icon-32x32" style="margin: 5px 0;" title="Поясняющая информация"></div>
-							</div>
-						</div>
-
-						Администратор ИБ: <br/>
-
-						<div class="row">
-							<div class="col-xs-11">
-								<select name="">
-									<option>Выберите из списка</option>
-									<option value="1">Значение 1</option>
-									<option value="2">Значение 2</option>
-									<option value="3">Значение 3</option>
-								</select>
-							</div>
-							<div class="col-xs-1">
-								<div class="question-icon icon-32x32" style="margin: 5px 0;" title="Поясняющая информация"></div>
-							</div>
-						</div>
-
-						Ответственный за антивирусную проверку: <br/>
-
-						<div class="row">
-							<div class="col-xs-11">
-								<select name="">
-									<option>Выберите из списка</option>
-									<option value="1">Значение 1</option>
-									<option value="2">Значение 2</option>
-									<option value="3">Значение 3</option>
-								</select>
-							</div>
-							<div class="col-xs-1">
-								<div class="question-icon icon-32x32" style="margin: 5px 0;" title="Поясняющая информация"></div>
-							</div>
-						</div>
-
-						Ответственный за техническое обслуживание: <br/>
-
-						<div class="row">
-							<div class="col-xs-11">
-								<select name="">
-									<option>Выберите из списка</option>
-									<option value="1">Значение 1</option>
-									<option value="2">Значение 2</option>
-									<option value="3">Значение 3</option>
-								</select>
-							</div>
-							<div class="col-xs-1">
-								<div class="question-icon icon-32x32" style="margin: 5px 0;" title="Поясняющая информация"></div>
-							</div>
-						</div>
-
-						Ответственный за криптосредства: <br/>
-
-						<div class="row">
-							<div class="col-xs-11">
-								<select name="">
-									<option>Выберите из списка</option>
-									<option value="1">Значение 1</option>
-									<option value="2">Значение 2</option>
-									<option value="3">Значение 3</option>
-								</select>
-							</div>
-							<div class="col-xs-1">
-								<div class="question-icon icon-32x32" style="margin: 5px 0;" title="Поясняющая информация"></div>
-							</div>
-						</div>
-
-						Заместитель ответственного за криптосредства: <br/>
-
-						<div class="row">
-							<div class="col-xs-11">
-								<select name="">
-									<option>Выберите из списка</option>
-									<option value="1">Значение 1</option>
-									<option value="2">Значение 2</option>
-									<option value="3">Значение 3</option>
-								</select>
-							</div>
-							<div class="col-xs-1">
-								<div class="question-icon icon-32x32" style="margin: 5px 0;" title="Поясняющая информация"></div>
-							</div>
-						</div>
-
-						Действующий на основании (в родительном падеже): <br/>
+						Отделы, ответственные за обеспечение собственной безопасности: <br/>
 
 						<div class="row">
 							<div class="col-xs-11">

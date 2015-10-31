@@ -98,16 +98,16 @@
 			 fileName: '.php'
 			 }*/,
 			{
-				name: 'Организация: Ответственные лица',
-				fileName: 'info-responsible-person.php'
-			}/*,
-			 {
-			 name: 'Организация: Ответственные отделы',
-			 fileName: '.php'
-			 }*/,
-			{
 				name: 'Ответственные лица, комиссия',
 				fileName: 'page-responsible-person.php'
+			},
+			{
+				name: 'Организация: <br/>Ответственные лица',
+				fileName: 'organization-responsible-person.php'
+			},
+			{
+				name: 'Организация: <br/>Ответственные отделы',
+				fileName: 'organization-responsible-departments.php'
 			}/*,
 			 {
 			 name: 'Общая статистика по подведомственным организациям',
