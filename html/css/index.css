@@ -137,22 +137,10 @@
   height: 16px;
   background: url("../images/icons/icon-16x16-sprite.png") no-repeat;
 }
+/** Градиенты **/
 /* Градиент в белый цвет справа, P.S.: установка отступа слева и высота - в index.js */
-.gradient-right {
-  position: absolute;
-  display: block;
-  float: right;
-  width: 30px;
-  height: 1.5em;
-  margin-top: -1.5em;
-  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
-  background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(#ffffff));
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffffff', GradientType=1);
-}
 /* /Градиент в белый цвет справа, P.S.: установка отступа слева и высота - в index.js */
+/** /Градиенты **/
 /**/
 /********************* file: static *********************/
 /**/
@@ -436,6 +424,12 @@ body {
   width: 100%;
   border-top: 2px solid #00a1e6;
   border-right: 2px solid #00a1e6;
+  background-image: -webkit-linear-gradient(top, #ececec, #ffffff);
+  background-image: -o-linear-gradient(top, #ececec, #ffffff);
+  background-image: -webkit-gradient(linear, top, bottom, from(#ececec), to(#ffffff));
+  background-image: linear-gradient(to bottom, #ececec, #ffffff);
+  background-repeat: repeat-y;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ececec', endColorstr='#ffffff', GradientType=0);
   border-top: 1px solid #dbdbdb;
 }
 .simple-top-bottom-border-table tr td {
@@ -451,8 +445,9 @@ body {
   border-left: 2px solid #00a1e6;
 }
 .simple-top-bottom-border-table th {
-  padding: 15px 20px;
   font-family: 'Ubuntu Regular' !important;
+  padding: 15px 20px;
+  background: #ffffff;
 }
 .simple-top-bottom-border-table td {
   padding: 10px 20px !important;
@@ -1506,6 +1501,12 @@ body {
 .simple-table {
   border-top: 2px solid #00a1e6;
   border-right: 2px solid #00a1e6;
+  background-image: -webkit-linear-gradient(top, #ececec, #ffffff);
+  background-image: -o-linear-gradient(top, #ececec, #ffffff);
+  background-image: -webkit-gradient(linear, top, bottom, from(#ececec), to(#ffffff));
+  background-image: linear-gradient(to bottom, #ececec, #ffffff);
+  background-repeat: repeat-y;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ececec', endColorstr='#ffffff', GradientType=0);
 }
 .simple-table th,
 .simple-table td {
@@ -1513,8 +1514,9 @@ body {
   border-left: 2px solid #00a1e6;
 }
 .simple-table th {
-  padding: 15px 20px;
   font-family: 'Ubuntu Regular' !important;
+  padding: 15px 20px;
+  background: #ffffff;
 }
 .simple-table td {
   padding: 10px 20px !important;

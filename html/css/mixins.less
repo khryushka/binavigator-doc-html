@@ -351,8 +351,9 @@
 	}
 }
 
+/** Градиенты **/
 /* Градиент в белый цвет справа, P.S.: установка отступа слева и высота - в index.js */
-.gradient-right {
+.gradient-to-right() {
 	position: absolute;
 	display: block;
 	float: right;
@@ -366,5 +367,20 @@
 	background-repeat: repeat-x;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffffff', GradientType=1);
 }
+.gradient-to-bottom() {
+	//position: absolute;
+	//display: block;
+	//float: right;
+	//width: 30px;
+	//height: 1.5em;
+	//margin-top: -1.5em;
+	background-image: -webkit-linear-gradient(top, #ececec, #fff);
+	background-image: -o-linear-gradient(top, #ececec, #fff);
+	background-image: -webkit-gradient(linear, top, bottom, from(#ececec), to(#fff));
+	background-image: linear-gradient(to bottom, #ececec, #fff);
+	background-repeat: repeat-y;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ececec', endColorstr='#ffffff', GradientType=0);
+}
 
 /* /Градиент в белый цвет справа, P.S.: установка отступа слева и высота - в index.js */
+/** /Градиенты **/
