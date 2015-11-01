@@ -81,8 +81,10 @@
 .center-text {
   text-align: center;
 }
-.small-text {
-  font-size: 13px;
+.small-text,
+.small-text * {
+  font-size: 12px;
+  line-height: 17px;
 }
 .gray-text {
   color: #7d8083;

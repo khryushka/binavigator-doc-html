@@ -673,6 +673,7 @@ ul.breadcrumbs-block {
 	margin-top: 5px;
 	margin-bottom: 13px;
 }
+
 .form-line-list {
 	> div {
 		.form-line;
@@ -955,6 +956,34 @@ body {
 	}
 	td {
 		padding: 10px 20px !important;
+	}
+}
+
+.avatar-small {
+	.border-radius(33px);
+	width: 66px;
+	height: 66px;
+	border: 2px solid @blue-color;
+}
+
+.avatar-small-list {
+	li.row {
+		margin-bottom: 22px;
+
+		> * {
+			display: table-cell;
+		}
+
+		.img-block {
+			.avatar-small;
+			.center-text;
+
+			display: table-cell;
+			vertical-align: middle;
+		}
+		.text-block {
+			.small-text;
+		}
 	}
 }
 

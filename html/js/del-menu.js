@@ -44,11 +44,11 @@
 			 {
 			 name: 'Стать партнёром',
 			 fileName: '.php'
-			 },
+			 }*/,
 			 {
-			 name: 'Вопросы эксперту 1',
-			 fileName: '.php'
-			 },
+			 name: 'Вопросы эксперту',
+			 fileName: 'expert-questions.php'
+			 }/*,
 			 {
 			 name: 'Вопросы эксперту 2',
 			 fileName: '.php'

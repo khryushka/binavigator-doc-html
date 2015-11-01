@@ -209,7 +209,10 @@
 }
 
 .small-text {
-	font-size: 13px;
+	&, * {
+		font-size: 12px;
+		line-height: 17px;
+	}
 }
 
 .gray-text {
@@ -367,6 +370,7 @@
 	background-repeat: repeat-x;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffffff', GradientType=1);
 }
+
 .gradient-to-bottom() {
 	//position: absolute;
 	//display: block;
