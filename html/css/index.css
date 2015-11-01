@@ -1457,7 +1457,9 @@ input.datepicker {
   width: 150px;
   min-width: auto;
   padding-right: 32px;
-  background: url('../images/icons/icon-calendar.png') no-repeat right center;
+  background-image: url('../images/icons/icon-calendar.png');
+  background-repeat: no-repeat;
+  background-position: right center;
 }
 .ui-datepicker {
   z-index: 1000 !important;

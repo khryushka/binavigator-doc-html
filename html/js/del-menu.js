@@ -96,11 +96,11 @@
 			{
 				name: 'Формирование технического решения',
 				fileName: 'page-technical-solutions-formation.php'
-			}/*,
-			 {
-			 name: 'Уведомление об обработке персональных данных',
-			 fileName: '.php'
-			 }*/,
+			},
+			{
+				name: 'Уведомление об обработке персональных данных',
+				fileName: 'page-personal-data-notice.php'
+			},
 			{
 				name: 'Ответственные лица, комиссия',
 				fileName: 'page-responsible-person.php'
