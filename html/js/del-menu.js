@@ -92,11 +92,11 @@
 			{
 				name: 'Общие сведения: <br/>О руководителе',
 				fileName: 'info-about-head.php'
+			},
+			{
+				name: 'Формирование технического решения',
+				fileName: 'page-technical-solutions-formation.php'
 			}/*,
-			 {
-			 name: 'Формирование технического решения',
-			 fileName: '.php'
-			 },
 			 {
 			 name: 'Уведомление об обработке персональных данных',
 			 fileName: '.php'
