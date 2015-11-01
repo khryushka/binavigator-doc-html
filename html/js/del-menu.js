@@ -45,10 +45,10 @@
 			 name: 'Стать партнёром',
 			 fileName: '.php'
 			 }*/,
-			 {
-			 name: 'Вопросы эксперту',
-			 fileName: 'expert-questions.php'
-			 }/*,
+			{
+				name: 'Вопросы эксперту',
+				fileName: 'expert-questions.php'
+			}/*,
 			 {
 			 name: 'Вопросы эксперту 2',
 			 fileName: '.php'
@@ -112,11 +112,11 @@
 			{
 				name: 'Организация: <br/>Ответственные отделы',
 				fileName: 'organization-responsible-departments.php'
-			}/*,
-			 {
-			 name: 'Общая статистика по подведомственным организациям',
-			 fileName: '.php'
-			 }*/,
+			},
+			{
+				name: 'Общая статистика<!-- по подведомственным организациям-->',
+				fileName: 'statistics-general.php'
+			},
 			{
 				name: 'Контакты',
 				fileName: 'page-contacts.php'

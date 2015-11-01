@@ -113,6 +113,13 @@
 		*/
 	?>
 
+	<!-- CirbularProgressBar -->
+	<script type="text/javascript" src="circular-progressbar/js/jquery.knob.js?t=<?= time () ?>"></script>
+	<!--[if IE]>
+	<script type="text/javascript" src="circular-progressbar/js/excanvas.js"></script>
+	<![endif]-->
+	<!-- /CirbularProgressBar -->
+
 	<script type="text/javascript" src="js/index.js?t=<?= time () ?>"></script>
 
 	<!-- Удалить меню html-ек -->

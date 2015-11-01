@@ -388,3 +388,13 @@
 
 /* /Градиент в белый цвет справа, P.S.: установка отступа слева и высота - в index.js */
 /** /Градиенты **/
+
+.border-block(@width: 1px, @color: @light-blue-color) {
+	.border-radius();
+
+	padding: 10px 15px 15px 15px;
+	border: @width solid @color;
+}
+.border-block {
+	.border-block;
+}
