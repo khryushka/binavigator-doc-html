@@ -60,11 +60,11 @@
 			 {
 			 name: 'Сведения конфиденциального характера',
 			 fileName: '.php'
-			 },
-			 {
-			 name: 'Документооборот',
-			 fileName: '.php'
-			 },
+			 }*/,
+			{
+				name: 'Документооборот',
+				fileName: 'document-management.php'
+			}/*,
 			 {
 			 name: 'Технические и эксплуатационные характеристики ИСПДн',
 			 fileName: '.php'
@@ -176,7 +176,9 @@
 			}
 		);
 		console.log(arMenu);
+		var isShowNumbers = true; // показывать список с цифрами
 		if (arMenu.length > 1) {
+			$('body').append('<style>.del-menu, .del-menu * {font-size: 13px; color: #fff !important;}</style>');
 			$('body').append('<div class="del-menu"><span>Страницы:</span></div>');
 			var currentFileName = '/';
 			var href = location.href.match(/([^\/]+\.(html|php)|\/$)/);
@@ -190,10 +192,12 @@
 			if (currentFileName == '/') {
 				currentFileName = arMenu[0]['fileName'];
 			}
+			var menuPointsStr = '';
+			var fontSize = '13px';
 			for (var i in arMenu) {
-				$('.del-menu').append('<a href="' + arMenu[i]['fileName'] + '"' + (currentFileName == arMenu[i]['fileName'] || currentFileName + queryString == arMenu[i]['fileName'] || queryString == arMenu[i]['fileName'] ? ' class="current"' : '') + (arMenu[i]['click'] ? ' onclick="' + arMenu[i]['click'] + '"' : '') + (arMenu[i]['attrs'] ? ' ' + arMenu[i]['attrs'] + ' ' : '') + '>' + arMenu[i]['name'] + '</a>');
+				menuPointsStr += '<li><a href="' + arMenu[i]['fileName'] + '"' + (currentFileName == arMenu[i]['fileName'] || currentFileName + queryString == arMenu[i]['fileName'] || queryString == arMenu[i]['fileName'] ? ' class="current"' : '') + (arMenu[i]['click'] ? ' onclick="' + arMenu[i]['click'] + '"' : '') + (arMenu[i]['attrs'] ? ' ' + arMenu[i]['attrs'] + ' ' : '') + '>' + arMenu[i]['name'] + '</a></li>';
 			}
-			$('.del-menu').css({
+			$('.del-menu').append('<ol' + (isShowNumbers ? ' type="1" start="1" style="list-style: decimal; padding-left: 25px;"' : '') + '>' + menuPointsStr + '</ol>').css({
 				position: 'absolute',
 				'z-index': 100000,
 				cursor: 'move',
@@ -208,12 +212,9 @@
 			}).find('span').css({
 				display: 'block',
 				'font-weight': 'bold',
-				color: '#fff',
 				'margin-bottom': '7px'
 			}).parent().find('a:link, a:visited').css({
 				display: 'block',
-				color: '#fff',
-				'font-size': '13px',
 				padding: '3px 5px 3px 10px'
 			}).parents('.del-menu').find('a.current:link, a.current:visited').css({
 				background: 'rgba(0,161,230,0.75)'
