@@ -56,19 +56,19 @@
 			{
 				name: 'Текущие документы',
 				fileName: 'page-current-documents.php'
-			}/*,
-			 {
-			 name: 'Сведения конфиденциального характера',
-			 fileName: '.php'
-			 }*/,
+			},
 			{
-				name: 'Документооборот',
-				fileName: 'document-management.php'
-			}/*,
-			 {
-			 name: 'Технические и эксплуатационные характеристики ИСПДн',
-			 fileName: '.php'
-			 }*/,
+				name: 'Мероприятия: Сведения конфиденциального характера',
+				fileName: 'activities-confidential-information.php'
+			},
+			{
+				name: 'Мероприятия: Документооборот',
+				fileName: 'activities-document-management.php'
+			},
+			{
+				name: 'Технические и эксплуатационные характеристики ИСПДн',
+				fileName: 'page-technical-characteristics.php'
+			},
 			{
 				name: 'Общие сведения: <br/>Об организации',
 				fileName: 'info-about-organization.php'
