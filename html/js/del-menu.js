@@ -98,6 +98,10 @@
 				fileName: 'page-technical-solutions-formation.php'
 			},
 			{
+				name: 'Уведомления',
+				fileName: 'page-notice-list.php'
+			},
+			{
 				name: 'Уведомление об обработке персональных данных',
 				fileName: 'page-personal-data-notice.php'
 			},

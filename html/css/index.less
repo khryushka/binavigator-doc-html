@@ -214,7 +214,7 @@ textarea {
 /** /Icons **/
 
 /** Buttons **/
-.button, a.button, input[type="submit"] {
+.button, a.button, input[type="submit"], input[type="reset"] {
 	&, &:link, &:active {
 		display: inline-block;
 		.border-radius();
@@ -308,6 +308,20 @@ textarea {
 		&:active {
 			background-color: @dark-red-color;
 		}
+	}
+}
+input[type="reset"] {
+	&, &:link, &:active {
+		color: @dark-gray-color;
+		background: @super-light-gray-color;
+		border-color: @light-gray-color;
+	}
+	&:hover {
+		background-color: @light-gray-color;
+	}
+	&:active {
+		color: @white-color;
+		background-color: @light-gray-color;
 	}
 }
 
