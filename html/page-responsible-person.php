@@ -181,7 +181,7 @@
 
 						<div class="row">
 							<div class="col-xs-11">
-								<select name="">
+								<select name="responsible-for-cryptocredits" id="responsible-for-cryptocredits" class="validate[notEquals[deputy-responsible-for-cryptocredits]]">
 									<option>Выберите из списка</option>
 									<option value="1">Значение 1</option>
 									<option value="2">Значение 2</option>
@@ -197,7 +197,7 @@
 
 						<div class="row">
 							<div class="col-xs-11">
-								<select name="">
+								<select name="deputy-responsible-for-cryptocredits" id="deputy-responsible-for-cryptocredits" class="validate[notEquals[responsible-for-cryptocredits]]">
 									<option>Выберите из списка</option>
 									<option value="1">Значение 1</option>
 									<option value="2">Значение 2</option>

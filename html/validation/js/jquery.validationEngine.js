@@ -684,6 +684,9 @@
 					case "equals":
 						errorMsg = methods._getErrorMessage(form, field, rules[i], rules, i, options, methods._equals);
 						break;
+					case "notEquals":
+						errorMsg = methods._getErrorMessage(form, field, rules[i], rules, i, options, methods._notEquals);
+						break;
 					case "funcCall":
 						errorMsg = methods._getErrorMessage(form, field, rules[i], rules, i, options, methods._funcCall);
 						break;
@@ -1108,6 +1111,13 @@
 
 			if (field.val() != $("#" + equalsField).val())
 				return options.allrules.equals.alertText;
+		},
+		_notEquals: function(field, rules, i, options) {
+			var equalsField = rules[i + 1];
+			console.log(equalsField)
+
+			if (field.val() == $("#" + equalsField).val())
+				return options.allrules.notEquals.alertText;
 		},
 		/**
 		* Check the maximum size (in characters)
