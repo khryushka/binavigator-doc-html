@@ -20,6 +20,8 @@
 		<!-- BreadcrumbsBlock -->
 		<ul class="breadcrumbs-block">
 			<li><a href="#">Рабочий стол</a></li>
+			<li><a href="#">Мероприятия</a></li>
+			<li><a href="#">Модель угроз</a></li>
 			<li><a href="#">Технические и эксплуатационные характеристики ИСПДн</a></li>
 		</ul>
 		<!-- /BreadcrumbsBlock -->
