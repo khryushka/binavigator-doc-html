@@ -95,15 +95,15 @@
 					{
 						name: 'Настройка профиля',
 						fileName: 'profile-settings.php'
-					}/*,
-					 {
-					 name: 'Настройка оформления: Приказы/Распоряжения',
-					 fileName: 'layout-settings-orders.php'
-					 },
-					 {
-					 name: 'Настройка оформления: Положения/Политики/Акты',
-					 fileName: '.php'
-					 }*/
+					},
+					{
+						name: 'Настройка оформления: Приказы/Распоряжения',
+						fileName: 'profile-layout-settings-orders.php'
+					},
+					{
+						name: 'Настройка оформления: Положения/Политики/Акты',
+						fileName: 'profile-layout-settings-policies.php'
+					}
 				)
 			},
 			{
@@ -229,7 +229,7 @@
 				currentFileName = href[0];
 			}
 			if (currentFileName == '/') {
-				currentFileName = arMenu[0]['pages'][0]['fileName'];
+				currentFileName = arMenuSection[0]['pages'][0]['fileName'];
 			}
 			var menuPointsStr = '';
 			for (var m in arMenuSection) {
@@ -241,7 +241,6 @@
 					menuPointsStr += '<li><a href="' + arMenu[i]['fileName'] + '"' + (currentFileName == arMenu[i]['fileName'] || currentFileName + queryString == arMenu[i]['fileName'] || queryString == arMenu[i]['fileName'] ? ' class="current"' : '') + (arMenu[i]['click'] ? ' onclick="' + arMenu[i]['click'] + '"' : '') + (arMenu[i]['attrs'] ? ' ' + arMenu[i]['attrs'] + ' ' : '') + '>' + arMenu[i]['name'] + '</a></li>';
 				}
 			}
-			console.log(menuPointsStr);
 			$('.del-menu').append('<ol' + (isShowNumbers ? ' type="1" start="1" style="list-style: decimal; padding-left: 25px;"' : '') + '>' + menuPointsStr + '</ol>').css({
 				position: 'absolute',
 				'z-index': 100000,

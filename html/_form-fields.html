@@ -1,8 +1,21 @@
+text: <br/>
+
+<div class="row">
+	<div class="col-xs-11">
+		<input type="text" name="text-field[]" value="">
+	</div>
+	<div class="col-xs-1">
+		<div class="question-icon icon-32x32" style="margin: 5px 0;" title="Поясняющая информация"></div>
+	</div>
+</div>
+
+<br/>
+
 select: <br/>
 
 <div class="row">
 	<div class="col-xs-11">
-		<select name="post">
+		<select name="select-field[]">
 			<option>Выберите</option>
 			<option value="1">Значение 1</option>
 			<option value="2">Значение 2</option>
@@ -20,7 +33,7 @@ checkbox: <br/>
 
 <div class="row">
 	<div class="col-xs-1">
-		<input type="checkbox" name="field[]" value="Y" id="field_1">
+		<input type="checkbox" name="checkbox-field[]" value="Y" id="field_1">
 	</div>
 	<div class="col-xs-10">
 		<label for="field_1">text</label>
@@ -36,23 +49,10 @@ radio: <br/>
 
 <div class="row">
 	<div class="col-xs-1">
-		<input type="radio" name="field[]" value="Y" id="field_1">
+		<input type="radio" name="radio-field-1" value="Y" id="field_1">
 	</div>
 	<div class="col-xs-11">
 		<label for="field_1">text</label>
-	</div>
-</div>
-
-<br/>
-
-text: <br/>
-
-<div class="row">
-	<div class="col-xs-11">
-		<input type="text" name="base" value="">
-	</div>
-	<div class="col-xs-1">
-		<div class="question-icon icon-32x32" style="margin: 5px 0;" title="Поясняющая информация"></div>
 	</div>
 </div>
 
@@ -62,7 +62,7 @@ textarea: <br/>
 
 <div class="row">
 	<div class="col-xs-11">
-		<textarea name="textarea"></textarea>
+		<textarea name="textarea-field[]"></textarea>
 	</div>
 	<div class="col-xs-1">
 		<div class="question-icon icon-32x32" style="margin: 5px 0;" title="Поясняющая информация"></div>
@@ -75,7 +75,7 @@ date <br/>
 
 <div class="row">
 	<div class="col-xs-12">
-		<input type="text" name="registration-date" value="" class="datepicker">
+		<input type="text" name="date-field[]" value="" class="datepicker">
 	</div>
 </div>
 

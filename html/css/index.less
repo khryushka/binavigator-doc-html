@@ -310,6 +310,7 @@ textarea {
 		}
 	}
 }
+
 input[type="reset"] {
 	&, &:link, &:active {
 		color: @dark-gray-color;
@@ -1287,6 +1288,31 @@ label.error {
 			line-height: 25px !important;
 			height: 50px;
 			margin-bottom: 25px;
+		}
+	}
+	&.setting-styles-block {
+		li {
+			.center-text;
+
+			display: inline-block;
+			height: 71px;
+			line-height: 71px;
+			border: 2px solid @blue-color;
+
+			&:first-child {
+				.border-radius-top-left();
+				.border-radius-bottom-left();
+			}
+			&:last-child {
+				.border-radius-top-right();
+				.border-radius-bottom-right();
+			}
+			& + li {
+				border-left: 0;
+			}
+			&:hover, &.active {
+				background: @super-light-blue-color;
+			}
 		}
 	}
 }

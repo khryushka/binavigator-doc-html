@@ -14,6 +14,7 @@
 		<!-- BreadcrumbsBlock -->
 		<ul class="breadcrumbs-block">
 			<li><a href="#">Рабочий стол</a></li>
+			<li><a href="#">Настройки</a></li>
 			<li><a href="#">Настройка профиля</a></li>
 		</ul>
 		<!-- /BreadcrumbsBlock -->

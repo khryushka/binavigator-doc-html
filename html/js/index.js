@@ -442,12 +442,14 @@
 				$this.find('li').each(function (i) {
 					var li = $(this);
 					li.on('mouseover click', function () {
+						$this.find('li').removeClass('active');
+						$this.find('li').eq(i).addClass('active')
 						$('.li-data').hide();
 						$('.li-data').eq(i).show();
 					});
 				});
 			}
-		})
+		});
 		/** /responsibility **/
 
 	});

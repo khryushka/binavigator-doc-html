@@ -1870,6 +1870,36 @@ label.error {
   height: 50px;
   margin-bottom: 25px;
 }
+.li-block.setting-styles-block li {
+  text-align: center;
+  display: inline-block;
+  height: 71px;
+  line-height: 71px;
+  border: 2px solid #00a1e6;
+}
+.li-block.setting-styles-block li:first-child {
+  -web-kit-border-top-left-radius: 5px;
+  -moz-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+  -web-kit-border-bottom-left-radius: 5px;
+  -moz-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.li-block.setting-styles-block li:last-child {
+  -web-kit-border-top-right-radius: 5px;
+  -moz-border-top-right-radius: 5px;
+  border-top-right-radius: 5px;
+  -web-kit-border-bottom-right-radius: 5px;
+  -moz-border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.li-block.setting-styles-block li + li {
+  border-left: 0;
+}
+.li-block.setting-styles-block li:hover,
+.li-block.setting-styles-block li.active {
+  background: #e3f5fc;
+}
 .li-data-block {
   margin-top: 60px;
   padding: 0;
