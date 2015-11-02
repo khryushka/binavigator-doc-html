@@ -120,6 +120,12 @@
 	<![endif]-->
 	<!-- /CirbularProgressBar -->
 
+	<!-- JqvMap -->
+	<link href="jqvmap/css/jqvmap.css" media="screen" rel="stylesheet" type="text/css"/>
+	<script src="jqvmap/js/jquery.vmap.js" type="text/javascript"></script>
+	<script src="jqvmap/js/maps/jquery.vmap.russia.js" type="text/javascript"></script>
+	<!-- /JqvMap -->
+
 	<script type="text/javascript" src="js/index.js?t=<?= time () ?>"></script>
 
 	<!-- Удалить меню html-ек -->

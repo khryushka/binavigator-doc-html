@@ -14,7 +14,7 @@
 		<!-- BreadcrumbsBlock -->
 		<ul class="breadcrumbs-block">
 			<li><a href="#">Главная</a></li>
-			<li><a href="#">Ответственность за нарушения и проверки контролирующих органов </a></li>
+			<li><a href="#">Ответственность за нарушения и проверки контролирующих органов</a></li>
 		</ul>
 		<!-- /BreadcrumbsBlock -->
 

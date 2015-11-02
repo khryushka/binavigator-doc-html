@@ -13,8 +13,10 @@
 
 		<!-- BreadcrumbsBlock -->
 		<ul class="breadcrumbs-block">
+			<!--
 			<li><a href="#">Главная</a></li>
 			<li><a href="#">Ответственность за нарушения и проверки контролирующих органов </a></li>
+			 -->
 		</ul>
 		<!-- /BreadcrumbsBlock -->
 
@@ -51,7 +53,7 @@
 									<div class="col15-xs-1"></div>
 									<div class="col15-xs-7 col15-xs-offset-1 center-text">
 										<div class="caption-big-block">Поддержка</div>
-										<div class="text-block">Консультирование в вопросахинформационной безопасности и подготовки к проверкам регуляторов</div>
+										<div class="text-block">Консультирование в вопросах информационной безопасности и подготовки к проверкам регуляторов</div>
 										<a href="#" class="button">Демо - доступ</a>
 									</div>
 									<div class="col15-xs-6 col15-xs-offset-1 img-block" style="background-image: url('images/content/big-slider-02.png')"></div>

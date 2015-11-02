@@ -116,11 +116,7 @@
 					{
 						name: 'Ответственность',
 						fileName: 'page-responsibility.php'
-					}/*,
-					 {
-					 name: 'Настройка стилей документации',
-					 fileName: 'doc-styles-settings.php'
-					 }*/,
+					},
 					{
 						name: 'Тарифы и цены',
 						fileName: 'page-tariffs.php'
@@ -128,14 +124,14 @@
 					 {
 					 name: 'Примеры ссылок на интерактивные карты',
 					 fileName: 'link-on-maps.php'
-					 },
-					 {
-					 name: 'Стать партнёром',
-					 fileName: '.php'
 					 }*/,
 					{
+						name: 'Стать партнёром',
+						fileName: 'page-become-partners.php'
+					},
+					{
 						name: 'Вопросы эксперту',
-						fileName: 'expert-questions.php'
+						fileName: 'page-expert-questions.php'
 					}/*,
 					 {
 					 name: 'Вопросы эксперту 2',

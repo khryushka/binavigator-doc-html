@@ -452,6 +452,35 @@
 		});
 		/** /responsibility **/
 
+
+		/** JqvMap **/
+		var colorRegion = '#1076C8'; // Цвет всех регионов
+		var focusRegion = '#FF9900'; // Цвет подсветки регионов при наведении на объекты из списка
+		var selectRegion = '#0A4C82'; // Цвет изначально подсвеченных регионов
+
+		var highlighted_states = {};
+
+			$('#vmap').vectorMap({
+				map: 'russia',
+				backgroundColor: '#ffffff',
+				borderColor: '#ffffff',
+				borderWidth: 2,
+				color: colorRegion,
+				colors: highlighted_states,
+				hoverOpacity: 0.7,
+				enableZoom: true,
+				showTooltip: true,
+
+				// Клик по региону
+				onRegionClick: function(element, code, region){
+					$('#opener-regional-partner').trigger('click');
+					$('.region-row').find('[name="region"]').val(region);
+					//alert(region+' - ' +code);
+				}
+			});
+		/** /JqvMap **/
+
+
 	});
 
 	/*

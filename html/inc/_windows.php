@@ -303,6 +303,109 @@
 </div>
 <!-- /RegistrationWindow -->
 
+<!-- RegionPartnershipWindow -->
+<div class="modal fade" id="region-partnership-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<div class="modal-title">Заявка на партнёрство</div>
+			</div>
+			<form action="#">
+				<div class="modal-body">
+
+					<div class="row">
+						<div class="col-xs-6 text-right" style="margin: 7px 0;">
+							Наименование организации <span class="red-text">*</span>:
+						</div>
+						<div class="col-xs-6">
+							<input type="text" name="company-name" value="" class="validate[required]">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-6 text-right" style="margin: 7px 0;">
+							ИНН <span class="red-text">*</span>:
+						</div>
+						<div class="col-xs-6">
+							<input type="text" name="inn" value="" class="validate[required]">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-6 text-right" style="margin: 7px 0;">
+							ФИО <span class="red-text">*</span>:
+						</div>
+						<div class="col-xs-6">
+							<input type="text" name="name" value="" class="validate[required]">
+						</div>
+					</div>
+
+					<div class="row region-row">
+						<div class="col-xs-6 text-right" style="margin: 7px 0;">
+							Регион
+						</div>
+						<div class="col-xs-6">
+							<input type="text" name="region" value="" class="">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-6 text-right" style="margin: 7px 0;">
+							Город <span class="red-text">*</span>:
+						</div>
+						<div class="col-xs-6">
+							<input type="text" name="city" value="" class="validate[required]">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-6 text-right" style="margin: 7px 0;">
+							E-mail <span class="red-text">*</span>:
+						</div>
+						<div class="col-xs-6">
+							<input type="text" name="email" value="" class="validate[required,custom[email]]">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-6 text-right" style="margin: 7px 0;">
+							Телефон <span class="red-text">*</span>:
+						</div>
+						<div class="col-xs-6">
+							<input type="text" name="phone" value="" class="validate[required,custom[phone]]">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-6 text-right" style="margin: 7px 0;">
+							Комментарий <span class="red-text">*</span>:
+						</div>
+						<div class="col-xs-6">
+							<textarea name="message" class="validate[required]"></textarea>
+						</div>
+					</div>
+
+				</div>
+				<div class="modal-footer">
+					<div class="row">
+						<div class="col-xs-6 col-xs-offset-3 center-text">
+							<input type="submit" class="button" value="Отправить заявку">
+						</div>
+						<!--
+						<div class="col-xs-3 pull-right">
+							<button type="button" class="btn btn-default" data-dismiss="modal" aria-hidden="true">Закрыть</button>
+						</div>
+						 -->
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- /RegionPartnershipWindow -->
+
+
 <!-- PartnershipWindow -->
 <div class="modal fade" id="partnership-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">

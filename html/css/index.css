@@ -1654,6 +1654,17 @@ label.error {
   background: #ff000f;
 }
 /** /Label **/
+/** BecomePartners **/
+.become-partners-list {
+  padding: 15px 0 35px 0;
+}
+.become-partners-list li {
+  padding: 10px 0;
+}
+.become-partners-list li .title {
+  margin-top: 55px;
+}
+/** /BecomePartners **/
 /** WinForm **/
 .window-form {
   text-align: center;
