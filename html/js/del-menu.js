@@ -1,200 +1,219 @@
 (function ($) {
 	$(document).ready(function () {
-		var arMenu = Array(
+		var arMenuSection = Array(
 			{
-				name: 'Главная',
-				fileName: 'index.php'
+				section: '',
+				pages: Array(
+					{
+						name: 'Главная',
+						fileName: 'index.php'
+					},
+					{
+						name: 'Рабочий стол',
+						fileName: 'desktop.php'
+					}
+				)
 			},
 			{
-				name: 'Рабочий стол',
-				fileName: 'desktop.php'
-			}/*,
-			 {
-			 name: 'Главная 2',
-			 fileName: '.php'
-			 },
-			 {
-			 name: 'Управление профилем',
-			 fileName: 'profile.php'
-			 }*/,
-			{
-				name: 'Настройка профиля',
-				fileName: 'page-profile-settings.php'
-			}/*,
-			 {
-			 name: 'Настройка стилей документации',
-			 fileName: 'doc-styles-settings.php'
-			 },
-			 {
-			 name: 'Тарифы и цены',
-			 fileName: 'tariffs.php'
-			 },
-			 {
-			 name: 'Настройка оформления: Приказы/Распоряжения',
-			 fileName: '.php'
-			 },
-			 {
-			 name: 'Настройка оформления: Положения/Политики/Акты',
-			 fileName: '.php'
-			 },
-			 {
-			 name: 'Стать партнёром',
-			 fileName: '.php'
-			 },
-			 {
-			 name: 'Вопросы эксперту 1',
-			 fileName: '.php'
-			 },
-			 {
-			 name: 'Вопросы эксперту 2',
-			 fileName: '.php'
-			 },
-			 {
-			 name: 'Текущие документы',
-			 fileName: '.php'
-			 },
-			 {
-			 name: 'Сведения конфиденциального характера',
-			 fileName: '.php'
-			 },
-			 {
-			 name: 'Меню: Меню 1',
-			 fileName: 'menu-1.php'
-			 },
-			 {
-			 name: 'Меню: Меню 2',
-			 fileName: 'menu-2.php'
-			 },
-			 {
-			 name: 'Меню: Меню 3',
-			 fileName: 'menu-3.php'
-			 },
-			 {
-			 name: 'Меню: Меню 4',
-			 fileName: 'menu-4.php'
-			 },
-			 {
-			 name: 'Документооборот',
-			 fileName: '.php'
-			 },
-			 {
-			 name: 'Технические и эксплуатационные характеристики ИСПДн',
-			 fileName: '.php'
-			 }*/,
-			{
-				name: 'Общие сведения: <br/>Об организации',
-				fileName: 'info-about-organization.php'
+				section: 'Общие сведения',
+				pages: Array(
+					{
+						name: 'Об организации',
+						fileName: 'info-about-organization.php'
+					},
+					{
+						name: 'Структура подразделений',
+						fileName: 'info-ou-structure.php'
+					},
+					{
+						name: 'Список должностей',
+						fileName: 'info-posts-list.php'
+					},
+					{
+						name: 'Список сотрудников',
+						fileName: 'info-employees-list.php'
+					},
+					{
+						name: 'Список помещений',
+						fileName: 'info-spaces.php'
+					},
+					{
+						name: 'О руководителе',
+						fileName: 'info-about-head.php'
+					}
+				)
 			},
 			{
-				name: 'Общие сведения: <br/>Структура подразделений',
-				fileName: 'info-ou-structure.php'
+				section: 'Организация',
+				pages: Array(
+					{
+						name: 'Ответственные лица, комиссия',
+						fileName: 'organization-responsible-person-commission.php'
+					},
+					{
+						name: 'Ответственные лица',
+						fileName: 'organization-responsible-person.php'
+					},
+					{
+						name: 'Ответственные отделы',
+						fileName: 'organization-responsible-departments.php'
+					}
+				)
 			},
 			{
-				name: 'Общие сведения: <br/>Список должностей',
-				fileName: 'info-posts-list.php'
+				section: 'Мероприятия',
+				pages: Array(
+					{
+						name: 'Сведения конфиденциального характера',
+						fileName: 'activities-confidential-information.php'
+					},
+					{
+						name: 'Документооборот',
+						fileName: 'activities-document-management.php'
+					},
+					{
+						name: 'Технические и эксплуатационные характеристики ИСПДн',
+						fileName: 'activities-technical-characteristics.php'
+					},
+					{
+						name: 'Формирование технического решения',
+						fileName: 'activities-technical-solutions-formation.php'
+					},
+					{
+						name: 'Уведомление об обработке персональных данных',
+						fileName: 'activities-personal-data-notice.php'
+					}
+				)
 			},
 			{
-				name: 'Общие сведения: <br/>Список сотрудников',
-				fileName: 'info-employees-list.php'
+				section: 'Профиль',
+				pages: Array(
+					{
+						name: 'Управление профилем',
+						fileName: 'profile-management.php'
+					},
+					{
+						name: 'Настройка профиля',
+						fileName: 'profile-settings.php'
+					},
+					{
+						name: 'Настройка оформления: Приказы/Распоряжения',
+						fileName: 'profile-layout-settings-orders.php'
+					},
+					{
+						name: 'Настройка оформления: Положения/Политики/Акты',
+						fileName: 'profile-layout-settings-policies.php'
+					}
+				)
 			},
 			{
-				name: 'Общие сведения: <br/>Список помещений',
-				fileName: 'info-spaces.php'
+				section: 'Другие страницы',
+				pages: Array(
+					{
+						name: 'Уведомления',
+						fileName: 'page-notice-list.php'
+					},
+					{
+						name: 'Ответственность',
+						fileName: 'page-responsibility.php'
+					},
+					{
+						name: 'Тарифы и цены',
+						fileName: 'page-tariffs.php'
+					}/*,
+					 {
+					 name: 'Примеры ссылок на интерактивные карты',
+					 fileName: 'link-on-maps.php'
+					 }*/,
+					{
+						name: 'Стать партнёром',
+						fileName: 'page-become-partners.php'
+					},
+					{
+						name: 'Вопросы эксперту',
+						fileName: 'page-expert-questions.php'
+					}/*,
+					 {
+					 name: 'Вопросы эксперту 2',
+					 fileName: '.php'
+					 }*/,
+					{
+						name: 'Общая статистика<!-- по подведомственным организациям-->',
+						fileName: 'statistics-general.php'
+					},
+					{
+						name: 'Текущие документы',
+						fileName: 'page-current-documents.php'
+					},
+					{
+						name: 'Контакты',
+						fileName: 'page-contacts.php'
+					}
+				)
 			},
 			{
-				name: 'Общие сведения: <br/>О руководителе',
-				fileName: 'info-about-head.php'
-			}/*,
-			 {
-			 name: 'Общие сведения: О руководителе (уменьшенные вопросы)',
-			 fileName: '.php'
-			 },
-			 {
-			 name: 'Формирование технического решения',
-			 fileName: '.php'
-			 },
-			 {
-			 name: 'Уведомление об обработке персональных данных',
-			 fileName: '.php'
-			 },
-			 {
-			 name: 'Организация: Ответственные лица',
-			 fileName: '.php'
-			 },
-			 {
-			 name: 'Организация: Ответственные отделы',
-			 fileName: '.php'
-			 }*/,
-			{
-				name: 'Ответственные лица, комиссия',
-				fileName: 'page-responsible-person.php'
-			}/*,
-			 {
-			 name: 'Общая статистика по подведомственным организациям',
-			 fileName: '.php'
-			 }*//*,
-			 {
-			 name: 'Примеры ссылок на интерактивные карты',
-			 fileName: 'link-on-maps.php'
-			 }*/,
-			{
-				name: 'Контакты',
-				fileName: 'page-contacts.php'
-			},
-			{
-				name: 'Окно: Введите логин и пароль',
-				fileName: '#',
-				click: "",
-				attrs: 'data-toggle="modal" data-target="#entry-modal"'
-			},
-			{
-				name: 'Окно: Регистрация',
-				fileName: '#',
-				click: "",
-				attrs: 'data-toggle="modal" data-target="#registration-modal"'
-			},
-			{
-				name: 'Окно: Отправка вопроса',
-				fileName: '#',
-				click: "",
-				attrs: 'data-toggle="modal" data-target="#feedback-modal"'
-			},
-			{
-				name: 'Окно: Заявка на партнёрство',
-				fileName: '#',
-				click: "",
-				attrs: 'data-toggle="modal" data-target="#partnership-modal"'
-			}/*,
-			 {
-			 name: 'Окно: Выбор шапки документов',
-			 fileName: '#',
-			 click: "javascript: $('.mask.win2').show(); return false;"
-			 },
-			 {
-			 name: 'Окно: Заявка на повторное формирование документов',
-			 fileName: '#',
-			 click: "javascript: $('.mask.win2').show(); return false;"
-			 },
-			 {
-			 name: 'Окно: Информация о разделе «Оперативные мероприятия»',
-			 fileName: '#',
-			 click: "javascript: $('.mask.win2').show(); return false;"
-			 }*/,
-			{
-				name: 'Окно: Редактирование падежных форм',
-				fileName: '#',
-				click: "",
-				attrs: 'data-toggle="modal" data-target="#edit-case-modal"'
-			}/*,
-			 {
-			 name: 'Окно: Падежные формы',
-			 fileName: '#',
-			 click: "javascript: $('.mask.win2').show(); return false;",
-			 attrs: 'data-toggle="modal" data-target="#edit-case-modal"'
-			 }*/
+				section: 'Окна',
+				pages: Array(
+					{
+						name: 'Внимание!',
+						fileName: '#',
+						click: "",
+						attrs: 'data-toggle="modal" data-target="#error-modal"'
+					},
+					{
+						name: 'Информация о разделе',
+						fileName: '#',
+						click: "",
+						attrs: 'data-toggle="modal" data-target="#info-section-modal"'
+					},
+					{
+						name: 'Введите логин и пароль',
+						fileName: '#',
+						click: "",
+						attrs: 'data-toggle="modal" data-target="#entry-modal"'
+					},
+					{
+						name: 'Регистрация',
+						fileName: '#',
+						click: "",
+						attrs: 'data-toggle="modal" data-target="#registration-modal"'
+					},
+					{
+						name: 'Отправка вопроса',
+						fileName: '#',
+						click: "",
+						attrs: 'data-toggle="modal" data-target="#feedback-modal"'
+					},
+					{
+						name: 'Заявка на партнёрство',
+						fileName: '#',
+						click: "",
+						attrs: 'data-toggle="modal" data-target="#partnership-modal"'
+					},
+					{
+						name: 'Выбор шапки документов',
+						fileName: '#',
+						click: "",
+						attrs: 'data-toggle="modal" data-target="#select-header-modal"'
+					}/*,
+					 {
+					 name: 'Окно: Заявка на повторное формирование документов',
+					 fileName: '#',
+					 click: "javascript: $('.mask.win2').show(); return false;"
+					 }*/,
+					{
+						name: 'Редактирование падежных форм',
+						fileName: '#',
+						click: "",
+						attrs: 'data-toggle="modal" data-target="#edit-case-modal"'
+					}
+				)
+			}
 		);
-		console.log(arMenu);
-		if (arMenu.length > 1) {
+		console.log(arMenuSection);
+		var isShowNumbers = true; // показывать список с цифрами
+		if (arMenuSection.length > 1) {
+			$('body').append('<style>.del-menu, .del-menu * {font-size: 13px; color: #fff !important;}</style>');
 			$('body').append('<div class="del-menu"><span>Страницы:</span></div>');
 			var currentFileName = '/';
 			var href = location.href.match(/([^\/]+\.(html|php)|\/$)/);
@@ -206,19 +225,26 @@
 				currentFileName = href[0];
 			}
 			if (currentFileName == '/') {
-				currentFileName = arMenu[0]['fileName'];
+				currentFileName = arMenuSection[0]['pages'][0]['fileName'];
 			}
-			for (var i in arMenu) {
-				$('.del-menu').append('<a href="' + arMenu[i]['fileName'] + '"' + (currentFileName == arMenu[i]['fileName'] || currentFileName + queryString == arMenu[i]['fileName'] || queryString == arMenu[i]['fileName'] ? ' class="current"' : '') + (arMenu[i]['click'] ? ' onclick="' + arMenu[i]['click'] + '"' : '') + (arMenu[i]['attrs'] ? ' ' + arMenu[i]['attrs'] + ' ' : '') + '>' + arMenu[i]['name'] + '</a>');
+			var menuPointsStr = '';
+			for (var m in arMenuSection) {
+				var section = arMenuSection[m]['section'];
+				var arMenu = arMenuSection[m]['pages'];
+
+				menuPointsStr += '<br/><i>' + section + '</i>';
+				for (var i in arMenu) {
+					menuPointsStr += '<li><a href="' + arMenu[i]['fileName'] + '"' + (currentFileName == arMenu[i]['fileName'] || currentFileName + queryString == arMenu[i]['fileName'] || queryString == arMenu[i]['fileName'] ? ' class="current"' : '') + (arMenu[i]['click'] ? ' onclick="' + arMenu[i]['click'] + '"' : '') + (arMenu[i]['attrs'] ? ' ' + arMenu[i]['attrs'] + ' ' : '') + '>' + arMenu[i]['name'] + '</a></li>';
+				}
 			}
-			$('.del-menu').css({
+			$('.del-menu').append('<ol' + (isShowNumbers ? ' type="1" start="1" style="list-style: decimal; padding-left: 25px;"' : '') + '>' + menuPointsStr + '</ol>').css({
 				position: 'absolute',
 				'z-index': 100000,
 				cursor: 'move',
 				top: 0,
 				right: 0,
 				width: '235px',
-				'margin-top': '141px', // 131px
+				'margin-top': '49px', // 131px
 				padding: '11px',
 				border: '1px solid #999',
 				// background: 'rgba(255,111,67,0.6)' // orange
@@ -226,12 +252,9 @@
 			}).find('span').css({
 				display: 'block',
 				'font-weight': 'bold',
-				color: '#fff',
 				'margin-bottom': '7px'
 			}).parent().find('a:link, a:visited').css({
 				display: 'block',
-				color: '#fff',
-				'font-size': '13px',
 				padding: '3px 5px 3px 10px'
 			}).parents('.del-menu').find('a.current:link, a.current:visited').css({
 				background: 'rgba(0,161,230,0.75)'

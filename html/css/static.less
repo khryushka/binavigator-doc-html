@@ -63,6 +63,10 @@ p, ul.simple-list {
 	padding-bottom: 9px;
 }
 
+ul.empty-list li + li {
+	padding-top: 1em;
+}
+
 div.simple-list {
 	> div + div {
 		clear: both;
@@ -72,4 +76,12 @@ div.simple-list {
 .required-field-sign {
 	.selected-text;
 	font-family: @fontB;
+}
+
+.border-2px {
+	border-width: 2px;
+}
+
+.border-3px {
+	border-width: 3px;
 }

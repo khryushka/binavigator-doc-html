@@ -15,6 +15,7 @@
 
 	<!-- Bootstrap -->
 	<link type="text/css" href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+	<link type="text/css" href="bootstrap/css/bootstrap-col-15.css" rel="stylesheet"/>
 	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 	<?
 		/*
@@ -47,6 +48,7 @@
 	<?
 		*/
 	?>
+	<link type="text/css" href="fonts/pt-sans-regular/stylesheet.css" rel="stylesheet"/>
 	<link type="text/css" href="fonts/pt-sans-bold/stylesheet.css" rel="stylesheet"/>
 	<!-- /Fonts -->
 
@@ -57,10 +59,10 @@
 	<script src="validation/js/jquery.validationEngine.js" type="text/javascript" charset="utf-8"></script>
 	<!-- /Validation -->
 
+	<!-- Sliders -->
 	<?
 		/*
 	?>
-	<!-- Sliders -->
 	<script type="text/javascript" src="sliders/carouFredSel/js/jquery.ba-throttle-debounce.min.js"></script>
 	<script type="text/javascript" src="sliders/carouFredSel/js/jquery.carouFredSel-6.2.1-packed.js"></script>
 	<script type="text/javascript" src="sliders/carouFredSel/js/jquery.touchSwipe.min.js"></script>
@@ -69,10 +71,14 @@
 
 	<link type="text/css" href="sliders/jcarousel/css/jcarousel.skin.css" rel="stylesheet"/>
 	<script type="text/javascript" src="sliders/jcarousel/js/jquery.jcarousel.min.js"></script>
-	<!-- /Sliders -->
+
 	<?
 		*/
 	?>
+	<link type="text/css" href="sliders/owl-carousel/css/owl.carousel.css" rel="stylesheet"/>
+	<link type="text/css" href="sliders/owl-carousel/css/owl.theme.default.min.css" rel="stylesheet"/>
+	<script type="text/javascript" src="sliders/owl-carousel/js/owl.carousel.min.js"></script>
+	<!-- /Sliders -->
 	<?
 		/*
 	?>
@@ -106,6 +112,19 @@
 	<?
 		*/
 	?>
+
+	<!-- CirbularProgressBar -->
+	<script type="text/javascript" src="circular-progressbar/js/jquery.knob.js?t=<?= time () ?>"></script>
+	<!--[if IE]>
+	<script type="text/javascript" src="circular-progressbar/js/excanvas.js"></script>
+	<![endif]-->
+	<!-- /CirbularProgressBar -->
+
+	<!-- JqvMap -->
+	<link href="jqvmap/css/jqvmap.css" media="screen" rel="stylesheet" type="text/css"/>
+	<script src="jqvmap/js/jquery.vmap.js" type="text/javascript"></script>
+	<script src="jqvmap/js/maps/jquery.vmap.russia.js" type="text/javascript"></script>
+	<!-- /JqvMap -->
 
 	<script type="text/javascript" src="js/index.js?t=<?= time () ?>"></script>
 

@@ -6,14 +6,102 @@
 		});
 		/**  /hr **/
 
+		/** CirbularProgressBar **/
+		$(".circularbar").knob({
+			change: function (value) {
+				//console.log("change : " + value);
+			},
+			release: function (value) {
+				//console.log(this.$.attr('value'));
+				console.log("release : " + value);
+			},
+			cancel: function () {
+				console.log("cancel : ", this);
+			},
+			format: function (value) {
+				return value + ' %';
+			},
+			draw: function () {
+
+				// "tron" case
+				if (this.$.data('skin') == 'tron') {
+
+					this.cursorExt = 0.3;
+
+					var a = this.arc(this.cv)  // Arc
+						, pa                   // Previous arc
+						, r = 1;
+
+					this.g.lineWidth = this.lineWidth;
+
+					if (this.o.displayPrevious) {
+						pa = this.arc(this.v);
+						this.g.beginPath();
+						this.g.strokeStyle = this.pColor;
+						this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, pa.s, pa.e, pa.d);
+						this.g.stroke();
+					}
+
+					this.g.beginPath();
+					this.g.strokeStyle = r ? this.o.fgColor : this.fgColor;
+					this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, a.s, a.e, a.d);
+					this.g.stroke();
+
+					this.g.lineWidth = 1;
+					this.g.beginPath();
+					this.g.strokeStyle = this.h2rgba(this.o.fgColor, "0.2");
+					this.g.arc(this.xy, this.xy, this.radius - this.lineWidth + 1 + this.lineWidth * 2 / 3, 0, 2 * Math.PI, false);
+					this.g.stroke();
+
+					return false;
+				}
+			},
+			font: 'Ubuntu Light'
+		});
+		/** /CirbularProgressBar **/
+
+		/** BigSlider **/
+		$('.owl-carousel').owlCarousel({
+			loop: true,
+			margin: 0,
+			responsiveClass: true,
+			autoplay: true,
+			autoplayTimeout: 3000,
+			stopOnHover: true,
+			transitionStyle: 'fade',
+			transition: 'fade',
+			easing: 'fade',
+
+			responsive: {
+				0: {
+					items: 1,
+					nav: true,
+					fallbackEasing: 'linear'
+				}
+				/*,
+				 600: {
+				 items: 3,
+				 nav: false
+				 },
+				 1000: {
+				 items: 5,
+				 nav: true,
+				 loop: false,
+				 margin: 20
+				 }
+				 */
+			}
+		});
+		/** /BigSlider **/
+
 		/** FormStyler **/
-		$('.body input[type=checkbox], .body input[type=radio], .body select').styler({
+		$('.middle-block input[type=checkbox], .middle-block input[type=radio], .middle-block select, .modal input[type=checkbox], .modal input[type=radio], .modal select').styler({
 			selectSearch: true
 		});
 		/** /FormStyler **/
 
 		/** Tooltip **/
-		$('.body [title]').tooltip();
+		$('.middle-block [title]').tooltip();
 		/** /Tooltip **/
 
 		/** pop-up-menu **/
@@ -122,6 +210,7 @@
 			var $this = $(this);
 			var fileTypes = [];
 			var acceptFileTypes = '';
+			var maxNumberOfFiles = parseInt($this.data('max-number-of-files')) ? $this.data('max-number-of-files') : 100;
 
 			if ($this.hasClass('fileupload-images')) {
 				fileTypes = ['png', 'jpg', 'jpeg', 'gif'];
@@ -139,7 +228,7 @@
 				url: SITE_TEMPLATE_PATH + '/jquery-file-upload/server/php/',
 				maxFileSize: 1024 * 1024,
 				acceptFileTypes: acceptFileTypes,
-				maxNumberOfFiles: 1,
+				maxNumberOfFiles: maxNumberOfFiles,
 				messages: {
 					maxNumberOfFiles: 'Максимальное количество файлов превышено',
 					acceptFileTypes: 'Тип файла не допускается',
@@ -345,6 +434,52 @@
 			}
 		);
 		/** /фокус на первый элемент при открытии формы **/
+
+		/** responsibility **/
+		$('.li-block').each(function () {
+			var $this = $(this);
+			if ($this.data('container')) {
+				$this.find('li').each(function (i) {
+					var li = $(this);
+					li.on('mouseover click', function () {
+						$this.find('li').removeClass('active');
+						$this.find('li').eq(i).addClass('active')
+						$('.li-data').hide();
+						$('.li-data').eq(i).show();
+					});
+				});
+			}
+		});
+		/** /responsibility **/
+
+
+		/** JqvMap **/
+		var colorRegion = '#1076C8'; // Цвет всех регионов
+		var focusRegion = '#FF9900'; // Цвет подсветки регионов при наведении на объекты из списка
+		var selectRegion = '#0A4C82'; // Цвет изначально подсвеченных регионов
+
+		var highlighted_states = {};
+
+			$('#vmap').vectorMap({
+				map: 'russia',
+				backgroundColor: '#ffffff',
+				borderColor: '#ffffff',
+				borderWidth: 2,
+				color: colorRegion,
+				colors: highlighted_states,
+				hoverOpacity: 0.7,
+				enableZoom: true,
+				showTooltip: true,
+
+				// Клик по региону
+				onRegionClick: function(element, code, region){
+					$('#opener-regional-partner').trigger('click');
+					$('.region-row').find('[name="region"]').val(region);
+					//alert(region+' - ' +code);
+				}
+			});
+		/** /JqvMap **/
+
 
 	});
 

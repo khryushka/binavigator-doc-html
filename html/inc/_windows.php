@@ -1,5 +1,143 @@
 <!-- Windows -->
 
+<!-- SelectHeaderWindow -->
+<div class="modal fade" id="select-header-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<div class="modal-title">Выбор шапки</div>
+			</div>
+			<form id="fileupload" class="fileupload-images" action="#t=<?= time () ?>" method="POST" enctype="multipart/form-data">
+				<div class="modal-body">
+
+					<div class="row">
+						<div class="col-xs-5">
+							Файл шапки документов
+						</div>
+						<div class="col-xs-7">
+							<select name="">
+								<option>Выберите из списка</option>
+								<option value="1">Значение 1</option>
+								<option value="2">Значение 2</option>
+								<option value="3">Значение 3</option>
+							</select>
+
+							<div class="clearfix"></div>
+
+							<!-- The fileinput-button span is used to style the file input field as button -->
+							<span class="button button-green button-small fileinput-button" style="margin-top: 10px;">
+								<i class="glyphicon glyphicon-plus"></i>
+								<span>Добавить файл...</span>
+								<input type="file" name="files[]" multiple>
+							</span>
+
+
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-12 center-text">
+
+
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-12">
+
+							<!-- The table listing the files available for upload/download -->
+							<table role="presentation" class="table table-striped">
+								<tbody class="files"></tbody>
+							</table>
+
+						</div>
+					</div>
+
+				</div>
+				<div class="modal-footer">
+					<div class="row">
+						<div class="col-xs-6 col-xs-offset-3 center-text">
+							<input type="submit" class="button" value="Сохранить">
+						</div>
+						<!--
+						<div class="col-xs-3 pull-right">
+							<button type="button" class="btn btn-default" data-dismiss="modal" aria-hidden="true">Закрыть</button>
+						</div>
+						 -->
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- /SelectHeaderWindow -->
+
+<!-- ErrorWindow -->
+<div class="modal fade error-modal" id="error-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<div class="modal-title">Заявка на повторное формирование пакета документов</div>
+			</div>
+			<div class="modal-body">
+
+				<div class="center-text">
+					Выполнение данной операции в демо-режиме невозможно.
+					<br/><br/>
+					Для перехода в расширенную версию сервиса подключитесь по одному из представленных тарифов
+				</div>
+
+			</div>
+			<div class="modal-footer">
+				<div class="pull-right">
+					<button type="button" class="button button-small button-dim-blue" data-dismiss="modal" aria-hidden="true">Закрыть</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /ErrorWindow -->
+
+<!-- InfoSectionWindow -->
+<div class="modal fade" id="info-section-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<div class="modal-title">Информация о разделе «Оперативные мероприятия»</div>
+			</div>
+			<form action="#">
+				<div class="modal-body">
+
+					Данный раздел представляет собой сборник задач, которые могут ежедневно встречаться в деятельности Организации и Администратора информационной безопасности, в частности. <br/><br/>
+					В этом разделе вы можете производить действия по созданию, удалению и редактированию пользователей, ответственных лиц. информационных систем, подразделений, кабинетов в которых осуществляется обработка ПДн. <br/><br/>
+					После вышеуказанных действий сервис автоматически добавит изменения в необходимые документы и предоставит вам соответствующиенормативные акты о внесении изменений. <br/><br/>
+					Также в разделе собраны все необходимые журналы и акты.
+
+				</div>
+				<div class="modal-footer">
+					<div class="row">
+						<div class="col-xs-6 col-xs-offset-3 center-text">
+							<!--
+							<input type="submit" class="button" value="Войти">
+
+							<br/><br/><br/>
+							<a href="#">Регистрация</a>
+							 -->
+						</div>
+						<div class="col-xs-3 pull-right">
+							<button type="button" class="button" data-dismiss="modal" aria-hidden="true">Закрыть</button>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- /InfoSectionWindow -->
+
 <!-- EntryWindow -->
 <div class="modal fade" id="entry-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
@@ -45,7 +183,7 @@
 
 					<div class="row">
 						<div class="col-xs-4 text-right" style="margin: 7px 0;">
-							ЄП:
+							ЭП:
 						</div>
 						<div class="col-xs-6">
 							<select name="">
@@ -165,6 +303,109 @@
 </div>
 <!-- /RegistrationWindow -->
 
+<!-- RegionPartnershipWindow -->
+<div class="modal fade" id="region-partnership-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<div class="modal-title">Заявка на партнёрство</div>
+			</div>
+			<form action="#">
+				<div class="modal-body">
+
+					<div class="row">
+						<div class="col-xs-6 text-right" style="margin: 7px 0;">
+							Наименование организации <span class="red-text">*</span>:
+						</div>
+						<div class="col-xs-6">
+							<input type="text" name="company-name" value="" class="validate[required]">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-6 text-right" style="margin: 7px 0;">
+							ИНН <span class="red-text">*</span>:
+						</div>
+						<div class="col-xs-6">
+							<input type="text" name="inn" value="" class="validate[required]">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-6 text-right" style="margin: 7px 0;">
+							ФИО <span class="red-text">*</span>:
+						</div>
+						<div class="col-xs-6">
+							<input type="text" name="name" value="" class="validate[required]">
+						</div>
+					</div>
+
+					<div class="row region-row">
+						<div class="col-xs-6 text-right" style="margin: 7px 0;">
+							Регион
+						</div>
+						<div class="col-xs-6">
+							<input type="text" name="region" value="" class="">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-6 text-right" style="margin: 7px 0;">
+							Город <span class="red-text">*</span>:
+						</div>
+						<div class="col-xs-6">
+							<input type="text" name="city" value="" class="validate[required]">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-6 text-right" style="margin: 7px 0;">
+							E-mail <span class="red-text">*</span>:
+						</div>
+						<div class="col-xs-6">
+							<input type="text" name="email" value="" class="validate[required,custom[email]]">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-6 text-right" style="margin: 7px 0;">
+							Телефон <span class="red-text">*</span>:
+						</div>
+						<div class="col-xs-6">
+							<input type="text" name="phone" value="" class="validate[required,custom[phone]]">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-6 text-right" style="margin: 7px 0;">
+							Комментарий <span class="red-text">*</span>:
+						</div>
+						<div class="col-xs-6">
+							<textarea name="message" class="validate[required]"></textarea>
+						</div>
+					</div>
+
+				</div>
+				<div class="modal-footer">
+					<div class="row">
+						<div class="col-xs-6 col-xs-offset-3 center-text">
+							<input type="submit" class="button" value="Отправить заявку">
+						</div>
+						<!--
+						<div class="col-xs-3 pull-right">
+							<button type="button" class="btn btn-default" data-dismiss="modal" aria-hidden="true">Закрыть</button>
+						</div>
+						 -->
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- /RegionPartnershipWindow -->
+
+
 <!-- PartnershipWindow -->
 <div class="modal fade" id="partnership-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
@@ -177,7 +418,7 @@
 				<div class="modal-body">
 
 					<div class="row">
-						<div class="col-xs-5 text-right" style="margin: 7px 0;">
+						<div class="col-xs-6 text-right" style="margin: 7px 0;">
 							Наименование организации <span class="red-text">*</span>:
 						</div>
 						<div class="col-xs-6">
@@ -186,7 +427,7 @@
 					</div>
 
 					<div class="row">
-						<div class="col-xs-5 text-right" style="margin: 7px 0;">
+						<div class="col-xs-6 text-right" style="margin: 7px 0;">
 							ИНН <span class="red-text">*</span>:
 						</div>
 						<div class="col-xs-6">
@@ -195,7 +436,7 @@
 					</div>
 
 					<div class="row">
-						<div class="col-xs-5 text-right" style="margin: 7px 0;">
+						<div class="col-xs-6 text-right" style="margin: 7px 0;">
 							ФИО <span class="red-text">*</span>:
 						</div>
 						<div class="col-xs-6">
@@ -204,7 +445,7 @@
 					</div>
 
 					<div class="row">
-						<div class="col-xs-5 text-right" style="margin: 7px 0;">
+						<div class="col-xs-6 text-right" style="margin: 7px 0;">
 							Город <span class="red-text">*</span>:
 						</div>
 						<div class="col-xs-6">
@@ -213,7 +454,7 @@
 					</div>
 
 					<div class="row">
-						<div class="col-xs-5 text-right" style="margin: 7px 0;">
+						<div class="col-xs-6 text-right" style="margin: 7px 0;">
 							E-mail <span class="red-text">*</span>:
 						</div>
 						<div class="col-xs-6">
@@ -222,7 +463,7 @@
 					</div>
 
 					<div class="row">
-						<div class="col-xs-5 text-right" style="margin: 7px 0;">
+						<div class="col-xs-6 text-right" style="margin: 7px 0;">
 							Телефон <span class="red-text">*</span>:
 						</div>
 						<div class="col-xs-6">
@@ -231,7 +472,7 @@
 					</div>
 
 					<div class="row">
-						<div class="col-xs-5 text-right" style="margin: 7px 0;">
+						<div class="col-xs-6 text-right" style="margin: 7px 0;">
 							Комментарий <span class="red-text">*</span>:
 						</div>
 						<div class="col-xs-6">

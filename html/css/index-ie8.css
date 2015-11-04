@@ -81,8 +81,12 @@
 .center-text {
   text-align: center;
 }
-.small-text {
-  font-size: 13px;
+small,
+.small-text,
+small *,
+.small-text * {
+  font-size: 12px;
+  line-height: 17px;
 }
 .gray-text {
   color: #7d8083;
@@ -137,22 +141,17 @@
   height: 16px;
   background: url("../images/icons/icon-16x16-sprite.png") no-repeat;
 }
+/** Градиенты **/
 /* Градиент в белый цвет справа, P.S.: установка отступа слева и высота - в index.js */
-.gradient-right {
-  position: absolute;
-  display: block;
-  float: right;
-  width: 30px;
-  height: 1.5em;
-  margin-top: -1.5em;
-  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
-  background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(#ffffff));
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffffff', GradientType=1);
-}
 /* /Градиент в белый цвет справа, P.S.: установка отступа слева и высота - в index.js */
+/** /Градиенты **/
+.border-block {
+  -web-kit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 10px 15px 15px 15px;
+  border: 1px solid #4daee5;
+}
 /**/
 /********************* file: static *********************/
 /**/
@@ -246,10 +245,19 @@ p,
 ul.simple-list {
   padding-bottom: 9px;
 }
+ul.empty-list li + li {
+  padding-top: 1em;
+}
 div.simple-list > div + div {
   clear: both;
 }
 .required-field-sign {
   color: #ff394a;
   font-family: 'Ubuntu Bold';
+}
+.border-2px {
+  border-width: 2px;
+}
+.border-3px {
+  border-width: 3px;
 }
