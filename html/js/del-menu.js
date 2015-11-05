@@ -46,10 +46,10 @@
 			{
 				section: 'Организация',
 				pages: Array(
-					{
+					/*{
 						name: 'Ответственные лица, комиссия',
 						fileName: 'organization-responsible-person-commission.php'
-					},
+					},*/
 					{
 						name: 'Ответственные лица',
 						fileName: 'organization-responsible-person.php'

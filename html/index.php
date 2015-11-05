@@ -92,23 +92,23 @@
 
 						<ul class="row li-block li-block-small" data-container="li-data-block-1">
 							<li class="col15-xs-3">
-								<div class="img"><img src="images/content/ability-01.png" width="167" height="166" alt="Разработка и ведение документов"></div>
+								<div class="img"><img src="images/content/ability-01.png" class="bg-round-icon-active" width="167" height="166" alt="Разработка и ведение документов"></div>
 								<div class="title">Разработка и ведение документов</div>
 							</li>
 							<li class="col15-xs-3">
-								<div class="img"><img src="images/content/ability-02.png" width="167" height="166" alt="Подбор тенических решений"></div>
+								<div class="img"><img src="images/content/ability-02.png" class="bg-round-icon-active" width="167" height="166" alt="Подбор тенических решений"></div>
 								<div class="title">Подбор тенических решений</div>
 							</li>
 							<li class="col15-xs-3">
-								<div class="img"><img src="images/content/ability-03.png" width="167" height="166" alt="Успешное прохождение проверок"></div>
+								<div class="img"><img src="images/content/ability-03.png" class="bg-round-icon-active" width="167" height="166" alt="Успешное прохождение проверок"></div>
 								<div class="title">Успешное прохождение проверок</div>
 							</li>
 							<li class="col15-xs-3">
-								<div class="img"><img src="images/content/ability-04.png" width="167" height="166" alt="Экспертная поддержка"></div>
+								<div class="img"><img src="images/content/ability-04.png" class="bg-round-icon-active" width="167" height="166" alt="Экспертная поддержка"></div>
 								<div class="title">Экспертная поддержка</div>
 							</li>
 							<li class="col15-xs-3">
-								<div class="img"><img src="images/content/ability-05.png" width="167" height="166" alt="Обследование у заказчика"></div>
+								<div class="img"><img src="images/content/ability-05.png" class="bg-round-icon-active" width="167" height="166" alt="Обследование у заказчика"></div>
 								<div class="title">Обследование у заказчика</div>
 							</li>
 						</ul>
