@@ -1109,8 +1109,8 @@ input[type="reset"]:active {
 .header-block > .wrapper > * {
   float: left;
 }
-.header-block .logo-block img {
-  padding: 6px 0;
+.header-block .logo-block {
+  margin: 6px 0;
 }
 .header-block .phone-block,
 .header-block .phone-block * {
