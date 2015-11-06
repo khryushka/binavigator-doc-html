@@ -108,7 +108,7 @@
 						<div class="clearfix"></div>
 						<br/><br/>
 
-						<div class="center-text"><input type="submit" value="Утвердить наказ"></div>
+						<div class="center-text"><input type="submit" value="Утвердить"></div>
 						<div class="clearfix"></div>
 						<br/><br/><br/>
 						<a href="#" class="button button-prev">Назад</a>

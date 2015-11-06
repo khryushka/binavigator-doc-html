@@ -43,15 +43,15 @@
 						<ul class="row li-block" data-container="li-data-block-1">
 							<li class="col-xs-4">
 								<div class="title">Уголовная</div>
-								<div class="img"><img src="images/content/responsibility-01.png" width="283" height="281" alt="Уголовная"></div>
+								<div class="img"><img src="images/content/responsibility-01.png" class="bg-round-icon-active" width="283" height="281" alt="Уголовная"></div>
 							</li>
 							<li class="col-xs-4">
 								<div class="title">Административная</div>
-								<div class="img"><img src="images/content/responsibility-02.png" width="283" height="281" alt="Административная"></div>
+								<div class="img"><img src="images/content/responsibility-02.png" class="bg-round-icon-active" width="283" height="281" alt="Административная"></div>
 							</li>
 							<li class="col-xs-4">
 								<div class="title">Гражданская</div>
-								<div class="img"><img src="images/content/responsibility-03.png" width="283" height="281" alt="Гражданская"></div>
+								<div class="img"><img src="images/content/responsibility-03.png" class="bg-round-icon-active" width="283" height="281" alt="Гражданская"></div>
 							</li>
 						</ul>
 

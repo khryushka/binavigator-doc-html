@@ -1634,6 +1634,14 @@ body {
   font-size: 12px;
   line-height: 17px;
 }
+.bg-round-icon {
+  background: url('../images/bg-round-icon.png') no-repeat center;
+  background-size: cover;
+}
+.active .bg-round-icon-active {
+  background: url('../images/bg-round-icon.png') no-repeat center;
+  background-size: cover;
+}
 /**/
 /**/
 /**/
