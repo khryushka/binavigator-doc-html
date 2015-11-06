@@ -68,6 +68,21 @@
 					<br/><br/><br/>
 
 					Использование терминального доступа: <br/>
+					<div class="row">
+						<div class="col-xs-11">
+							<select name="post" multiple size="5">
+								<option>Выберите ИСПДн с терминальным доступом</option>
+								<option value="1">ИСПДн 1</option>
+								<option value="2">ИСПДн 2</option>
+								<option value="3">ИСПДн 3</option>
+								<option value="4">ИСПДн 4</option>
+								<option value="5">ИСПДн 5</option>
+							</select>
+						</div>
+						<div class="col-xs-1">
+							<div class="question-icon icon-32x32" style="margin: 5px 0;" title="Поясняющая информация"></div>
+						</div>
+					</div>
 					<small>Отметьте, пожалуйста, при работе в каких ИСПДн используется терминальный доступ</small>
 
 					<br/><br/><br/>

@@ -450,6 +450,7 @@
 				});
 			}
 		});
+		$('.li-block').find('li').eq(0).trigger('click');
 		/** /responsibility **/
 
 

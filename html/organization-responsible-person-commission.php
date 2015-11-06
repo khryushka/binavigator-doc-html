@@ -65,22 +65,6 @@
 
 					<form name="person-form" class="form-line-list" action="#" method="POST" enctype="multipart/form-data">
 
-						Действующий на основании (в родительном падеже): <br/>
-
-						<div class="row">
-							<div class="col-xs-11">
-								<select name="">
-									<option>Выберите из списка</option>
-									<option value="1">Значение 1</option>
-									<option value="2">Значение 2</option>
-									<option value="3">Значение 3</option>
-								</select>
-							</div>
-							<div class="col-xs-1">
-								<div class="question-icon icon-32x32" style="margin: 5px 0;" title="Поясняющая информация"></div>
-							</div>
-						</div>
-
 						Ответственный за ознакомление с приказами: <br/>
 
 						<div class="row">
@@ -198,22 +182,6 @@
 						<div class="row">
 							<div class="col-xs-11">
 								<select name="deputy-responsible-for-cryptocredits" id="deputy-responsible-for-cryptocredits" class="validate[notEquals[responsible-for-cryptocredits]]">
-									<option>Выберите из списка</option>
-									<option value="1">Значение 1</option>
-									<option value="2">Значение 2</option>
-									<option value="3">Значение 3</option>
-								</select>
-							</div>
-							<div class="col-xs-1">
-								<div class="question-icon icon-32x32" style="margin: 5px 0;" title="Поясняющая информация"></div>
-							</div>
-						</div>
-
-						Действующий на основании (в родительном падеже): <br/>
-
-						<div class="row">
-							<div class="col-xs-11">
-								<select name="">
 									<option>Выберите из списка</option>
 									<option value="1">Значение 1</option>
 									<option value="2">Значение 2</option>
